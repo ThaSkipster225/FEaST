@@ -7,4 +7,8 @@ import {
   query, orderBy
 } from "firebase/firestore";
 import { db } from "@/firebase";
+
+
+/* USER INFO */
+
 </script>
