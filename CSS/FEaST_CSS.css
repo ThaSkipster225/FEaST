@@ -113,6 +113,15 @@ a:hover #Locations{
     border-radius: 50%;
 }
 
+span .navbar-toggler-icon {
+    color: black;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+    margin-top: 35px;
+}
+
 /* End Navigation Section */
 
 /* Carousel Section */
