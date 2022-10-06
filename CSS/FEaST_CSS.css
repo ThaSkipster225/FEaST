@@ -97,6 +97,7 @@ a:hover #Locations{
     text-transform: uppercase;
     letter-spacing: 1px;
     Color: Red;
+    margin-right: 30px;
 }
 
 .navbar-nav .nav-link.active {
