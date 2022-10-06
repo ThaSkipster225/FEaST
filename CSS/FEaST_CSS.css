@@ -92,12 +92,12 @@ a:hover #Locations{
 }
 
 .navbar .nav-link {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
     Color: Red;
-    margin-right: 30px;
+    margin-right: 25px;
 }
 
 .navbar-nav .nav-link.active {
