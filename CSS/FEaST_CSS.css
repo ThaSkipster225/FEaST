@@ -295,6 +295,17 @@ a:hover #Locations{
     transform: translateY(-60px);
 }
 
+/* Body */
+
+#link h2 {
+    margin-top: 50px;
+}
+
+#link p {
+    text-align: center !important;
+
+}
+
 /* Footer */
 
 footer a {
