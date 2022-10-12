@@ -203,6 +203,14 @@ a:hover #Locations{
     position: relative;
 }
 
+.food-location h3{
+    opacity: 1;
+    color: black;
+    position: absolute;
+    bottom: 68px;
+    left: 16px;
+}
+
 .food-location img{
     width: 300px;
     height: 300px;
