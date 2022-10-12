@@ -40,7 +40,7 @@ img {
 }
 
 section {
-    padding-top: 50px;
+    padding-top: 30px;
     padding-bottom: 50px;
 }
 
@@ -240,9 +240,17 @@ a:hover #Locations{
 }
 
 /* Team Member Section */
+.p-4{
+    height: 316px;
+    width: 316px;
+}
 
 .team-member {
     background-color: #5a1129;
+}
+
+.team-member-img img{
+    width: 100%;
 }
 
 .team-member.even {
