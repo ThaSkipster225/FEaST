@@ -237,7 +237,7 @@ a:hover #Locations{
 .location-overlay h3, 
 .location-overlay h6 {
     color: white !important;
-    bottom: 80px !important;
+    bottom: 84px !important;
     left: 16px;
 }
 
@@ -256,7 +256,7 @@ a:hover #Locations{
 }
 
 .team-member-img img{
-    width: 100%;
+    width: 100% !important;
 }
 
 .team-member.even {
