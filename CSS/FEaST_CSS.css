@@ -237,8 +237,16 @@ a:hover #Locations{
 .location-overlay h3, 
 .location-overlay h6 {
     color: white !important;
-    bottom: 84px !important;
+    bottom: 108px !important;
     left: 16px;
+}
+
+.food-location .location-overlay h3{
+    font-size: 25px;
+}
+
+.food-location .location-overlay h6{
+    font-size: 14.5px;
 }
 
 .food-location:hover .location-overlay {
