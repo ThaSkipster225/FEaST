@@ -11,10 +11,6 @@
         The web app is called FEaST (Food Expedited and Service Terminal) and will serve as a mobile ordering system for our campus's food locations.
         -->
 
-  <!-- Bootstrap 5.2.1 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <!-- External CSS File Link -->
-  <link rel="stylesheet" href="CSS/FEaST_CSS.css">
 </header>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar">
