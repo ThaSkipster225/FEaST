@@ -368,7 +368,7 @@
     <section id="team" class="row g-0 py-0 text-center">
       <div class="col-lg-3 col-sm-6 team-member" >
         <div class="team-member-img">
-          <img src="Images/People/AC (2).jpg" alt="AC Photo">
+          <img src="Images/People/AC.jpg" alt="AC Photo">
           <div class="social-icons">
             <a href="mailto:anselmiscolumna@gmail.com"><i class="fa fa-envelope"></i></a>
             <a href="https://www.linkedin.com/in/anselmiscolumna/" target="_blank"><i class="fa fa-address-card"
