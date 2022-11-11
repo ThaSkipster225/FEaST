@@ -23,6 +23,7 @@
     </div>
     <!-- Test -->
 </template>
+
 <script>
 export default {
     name: 'CoinForm',

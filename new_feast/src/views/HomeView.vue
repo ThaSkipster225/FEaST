@@ -168,19 +168,7 @@
     <Section id="Locations" class="row g-0">
       <h2>Locations</h2>
       <!-- Computer Science Section (Fresh Twist) -->
-      <div class="col-lg-3 col-sm-6">
-        <div class="food-location">
-          <h3>Fresh Twist</h3>
-          <a href="CompSci.html"><img src="../assets/Images/FreshTwist/FreshTwistImage.jpg" alt="" class="w-100">
-          <div class="location-overlay">
-            <div>
-              <h3>Fresh Twist</h3>
-              <h6>Located in the Weinstein building, Pretzelmaker has been making fresh baked and handcrafted pretzels since 1991. If you ever get a craving for something salty, you can’t go wrong going with Freshtwist!</h6>
-            </div>
-          </div>
-          </a>
-        </div>
-      </div>
+      <LocationCard LocName="Fresh Twist" />
 
       <!-- The Caf Section (Wynee's Bistro {In the Lower Section}, Sushi Place, Superbowls, Steak and Shake) -->
       <div class="col-lg-3 col-sm-6">
@@ -469,11 +457,12 @@
 <script>
 // @ is an alias to /src
 // import HelloWorld from '@/components/HelloWorld.vue'
+import LocationCard from '../components/LocationCard.vue'
 
 export default {
   name: 'HomeView',
-  // Components: {
-
-  // }
+  Components: {
+    LocationCard
+  }
 }
 </script>
