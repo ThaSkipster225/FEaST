@@ -4,18 +4,14 @@
     <router-link to="/about">About</router-link>
   </nav>
   <router-view/>
-  <div id="app">
-    <CoinForm />
-  </div>
 </template>
 
 <script>
-import CoinForm from './components/CoinForm.vue'
+// import CoinForm from './components/CoinForm.vue'
 
 export default {
   name: 'app',
   components: {
-    CoinForm
   }
 }
 </script>
