@@ -33,7 +33,7 @@
     <!-- Lower Nav Bar for proper Navigation. It's sticky and has Scroll spy in it so it will highlight the section we are currently in.-->
     <nav class="navbar sticky-top navbar-expand-lg bg-white">
       <div class="container-fluid bg-white">
-        <a class="navbar-brand" href="index.html"><img src="Images/FeastIcon.png" alt="Feast Logo" width=50 height=50></a>
+        <a class="navbar-brand" href="index.html"><img src="../assets/Images/FeastIcon.png" alt="Feast Logo" width=50 height=50></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
           aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
