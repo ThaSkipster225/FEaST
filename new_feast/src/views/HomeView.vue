@@ -1,12 +1,12 @@
 <script>
 // @ is an alias to /src
 // import HelloWorld from '@/components/HelloWorld.vue'
-import LocationCard from '../components/LocationCard.vue'
+import LocationCardVue from '@/components/LocationCard.vue';
 
 export default {
   name: 'HomeView',
   Components: {
-    LocationCard,
+    LocationCardVue
   }
 }
 </script>
@@ -181,7 +181,10 @@ export default {
       <Section id="Locations" class="row g-0">
         <h2>Locations</h2>
         <!-- Computer Science Section (Fresh Twist) -->
-        <LocationCard LocationName="FreshTwist" />
+        <LocationCardVue 
+        :LocationName="FreshTwist" 
+        class="food-location"
+        />
 
         <!-- The Caf Section (Wynee's Bistro {In the Lower Section}, Sushi Place, Superbowls, Steak and Shake) -->
         <div class="col-lg-3 col-sm-6">
