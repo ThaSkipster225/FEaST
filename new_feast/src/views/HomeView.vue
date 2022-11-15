@@ -4,8 +4,8 @@
 import LocationCardVue from '@/components/LocationCard.vue';
 
 export default {
-  name: 'HomeView',
-  Components: {
+  name: "HomeView",
+  components: {
     LocationCardVue
   }
 }
@@ -181,10 +181,7 @@ export default {
       <Section id="Locations" class="row g-0">
         <h2>Locations</h2>
         <!-- Computer Science Section (Fresh Twist) -->
-        <LocationCardVue 
-        :LocationName="FreshTwist" 
-        class="food-location"
-        />
+        <LocationCardVue></LocationCardVue>
 
         <!-- The Caf Section (Wynee's Bistro {In the Lower Section}, Sushi Place, Superbowls, Steak and Shake) -->
         <div class="col-lg-3 col-sm-6">

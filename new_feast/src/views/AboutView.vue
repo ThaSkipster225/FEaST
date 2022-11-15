@@ -4,8 +4,8 @@ import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
     name: "AboutView",
-    Components: {
-        HelloWorld,
+    components: {
+        HelloWorld
     }
 }
 </script>
