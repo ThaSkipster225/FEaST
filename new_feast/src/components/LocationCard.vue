@@ -3,7 +3,7 @@
   <div class="col-lg-3 col-sm-6">
     <div class="food-location">
       <h3>{{ FoodLoc }}</h3>
-      <a href="CompSci.html"><img src="../assets/Images/FreshTwist/FreshTwistImage.jpg" alt="{{ FoodLoc }}" class="w-100">
+      <a href="CompSci.html"><img src={{ ImageString }} alt="{{ FoodLoc }}" class="w-100">
       <div class="location-overlay">
         <div>
           <h3>{{ FoodLoc }}</h3>
@@ -18,7 +18,8 @@
 <script>
 export default {
   props: {
-    FoodLoc: String
+    FoodLoc: String,
+    ImageString: String
   }
 }
 </script>

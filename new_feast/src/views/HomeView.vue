@@ -181,95 +181,22 @@ export default {
       <Section id="Locations" class="row g-0">
         <h2>Locations</h2>
         <!-- Computer Science Section (Fresh Twist) -->
-        <LocationCardVue FoodLoc="Fresh Twist!"></LocationCardVue>
+        <LocationCardVue FoodLoc="Fresh Twist" ImageString="../assets/Images/FreshTwist/FreshTwistImage.jpg" />
 
         <!-- The Caf Section (Wynee's Bistro {In the Lower Section}, Sushi Place, Superbowls, Steak and Shake) -->
-        <div class="col-lg-3 col-sm-6">
-          <div class="food-location">
-            <h3>Kazan Sushi</h3>
-            <a href="Cafeteria.html"><img src="../assets/Images/placeholder.jpg" alt="" class="w-100">
-            <div class="location-overlay">
-              <div>
-                <h3>Kazan Sushi</h3>
-                <h6>Built within the cafeteria and next to Portabellos, Kazan promises the highest quality gyoza, spring rolls, and sushi! Hand-rolled every day and in all varieties and tastes, get your sushi needs today!</h6>
-              </div>
-            </div>
-            </a>
-          </div>
-        </div>
+        <LocationCardVue FoodLoc="Kazan Sushi" ImageString="../assets/Images/placeholder.jpg" />
 
-        <div class="col-lg-3 col-sm-6">
-          <div class="food-location">
-            <h3>Super Bowls</h3>
-            <a href="Cafeteria.html"><img src="../assets/Images/placeholder.jpg" alt="" class="w-100">
-            <div class="location-overlay">
-              <div>
-                <h3>Super Bowls</h3>
-                <h6>New, improved, and set next to Wynee's Bistro, Superbowls provides a relaxing, hands-off experience in crafting "superbowls" made to order. With additional options offered on special occasions, try this option today!</h6>
-              </div>
-            </div>
-          </a>
-          </div>
-        </div>
+        <LocationCardVue FoodLoc="Super Bowls" ImageString="../assets/Images/placeholder.jpg" />
 
-        <div class="col-lg-3 col-sm-6">
-          <div class="food-location">
-            <h3>Steak & Shake</h3>
-            <a href="Cafeteria.html"><img src="../assets/Images/placeholder.jpg" alt="" class="w-100">
-            <div class="location-overlay">
-              <div>
-                <h3>Steak & Shake</h3>
-                <h6>Located in the back of the cafeteria, come to Steak and Shake to enjoy a fast-casual and hand-prepared steakburger with a refreshing and delicious milkshake. After all, “If it's in sight, it must be right!”
-                </h6>
-              </div>
-            </div>
-            </a>
-          </div>
-        </div>
+        <LocationCardVue FoodLoc="Steak & Shake" ImageString="../assets/Images/placeholder.jpg" />
 
         <!-- Undercaf Section (Boar's Head Deli and Freshens) -->
-        <div class="col-lg-3 col-sm-6">
-          <div class="food-location">
-            <h3>Boar's Head Deli</h3>
-            <a href="Undercaf.html"><img src="../assets/Images/Undercaf/UnderCafBoarsHeadImage.jpg" alt="" class="w-100">
-            <div class="location-overlay">
-              <div>
-                <h3>Boar's Head Deli</h3>
-                <h6>More than just a sandwich shop located in the undercaf, Boar's Head has been dedicated to the quality of its craft since 1905. Offering both hot and cold sandwich options as well as soups, come experience these delectable offerings!</h6>
-              </div>
-            </div>
-            </a>
-          </div>
-        </div>
+        <LocationCardVue FoodLoc="Boar's Head Deli" ImageString="../assets/Images/placeholder.jpg" />
 
-        <div class="col-lg-3 col-sm-6">
-          <div class="food-location">
-            <h3>Freshen's</h3>
-            <a href="Undercaf.html"><img src="../assets/Images/Freshens/FreshensImage.jpg" alt="" class="w-100">
-            <div class="location-overlay">
-              <div>
-                <h3>Freshen's</h3>
-                <h6>Set alongside Boar's Head Deli in the undercaf, Freshens offers refreshing smoothies prepared to order. Come into the cafe space, grab a fresh and healthy smoothie, and study for those exams while stimulating your brain with vitamins galore!</h6>
-              </div>
-            </div>
-            </a>
-          </div>
-        </div>
+        <LocationCardVue FoodLoc="Freshen's" ImageString="../assets/Images/Freshens/FreshensImage.jpg" />
 
         <!-- Central Campus Section (Buckstop) -->
-        <div class="col-lg-3 col-sm-6">
-          <div class="food-location">
-            <h3>Buckstop</h3>
-            <a href="Central.html"><img src="../assets/Images/BuckStop/BuckstopImage.jpg" alt="" class="w-100">
-            <div class="location-overlay">
-              <div>
-                <h3>Buckstop</h3>
-                <h6>Located along the walk between the Spivey/JR compound and the LP Ordway Building, Buckstop offers a unique pizza and grill experience. Come out, grab a slice, and experience the open-air brick-oven pizza experience!</h6>
-              </div>
-            </div>
-            </a>
-          </div>
-        </div>
+        <LocationCardVue FoodLoc="Buckstop" ImageString="../assets/Images/Buckstop/BuckstopImage.jpg" />
 
         <!-- South Side of Campus (Happy Place, Mocketship, Tutu's Cyber Cafe, Grill Master) -->
         <div class="col-lg-3 col-sm-6">
