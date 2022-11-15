@@ -181,7 +181,7 @@ export default {
       <Section id="Locations" class="row g-0">
         <h2>Locations</h2>
         <!-- Computer Science Section (Fresh Twist) -->
-        <LocationCardVue></LocationCardVue>
+        <LocationCardVue FoodLoc="Fresh Twist!"></LocationCardVue>
 
         <!-- The Caf Section (Wynee's Bistro {In the Lower Section}, Sushi Place, Superbowls, Steak and Shake) -->
         <div class="col-lg-3 col-sm-6">
