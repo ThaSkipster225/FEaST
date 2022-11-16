@@ -1,12 +1,15 @@
 <script>
 // @ is an alias to /src
 // import HelloWorld from '@/components/HelloWorld.vue'
-import LocationCardVue from '@/components/LocationCard.vue';
+// import LocationCardVue from '@/components/LocationCard.vue';
+import LoginModalVue from '@/components/LoginModal.vue';
+
 
 export default {
   name: "HomeView",
   components: {
-    LocationCardVue
+    // LocationCardVue
+    LoginModalVue
   }
 }
 </script>
@@ -100,7 +103,8 @@ export default {
       <div id="Home">
 
         <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <LoginModalVue></LoginModalVue>
+        <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
@@ -126,7 +130,7 @@ export default {
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <h1>
           Welcome to FEaST
