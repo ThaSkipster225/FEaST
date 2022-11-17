@@ -188,14 +188,14 @@ export default {
         <LocationCardVue FoodLoc="Fresh Twist" ImageString="../assets/Images/placeholder.jpg" />
 
         <!-- The Caf Section (Wynee's Bistro {In the Lower Section}, Sushi Place, Superbowls, Steak and Shake) -->
-        <LocationCardVue FoodLoc="Kazan Sushi" ImageString="../assets/Images/placeholder.jpg" />
+        <LocationCardVue FoodLoc="Kazan Sushi" ImageString="../assets/Images/WyneesBistro/SushiBarImage.jpg" />
 
-        <LocationCardVue FoodLoc="Super Bowls" ImageString="../assets/Images/placeholder.jpg" />
+        <LocationCardVue FoodLoc="Super Bowls" ImageString="../assets/Images/WyneesBistro/SuperBowlsImage.jpg" />
 
-        <LocationCardVue FoodLoc="Steak & Shake" ImageString="../assets/Images/placeholder.jpg" />
+        <LocationCardVue FoodLoc="Steak & Shake" ImageString="../assets/Images/WyneesBistro/SteakAndShakeImage.jpg" />
 
         <!-- Undercaf Section (Boar's Head Deli and Freshens) -->
-        <LocationCardVue FoodLoc="Boar's Head Deli" ImageString="../assets/Images/placeholder.jpg" />
+        <LocationCardVue FoodLoc="Boar's Head Deli" ImageString="../assets/Images/Undercaf/UnderCafBoarsHeadImage.jpg" />
 
         <LocationCardVue FoodLoc="Freshen's" ImageString="../assets/Images/Freshens/FreshensImage.jpg" />
 
