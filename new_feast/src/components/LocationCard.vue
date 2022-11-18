@@ -7,7 +7,7 @@
       <div class="location-overlay">
         <div>
           <h3>{{ FoodLoc }}</h3>
-          <h6>Located in the Weinstein building, Pretzelmaker has been making fresh baked and handcrafted pretzels since 1991. If you ever get a craving for something salty, you can’t go wrong going with Freshtwist!</h6>
+          <h6>{{ LocDesc }}</h6>
         </div>
       </div>
       </a>
@@ -20,7 +20,8 @@ export default {
   name: 'LocationCard',
   props: {
     FoodLoc: String,
-    ImageString: String
+    ImageString: String,
+    LocDesc: String
   }
 }
 </script>

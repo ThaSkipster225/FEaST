@@ -192,10 +192,17 @@ export default {
       <Section id="Locations" class="row g-0">
         <h2>Locations</h2>
         <!-- Computer Science Section (Fresh Twist) -->
-        <LocationCardVue FoodLoc="Fresh Twist" ImageString="../assets/Images/placeholder.jpg" />
+        <LocationCardVue 
+        FoodLoc="Fresh Twist" 
+        ImageString="../assets/Images/placeholder.jpg" 
+        LocDesc="Located in the Weinstein building, Pretzelmaker has been making fresh baked and handcrafted pretzels since 1991. If you ever get a craving for something salty, you can’t go wrong going with Freshtwist" 
+        />
 
         <!-- The Caf Section (Wynee's Bistro {In the Lower Section}, Sushi Place, Superbowls, Steak and Shake) -->
-        <LocationCardVue FoodLoc="Kazan Sushi" ImageString="../assets/Images/WyneesBistro/SushiBarImage.jpg" />
+        <LocationCardVue 
+        FoodLoc="Kazan Sushi" 
+        ImageString="../assets/Images/WyneesBistro/SushiBarImage.jpg" 
+        />
 
         <LocationCardVue FoodLoc="Super Bowls" ImageString="../assets/Images/WyneesBistro/SuperBowlsImage.jpg" />
 
@@ -210,19 +217,11 @@ export default {
         <LocationCardVue FoodLoc="Buckstop" ImageString="../assets/Images/Buckstop/BuckstopImage.jpg" />
 
         <!-- South Side of Campus (Happy Place, Mocketship, Tutu's Cyber Cafe, Grill Master) -->
-        <div class="col-lg-3 col-sm-6">
-          <div class="food-location">
-            <h3>Happy Place</h3>
-            <a href="South.html"><img src="../assets/Images/HappyPlace/HappyPlaceImage.jpg" alt="" class="w-100">
-            <div class="location-overlay">
-              <div>
-                <h3>Happy Place</h3>
-                <h6>Recently relocated to the food court next to the Branscomb Auditorium, Happy Place offers barbeque food at affordable prices to students and staff alike. Come and get a bag full of happiness today!</h6>
-              </div>
-            </div>
-            </a>
-          </div>
-        </div>
+        <LocationCardVue 
+        FoodLoc="Happy Place" 
+        ImageString="../assets/Images/HappyPlace/HappyPlaceImage.jpg" 
+        LocDesc="Recently relocated to the food court next to the Branscomb Auditorium, Happy Place offers barbeque food at affordable prices to students and staff alike. Come and get a bag full of happiness today"
+         />
 
         <div class="col-lg-3 col-sm-6">
           <div class="food-location">
