@@ -214,7 +214,10 @@ export default {
         ImageString="../assets/Images/WyneesBistro/SteakAndShakeImage.jpg" 
         />
 
-        <LocationCardVue FoodLoc="Portabello's" ImageString="../assets/Images/WyneesBistro/PortabellosImage.jpg" />
+        <LocationCardVue 
+        FoodLoc="Portabello's" 
+        ImageString="../assets/Images/WyneesBistro/PortabellosImage.jpg" 
+        />
 
         <!-- Undercaf Section (Boar's Head Deli and Freshens) -->
         <LocationCardVue 
@@ -252,34 +255,18 @@ export default {
         LocDesc="Located within the Roux Library, Tutu's is the campus Starbucks, offering locally brewed coffee and pastries for the delight of the campus. Stop on by to use the free computers, get a bite to eat and something warm to drink!"
         />
 
-        <div class="col-lg-3 col-sm-6">
-          <div class="food-location">
-            <h3>Grillmaster</h3>
-            <a href="South.html"><img src="../assets/Images/Grillmasters/GrillmastersImage.jpg" alt="" class="w-100">
-            <div class="location-overlay">
-              <div>
-                <h3>Grillmaster</h3>
-                <h6>Come to Grillmasters, set within and outside of Roux Library! Here, grilled burgers, hot dogs, and other specialties are offered with the comforts of a fresh cookout are available for your enjoyment.</h6>
-              </div>
-            </div>
-            </a>
-          </div>
-        </div>
+        <LocationCardVue
+        FoodLoc="Grillmaster"
+        ImageString="../assets/Images/Grillmasters/GrillmastersImage.jpg"
+        LocDesc="Come to Grillmasters, set within and outside of Roux Library! Here, grilled burgers, hot dogs, and other specialties are offered with the comforts of a fresh cookout are available for your enjoyment."
+        />
 
         <!-- The Caf -->
-        <div class="col-lg-3 col-sm-6">
-          <div class="food-location">
-            <h3>Wynee's Bistro</h3>
-            <a href="South.html"><img src="../assets/Images/WyneesBistro/WyneesImage.jpg" alt="" class="w-100">
-            <div class="location-overlay">
-              <div>
-                <h3>Wynee's Bistro</h3>
-                <h6>Wynee's Bistro, otherwise known as the cafeteria, offers a rotating menu daily to offer students a wide variety of warm meals every day of the week. Alongside this location is Portabellos, a constant stop for your flatbread pizza needs.</h6>
-              </div>
-            </div>
-            </a>
-          </div>
-        </div>
+        <LocationCardVue
+        FoodLoc="Wynee's Bistro"
+        ImageString="../assets/Images/WyneesBistro/WyneesImage.jpg"
+        LocDesc="Wynee's Bistro, otherwise known as the cafeteria, offers a rotating menu daily to offer students a wide variety of warm meals every day of the week. Alongside this location is Portabellos, a constant stop for your flatbread pizza needs."
+        />
 
 
         <!-- Big Image for the Caf -->
