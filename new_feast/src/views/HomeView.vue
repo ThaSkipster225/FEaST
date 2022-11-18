@@ -2,6 +2,7 @@
 // @ is an alias to /src
 // import HelloWorld from '@/components/HelloWorld.vue'
 import AboutCardVue from '@/components/AboutCard.vue';
+import RegisterModalVue from '@/components/RegisterModal.vue';
 import LocationCardVue from '@/components/LocationCard.vue';
 import LoginModalVue from '@/components/LoginModal.vue';
 
@@ -11,7 +12,8 @@ export default {
   components: {
     LocationCardVue,
     LoginModalVue,
-    AboutCardVue
+    AboutCardVue,
+    RegisterModalVue
   }
 }
 </script>
@@ -39,7 +41,10 @@ export default {
         <div class="container">
           <div class="col-12">
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" class="btn btn-primary m-2" data-bs-toggle="modal" data-bs-target="#RegisterModal">
+              Register
+            </button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LoginModal">
               Log In
             </button>
           </div>
@@ -106,6 +111,7 @@ export default {
 
         <!-- Modal -->
         <LoginModalVue></LoginModalVue>
+        <RegisterModalVue></RegisterModalVue>
         <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
