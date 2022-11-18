@@ -192,53 +192,59 @@ export default {
       <Section id="Locations" class="row g-0">
         <h2>Locations</h2>
         <!-- Computer Science Section (Fresh Twist) -->
-        <LocationCardVue FoodLoc="Fresh Twist" ImageString="../assets/Images/placeholder.jpg" />
+        <LocationCardVue 
+        FoodLoc="Fresh Twist" 
+        ImageString="../assets/Images/placeholder.jpg" 
+        LocDesc="Located in the Weinstein building, Pretzelmaker has been making fresh baked and handcrafted pretzels since 1991. If you ever get a craving for something salty, you can’t go wrong going with Freshtwist" 
+        />
 
         <!-- The Caf Section (Wynee's Bistro {In the Lower Section}, Sushi Place, Superbowls, Steak and Shake) -->
-        <LocationCardVue FoodLoc="Kazan Sushi" ImageString="../assets/Images/WyneesBistro/SushiBarImage.jpg" />
+        <LocationCardVue 
+        FoodLoc="Kazan Sushi" 
+        ImageString="../assets/Images/WyneesBistro/SushiBarImage.jpg" 
+        />
 
-        <LocationCardVue FoodLoc="Super Bowls" ImageString="../assets/Images/WyneesBistro/SuperBowlsImage.jpg" />
+        <LocationCardVue 
+        FoodLoc="Super Bowls" 
+        ImageString="../assets/Images/WyneesBistro/SuperBowlsImage.jpg" 
+        />
 
-        <LocationCardVue FoodLoc="Steak & Shake" ImageString="../assets/Images/WyneesBistro/SteakAndShakeImage.jpg" />
+        <LocationCardVue 
+        FoodLoc="Steak & Shake" 
+        ImageString="../assets/Images/WyneesBistro/SteakAndShakeImage.jpg" 
+        />
 
         <LocationCardVue FoodLoc="Portabello's" ImageString="../assets/Images/WyneesBistro/PortabellosImage.jpg" />
 
         <!-- Undercaf Section (Boar's Head Deli and Freshens) -->
-        <LocationCardVue FoodLoc="Boar's Head Deli" ImageString="../assets/Images/Undercaf/UnderCafBoarsHeadImage.jpg" />
+        <LocationCardVue 
+        FoodLoc="Boar's Head Deli" 
+        ImageString="../assets/Images/Undercaf/UnderCafBoarsHeadImage.jpg" 
+        />
 
-        <LocationCardVue FoodLoc="Freshen's" ImageString="../assets/Images/Freshens/FreshensImage.jpg" />
+        <LocationCardVue 
+        FoodLoc="Freshen's" 
+        ImageString="../assets/Images/Freshens/FreshensImage.jpg" 
+        />
 
         <!-- Central Campus Section (Buckstop) -->
-        <LocationCardVue FoodLoc="Buckstop" ImageString="../assets/Images/Buckstop/BuckstopImage.jpg" />
+        <LocationCardVue 
+        FoodLoc="Buckstop" 
+        ImageString="../assets/Images/Buckstop/BuckstopImage.jpg" 
+        />
 
         <!-- South Side of Campus (Happy Place, Mocketship, Tutu's Cyber Cafe, Grill Master) -->
-        <div class="col-lg-3 col-sm-6">
-          <div class="food-location">
-            <h3>Happy Place</h3>
-            <a href="South.html"><img src="../assets/Images/HappyPlace/HappyPlaceImage.jpg" alt="" class="w-100">
-            <div class="location-overlay">
-              <div>
-                <h3>Happy Place</h3>
-                <h6>Recently relocated to the food court next to the Branscomb Auditorium, Happy Place offers barbeque food at affordable prices to students and staff alike. Come and get a bag full of happiness today!</h6>
-              </div>
-            </div>
-            </a>
-          </div>
-        </div>
+        <LocationCardVue 
+        FoodLoc="Happy Place" 
+        ImageString="../assets/Images/HappyPlace/HappyPlaceImage.jpg" 
+        LocDesc="Recently relocated to the food court next to the Branscomb Auditorium, Happy Place offers barbeque food at affordable prices to students and staff alike. Come and get a bag full of happiness today"
+         />
 
-        <div class="col-lg-3 col-sm-6">
-          <div class="food-location">
-            <h3>Mocketship</h3>
-            <a href="South.html"><img src="../assets/Images/MocketShip/MocketShipImage.jpg" alt="" class="w-100">
-            <div class="location-overlay">
-              <div>
-                <h3>Mocketship</h3>
-                <h6>The newest offering at FSC, Mocketship is located in the food court next to the Branscomb Auditorium. Come to Mocketship and be taken to the stars with the healthiest options across campus including wraps and snacks!</h6>
-              </div>
-            </div>
-            </a>
-          </div>
-        </div>
+        <LocationCardVue
+        FoodLoc="Mocketship"
+        ImageString="../assets/Images/MocketShip/MocketShipImage.jpg"
+        LocDesc="The newest offering at FSC, Mocketship is located in the food court next to the Branscomb Auditorium. Come to Mocketship and be taken to the stars with the healthiest options across campus including wraps and snacks!"
+        />
 
         <div class="col-lg-3 col-sm-6">
           <div class="food-location">
