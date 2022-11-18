@@ -15,6 +15,7 @@
 </template>
 
 <script>
+  import firebase from 'firebase'
   const axios = require('axios')
   const cheerio = require('cheerio')
 

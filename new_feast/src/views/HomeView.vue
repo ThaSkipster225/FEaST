@@ -201,6 +201,8 @@ export default {
 
         <LocationCardVue FoodLoc="Steak & Shake" ImageString="../assets/Images/WyneesBistro/SteakAndShakeImage.jpg" />
 
+        <LocationCardVue FoodLoc="Portabello's" ImageString="../assets/Images/WyneesBistro/PortabellosImage.jpg" />
+
         <!-- Undercaf Section (Boar's Head Deli and Freshens) -->
         <LocationCardVue FoodLoc="Boar's Head Deli" ImageString="../assets/Images/Undercaf/UnderCafBoarsHeadImage.jpg" />
 
