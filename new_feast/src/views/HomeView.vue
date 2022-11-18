@@ -246,19 +246,11 @@ export default {
         LocDesc="The newest offering at FSC, Mocketship is located in the food court next to the Branscomb Auditorium. Come to Mocketship and be taken to the stars with the healthiest options across campus including wraps and snacks!"
         />
 
-        <div class="col-lg-3 col-sm-6">
-          <div class="food-location">
-            <h3>Tutu's Cyber Cafe</h3>
-            <a href="South.html"><img src="../assets/Images/TutusCyberCafe/TuTusImage.jpg" alt="" class="w-100">
-            <div class="location-overlay">
-              <div>
-                <h3>Tutu's Cyber Cafe</h3>
-                <h6>Located within the Roux Library, Tutu's is the campus Starbucks, offering locally brewed coffee and pastries for the delight of the campus. Stop on by to use the free computers, get a bite to eat and something warm to drink!</h6>
-              </div>
-            </div>
-            </a>
-          </div>
-        </div>
+        <LocationCardVue
+        FoodLoc="Tutu's Cyber Cafe"
+        ImageString="../assets/Images/TutusCyberCafe/TuTusImage.jpg"
+        LocDesc="Located within the Roux Library, Tutu's is the campus Starbucks, offering locally brewed coffee and pastries for the delight of the campus. Stop on by to use the free computers, get a bite to eat and something warm to drink!"
+        />
 
         <div class="col-lg-3 col-sm-6">
           <div class="food-location">
