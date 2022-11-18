@@ -2,7 +2,6 @@
   <nav>
     <router-link to="/"><span>Home</span></router-link> |
     <router-link to="/about">About</router-link>
-    <router-link to="/register">Register</router-link>
     <location-card-vue/>
   </nav>
   <router-view/>
