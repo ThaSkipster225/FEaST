@@ -1,17 +1,17 @@
 <script>
 // @ is an alias to /src
 // import HelloWorld from '@/components/HelloWorld.vue'
-// import LocationCardVue from '@/components/LocationCard.vue';
+import AboutCardVue from '@/components/AboutCard.vue';
+import LocationCardVue from '@/components/LocationCard.vue';
 import LoginModalVue from '@/components/LoginModal.vue';
-import RegisterModalVue from '@/components/RegisterModal.vue';
 
 
 export default {
   name: "HomeView",
   components: {
-    // LocationCardVue
+    LocationCardVue,
     LoginModalVue,
-    RegisterModalVue
+    AboutCardVue
   }
 }
 </script>
@@ -39,10 +39,7 @@ export default {
         <div class="container">
           <div class="col-12">
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary m-2" data-bs-toggle="modal" data-bs-target="#RegisterModal">
-              Register
-            </button>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LoginModal">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
               Log In
             </button>
           </div>
@@ -109,7 +106,6 @@ export default {
 
         <!-- Modal -->
         <LoginModalVue></LoginModalVue>
-        <RegisterModalVue></RegisterModalVue>
         <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
@@ -191,7 +187,7 @@ export default {
       <Section id="Locations" class="row g-0">
         <h2>Locations</h2>
         <!-- Computer Science Section (Fresh Twist) -->
-        <LocationCardVue FoodLoc="Fresh Twist" ImageString="../assets/Images/FreshTwist/FreshTwistImage.jpg" />
+        <LocationCardVue FoodLoc="Fresh Twist" ImageString="../assets/Images/placeholder.jpg" />
 
         <!-- The Caf Section (Wynee's Bistro {In the Lower Section}, Sushi Place, Superbowls, Steak and Shake) -->
         <LocationCardVue FoodLoc="Kazan Sushi" ImageString="../assets/Images/WyneesBistro/SushiBarImage.jpg" />
@@ -305,26 +301,8 @@ export default {
       <div id="AboutUs">
         <h2>The Team</h2>
         <section id="team" class="row g-0 py-0 text-center">
-          <div class="col-lg-3 col-sm-6 team-member" >
-            <div class="team-member-img">
-              <img src="../assets/Images/People/AC.jpg" alt="AC Photo">
-              <div class="social-icons">
-                <a href="mailto:anselmiscolumna@gmail.com"><i class="fa fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/anselmiscolumna/" target="_blank"><i class="fa fa-address-card"
-                  aria-hidden="true"></i></a>
-                <a href="https://www.instagram.com/a__cado/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://github.com/anselmiscolumna" target="_blank"><i class="fab fa-github"></i></a>
-              </div>
-            </div>
-            <div class="p-4">
-              <h5 class="title-sm mt-3 mb-0 text-white">Anselmis 'AC' Columna</h5>
-              <small class="text-white">CS Student - AI & Machine Learning</small>
-              <div class="hline"></div>
-              <p class="text-white">Born in Patterson, New Jersey and raised in Kissimmee, Florida. Began studying Computer Science Fall Semester of 2019.
-                Expecting to graduate Spring 2023.
-              </p>
-            </div>
-          </div>
+          <AboutCardVue PersonName ="Anselmis 'AC' Columna" PersonDesc="Born in Patterson, New Jersey and raised in Kissimmee, Florida. Began studying Computer Science Fall Semester of 2019.
+        Expecting to graduate Spring 2023." />
 
           <div class="col-lg-3 col-sm-6 team-member even">
             <div class="team-member-img">
