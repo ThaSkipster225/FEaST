@@ -193,79 +193,86 @@ export default {
         <h2>Locations</h2>
         <!-- Computer Science Section (Fresh Twist) -->
         <LocationCardVue 
-        FoodLoc="Fresh Twist" 
-        ImageString="../assets/Images/placeholder.jpg" 
-        LocDesc="Located in the Weinstein building, Pretzelmaker has been making fresh baked and handcrafted pretzels since 1991. If you ever get a craving for something salty, you can’t go wrong going with Freshtwist" 
+        :FoodLoc="'Fresh Twist'" 
+        :ImageString="`${require('@/assets/Images/FreshTwist/FreshTwistImage.jpg')}`" 
+        :LocDesc="'Located in the Weinstein building, Pretzelmaker has been making fresh baked and handcrafted pretzels since 1991. If you ever get a craving for something salty, you can’t go wrong going with Freshtwist'" 
         />
 
         <!-- The Caf Section (Wynee's Bistro {In the Lower Section}, Sushi Place, Superbowls, Steak and Shake) -->
         <LocationCardVue 
-        FoodLoc="Kazan Sushi" 
-        ImageString="../assets/Images/WyneesBistro/SushiBarImage.jpg" 
+        :FoodLoc="'Kazan Sushi'" 
+        :ImageString="`${require('@/assets/Images/WyneesBistro/SushiBarImage.jpg')}`"
+        :LocDesc="'Located in Wynees Bistro, Kazan Sushi has been feeding hungry FSC students for many years. It is always handcrafted and created with the greatest ingredients possible.'" 
         />
 
         <LocationCardVue 
-        FoodLoc="Super Bowls" 
-        ImageString="../assets/Images/WyneesBistro/SuperBowlsImage.jpg" 
+        :FoodLoc="'Super Bowls'" 
+        :ImageString="`${require('@/assets/Images/WyneesBistro/SuperBowlsImage.jpg')}`"
+        :LocDesc="'Located in Wynees Bistro, Super Bowls is FSCs creation to give students a healthier and different option.'"
         />
 
         <LocationCardVue 
-        FoodLoc="Steak & Shake" 
-        ImageString="../assets/Images/WyneesBistro/SteakAndShakeImage.jpg" 
+        :FoodLoc="'Steak & Shake'" 
+        :ImageString="`${require('@/assets/Images/WyneesBistro/SteakAndShakeImage.jpg')}`"
+        :LocDesc="'Located in Wynees Bistro, Steak & Shake has been serving the country with their very own steakburgers for many many years.'"
         />
 
         <LocationCardVue 
-        FoodLoc="Portabello's" 
-        ImageString="../assets/Images/WyneesBistro/PortabellosImage.jpg" 
+        :FoodLoc="'Portabellos'" 
+        :ImageString="`${require('@/assets/Images/WyneesBistro/PortabellosImage.jpg')}`"
+        :LocDesc="'Loacted in Wynees Bistro, Portabellos has been blessing the FSC community for many many years with pasta and pizza. '"
         />
 
         <!-- Undercaf Section (Boar's Head Deli and Freshens) -->
         <LocationCardVue 
-        FoodLoc="Boar's Head Deli" 
-        ImageString="../assets/Images/Undercaf/UnderCafBoarsHeadImage.jpg" 
+        :FoodLoc="'Boar\'s Head Deli'" 
+        :ImageString="`${require('@/assets/Images/Undercaf/UnderCafBoarsHeadImage.jpg')}`" 
+        :LocDesc="'Boar\'s Head Deli has been blessing the world for many years. Started by George Jenkins himself, Florida Southern has taken up the mark of continuing his work here on campus by serving the finest of sliced meat and cheeses.'"
         />
 
         <LocationCardVue 
-        FoodLoc="Freshen's" 
-        ImageString="../assets/Images/Freshens/FreshensImage.jpg" 
+        :FoodLoc="'Freshen\'s'" 
+        :ImageString="`${require('@/assets/Images/Freshens/FreshensImage.jpg')}`" 
+        :LocDesc="'Located in the Undercaf, Freshen\'s has been blessing the undercaf with smoothie options for many years. They use only the freshest ingredients and prepare everything to order.'"
         />
 
         <!-- Central Campus Section (Buckstop) -->
         <LocationCardVue 
-        FoodLoc="Buckstop" 
-        ImageString="../assets/Images/Buckstop/BuckstopImage.jpg" 
+        :FoodLoc="'Buckstop'" 
+        :ImageString="`${require('@/assets/Images/BuckStop/BuckstopImage.jpg')}`"
+        :LocDesc="'Located at the heart of Florida Southern\'s campus, Buckstop prepares only the finest brick oven pizza for the student body. It is one of the only brick oven pizza places to exist on a college campus.'"
         />
 
         <!-- South Side of Campus (Happy Place, Mocketship, Tutu's Cyber Cafe, Grill Master) -->
         <LocationCardVue 
-        FoodLoc="Happy Place" 
-        ImageString="../assets/Images/HappyPlace/HappyPlaceImage.jpg" 
-        LocDesc="Recently relocated to the food court next to the Branscomb Auditorium, Happy Place offers barbeque food at affordable prices to students and staff alike. Come and get a bag full of happiness today"
+        :FoodLoc="'Happy Place'" 
+        :ImageString="`${require('@/assets/Images/HappyPlace/HappyPlaceImage.jpg')}`" 
+        :LocDesc="'Recently relocated to the food court next to the Branscomb Auditorium, Happy Place offers barbeque food at affordable prices to students and staff alike. Come and get a bag full of happiness today'"
          />
 
         <LocationCardVue
-        FoodLoc="Mocketship"
-        ImageString="../assets/Images/MocketShip/MocketShipImage.jpg"
-        LocDesc="The newest offering at FSC, Mocketship is located in the food court next to the Branscomb Auditorium. Come to Mocketship and be taken to the stars with the healthiest options across campus including wraps and snacks!"
+        :FoodLoc="'Mocketship'"
+        :ImageString="`${require('@/assets/Images/MocketShip/MocketShipImage.jpg')}`"
+        :LocDesc="'The newest offering at FSC, Mocketship is located in the food court next to the Branscomb Auditorium. Come to Mocketship and be taken to the stars with the healthiest options across campus including wraps and snacks!'"
         />
 
         <LocationCardVue
-        FoodLoc="Tutu's Cyber Cafe"
-        ImageString="../assets/Images/TutusCyberCafe/TuTusImage.jpg"
-        LocDesc="Located within the Roux Library, Tutu's is the campus Starbucks, offering locally brewed coffee and pastries for the delight of the campus. Stop on by to use the free computers, get a bite to eat and something warm to drink!"
+        :FoodLoc="'Tutu\'s Cyber Cafe'"
+        :ImageString="`${require('@/assets/Images/TutusCyberCafe/TuTusImage.jpg')}`"
+        :LocDesc="'Located within the Roux Library, Tutu\'s is the campus Starbucks, offering locally brewed coffee and pastries for the delight of the campus. Stop on by to use the free computers, get a bite to eat and something warm to drink!'"
         />
 
         <LocationCardVue
-        FoodLoc="Grillmaster"
-        ImageString="../assets/Images/Grillmasters/GrillmastersImage.jpg"
-        LocDesc="Come to Grillmasters, set within and outside of Roux Library! Here, grilled burgers, hot dogs, and other specialties are offered with the comforts of a fresh cookout are available for your enjoyment."
+        :FoodLoc="'Grillmaster'"
+        :ImageString="`${require('@/assets/Images/Grillmasters/GrillmastersImage.jpg')}`"
+        :LocDesc="'Come to Grillmasters, set within and outside of Roux Library! Here, grilled burgers, hot dogs, and other specialties are offered with the comforts of a fresh cookout are available for your enjoyment.'"
         />
 
         <!-- The Caf -->
         <LocationCardVue
-        FoodLoc="Wynee's Bistro"
-        ImageString="../assets/Images/WyneesBistro/WyneesImage.jpg"
-        LocDesc="Wynee's Bistro, otherwise known as the cafeteria, offers a rotating menu daily to offer students a wide variety of warm meals every day of the week. Alongside this location is Portabellos, a constant stop for your flatbread pizza needs."
+        :FoodLoc="'Wynee\'s Bistro'"
+        :ImageString="`${require('@/assets/Images/WyneesBistro/WyneesImage.jpg')}`"
+        :LocDesc="'Wynee\'s Bistro, otherwise known as the cafeteria, offers a rotating menu daily to offer students a wide variety of warm meals every day of the week. Alongside this location is Portabellos, a constant stop for your flatbread pizza needs.'"
         />
 
 
@@ -293,10 +300,26 @@ export default {
       <div id="AboutUs">
         <h2>The Team</h2>
         <section id="team" class="row g-0 py-0 text-center">
-          <AboutCardVue PersonName ="Anselmis 'AC' Columna" PersonDesc="Born in Patterson, New Jersey and raised in Kissimmee, Florida. Began studying Computer Science Fall Semester of 2019.
-        Expecting to graduate Spring 2023." />
+          <AboutCardVue 
+          PersonName ="Anselmis 'AC' Columna" 
+          :PersonImage="`${require('@/assets/Images/People/AC.jpg')}`"
+          PersonSmall="CS Student - AI & Machine Learning"
+          PersonDesc="Born in Patterson, New Jersey and raised in Kissimmee, Florida. Began studying Computer Science Fall Semester of 2019.
+          Expecting to graduate Spring 2023." 
+          PersonEmail="anselmiscolumna@gmail.com"
+          PersonEven=false
+          />
 
-          <div class="col-lg-3 col-sm-6 team-member even">
+          <AboutCardVue
+          PersonName="Austin Scheetz"
+          :PersonImage="`${require('@/assets/Images/People/AustinImage.jpg')}`"
+          PersonSmall="CS Student - AI & Machine Learning"
+          PersonDesc="Born in North Port and raised in both Englewood and Port Charlotte FL. Started studying computer science in earnest his 
+          Freshman year of college but always had a fasination with computers throughout his life. Expecting to graduate Spring 2024 or Fall 2024."
+          PersonEven=true
+          />
+
+          <!-- <div class="col-lg-3 col-sm-6 team-member even">
             <div class="team-member-img">
               <img src="../assets/Images/People/AustinImage.jpg" alt="Austin Photo">
               <div class="social-icons">
@@ -314,9 +337,19 @@ export default {
               <p class="text-white">Born in North Port and raised in both Englewood and Port Charlotte FL. Started studying computer science in earnest his 
                 Freshman year of college but always had a fasination with computers throughout his life. Expecting to graduate Spring 2024 or Fall 2024.</p>
             </div>
-          </div>
+          </div> -->
 
-          <div class="col-lg-3 col-sm-6 team-member">
+          <AboutCardVue 
+          PersonName="Sebastian 'Skippy' Paquette"
+          :PersonImage="`${require('@/assets/Images/People/Skippy_SGA_Headshot1.jpg')}`"
+          PersonSmall="CS Student - AI & Machine Learning"
+          PersonDesc="Born and raised in Fort Lauderdale, FL. Started studying computer science Freshman year of highschool and 
+          graduated highschool with a Technical Trade in Database Application Development and Programming. Expecting graduation in the Spring
+          of 2023."
+          PersonEven=false
+          />
+
+          <!-- <div class="col-lg-3 col-sm-6 team-member">
             <div class="team-member-img">
               <img src="../assets/Images/People/Skippy_SGA_Headshot1.jpg" alt="">
               <div class="social-icons">
@@ -336,9 +369,19 @@ export default {
                 of 2023.
               </p>
             </div>
-          </div>
+          </div> -->
 
-          <div class="col-lg-3 col-sm-6 team-member even">
+          <AboutCardVue
+          PersonName="Dr. Cazalas"
+          :PersonImage="`${require('@/assets/Images/People/JC-jpg-1.jpg')}`"
+          PersonSmall="Professor and Project Advisor"
+          PersonDesc="Jonathan received his Bachelor of Science in Computer Science from the University of Central Florida in 2006.
+          He subsequently earned a Master of Science in Computer Science in 2008 and a Doctor of Philosophy in Computer Science in 2012, 
+          both from the University of Central Florida."
+          PersonEven=true
+          />
+
+          <!-- <div class="col-lg-3 col-sm-6 team-member even">
             <div class="team-member-img">
               <img src="../assets/Images/People/JC-jpg-1.jpg" alt="Dr. Cazalas Photo">
               <div class="social-icons">
@@ -357,7 +400,7 @@ export default {
                 He subsequently earned a Master of Science in Computer Science in 2008 and a Doctor of Philosophy in Computer Science in 2012, 
                 both from the University of Central Florida.</p>
             </div>
-          </div>
+          </div> -->
 
         </section>
       </div>
