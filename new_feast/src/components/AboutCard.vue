@@ -4,11 +4,10 @@
     <div class="team-member-img">
         <img :src="PersonImage" alt="AC Photo">
         <div class="social-icons">
-        <a :href="`mailto:${PersonEmail}`"></a>
-        <a href="https://www.linkedin.com/in/anselmiscolumna/" target="_blank"><i class="fa fa-address-card"
-            aria-hidden="true"></i></a>
-        <a href="https://www.instagram.com/a__cado/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://github.com/anselmiscolumna" target="_blank"><i class="fab fa-github"></i></a>
+        <a :href="`mailto:${PersonEmail}`"><font-awesome-icon icon="fa-solid fa-envelope"></font-awesome-icon></a>
+        <a :href="Social1" target="_blank"><font-awesome-icon icon="fa-brands fa-linkedin"></font-awesome-icon></a>
+        <a :href="Social2" target="_blank"><font-awesome-icon icon="fa-brands fa-instagram"></font-awesome-icon></a>
+        <a :href="Social3" target="_blank"><font-awesome-icon icon="fa-brands fa-github"></font-awesome-icon></a>
         </div>
     </div>
     <div class="p-4">

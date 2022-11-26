@@ -301,29 +301,34 @@ export default {
         <h2>The Team</h2>
         <section id="team" class="row g-0 py-0 text-center">
           <AboutCardVue 
-          PersonName ="Anselmis 'AC' Columna" 
+          :PersonName ="'Anselmis \'AC\' Columna'" 
           :PersonImage="`${require('@/assets/Images/People/AC.jpg')}`"
-          PersonSmall="CS Student - AI & Machine Learning"
-          PersonDesc="Born in Patterson, New Jersey and raised in Kissimmee, Florida. Began studying Computer Science Fall Semester of 2019.
-          Expecting to graduate Spring 2023." 
-          PersonEmail="anselmiscolumna@gmail.com"
+          :PersonSmall="'CS Student - AI & Machine Learning'"
+          :PersonDesc="'Born in Patterson, New Jersey and raised in Kissimmee, Florida. Began studying Computer Science Fall Semester of 2019. Expecting to graduate Spring 2023.'" 
+          :PersonEmail="'anselmiscolumna@gmail.com'"
           PersonEven=false
+          :Social1="'https://www.linkedin.com/in/anselmiscolumna/'"
+          :Social2="'https://www.instagram.com/a__cado/'"
+          :Social3="'https://github.com/anselmiscolumna'"
           />
 
           <AboutCardVue
-          PersonName="Austin Scheetz"
+          :PersonName="'Austin Scheetz'"
           :PersonImage="`${require('@/assets/Images/People/AustinImage.jpg')}`"
-          PersonSmall="CS Student - AI & Machine Learning"
-          PersonDesc="Born in North Port and raised in both Englewood and Port Charlotte FL. Started studying computer science in earnest his 
-          Freshman year of college but always had a fasination with computers throughout his life. Expecting to graduate Spring 2024 or Fall 2024."
+          :PersonSmall="'CS Student - AI & Machine Learning'"
+          :PersonDesc="'Born in North Port and raised in both Englewood and Port Charlotte FL. Started studying computer science in earnest his Freshman year of college but always had a fasination with computers throughout his life. Expecting to graduate Spring 2024 or Fall 2024.'"
+          :PersonEmail="'austinscheetz4business@gmail.com'"
           PersonEven=true
+          :Social1="''"
+          :Social2="''"
+          :Social3="'https://github.com/AceofCardz02'"
           />
 
           <!-- <div class="col-lg-3 col-sm-6 team-member even">
             <div class="team-member-img">
               <img src="../assets/Images/People/AustinImage.jpg" alt="Austin Photo">
               <div class="social-icons">
-                <a href="mailto:austinscheetz4business@gmail.com"><i class="fa fa-envelope"></i></a>
+                <a href="austinscheetz4business@gmail.com"><i class="fa fa-envelope"></i></a>
                 <a href="#" target="_blank"><i class="fa fa-address-card"
                   aria-hidden="true"></i></a>
                 <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -340,20 +345,22 @@ export default {
           </div> -->
 
           <AboutCardVue 
-          PersonName="Sebastian 'Skippy' Paquette"
+          :PersonName="'Sebastian \'Skippy\' Paquette'"
           :PersonImage="`${require('@/assets/Images/People/Skippy_SGA_Headshot1.jpg')}`"
-          PersonSmall="CS Student - AI & Machine Learning"
-          PersonDesc="Born and raised in Fort Lauderdale, FL. Started studying computer science Freshman year of highschool and 
-          graduated highschool with a Technical Trade in Database Application Development and Programming. Expecting graduation in the Spring
-          of 2023."
+          :PersonSmall="'CS Student - AI & Machine Learning'"
+          :PersonDesc="'Born and raised in Fort Lauderdale, FL. Started studying computer science Freshman year of highschool and graduated highschool with a Technical Trade in Database Application Development and Programming. Expecting graduation in the Spring of 2023.'"
+          :PersonEmail="'sebastian.paquette0@gmail.com'"
           PersonEven=false
+          :Social1="'https://www.linkedin.com/in/sebastianpaquette/'"
+          :Social2="'https://www.instagram.com/thaskipper225/'"
+          :Social3="'https://github.com/ThaSkipster225'"
           />
 
           <!-- <div class="col-lg-3 col-sm-6 team-member">
             <div class="team-member-img">
               <img src="../assets/Images/People/Skippy_SGA_Headshot1.jpg" alt="">
               <div class="social-icons">
-                <a href="mailto:sebastian.paquette0@gmail.com"><i class="fa fa-envelope"></i></a>
+                <a href="sebastian.paquette0@gmail.com"><i class="fa fa-envelope"></i></a>
                 <a href="https://www.linkedin.com/in/sebastianpaquette/" target="_blank"><i class="fa fa-address-card"
                     aria-hidden="true"></i></a>
                 <a href="https://www.instagram.com/thaskipper225/" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -372,20 +379,22 @@ export default {
           </div> -->
 
           <AboutCardVue
-          PersonName="Dr. Cazalas"
+          :PersonName="'Dr. Cazalas'"
           :PersonImage="`${require('@/assets/Images/People/JC-jpg-1.jpg')}`"
-          PersonSmall="Professor and Project Advisor"
-          PersonDesc="Jonathan received his Bachelor of Science in Computer Science from the University of Central Florida in 2006.
-          He subsequently earned a Master of Science in Computer Science in 2008 and a Doctor of Philosophy in Computer Science in 2012, 
-          both from the University of Central Florida."
+          :PersonSmall="'Professor and Project Advisor'"
+          :PersonDesc="'Dr. Cazalas received his Bachelor of Science in Computer Science from the University of Central Florida in 2006. He subsequently earned a Master of Science in Computer Science in 2008 and a Doctor of Philosophy in Computer Science in 2012, both from the University of Central Florida.'"
+          :PersonEmail="'jcazalas@flsouthern.edu'"
           PersonEven=true
+          :Social1="'https://www.linkedin.com/in/jcazalas/'"
+          :Social2="'https://www.instagram.com/'"
+          :Social3="'https://github.com/'"
           />
 
           <!-- <div class="col-lg-3 col-sm-6 team-member even">
             <div class="team-member-img">
               <img src="../assets/Images/People/JC-jpg-1.jpg" alt="Dr. Cazalas Photo">
               <div class="social-icons">
-                <a href="mailto:jcazalas@flsouthern.edu"><i class="fa fa-envelope"></i></a>
+                <a href="jcazalas@flsouthern.edu"><i class="fa fa-envelope"></i></a>
                 <a href="https://www.linkedin.com/in/jcazalas/" target="_blank"><i class="fa fa-address-card"
                   aria-hidden="true"></i></a>
                 <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
