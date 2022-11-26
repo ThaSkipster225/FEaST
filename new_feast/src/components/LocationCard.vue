@@ -19,9 +19,6 @@
 export default {
   name: 'LocationCard',
   props: ["FoodLoc", "ImageString", "LocDesc"]
-    // [FoodLoc: String,
-    // ImageString: String,
-    // LocDesc: String]
   
 }
 </script>
