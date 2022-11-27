@@ -38,30 +38,22 @@
   </div> -->
 </template>
 
-<script>
-import firebase from 'firebase';
+<script setup>
+import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth'
 import { ref } from 'vue';
+import firebase from '../firebaseInit'
 
-export default {
-  setup(){
-    const email = ref('')
-    const password = ref('')
+const email = ref('')
+const password = ref('')
 
-    const Register = () =>{
-      firebase
-        .auth()
-        .createUserWithEmailAndPassword(email.value, password.value)
-        .then(user => {
-          alert(user);
-        })
-        .catch(err => alert(err.message));
-    }
+const auth = getAuth(firebase)
 
-    return {
-      Register,
-      email,
-      password
-    }
-  }
+const Register = () =>{
+    createUserWithEmailAndPassword(auth, email.value, password.value)
+    .then(user => {
+      alert(user);
+    })
+    .catch(err => alert(err.message));
 }
+
 </script>
