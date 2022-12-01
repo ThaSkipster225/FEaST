@@ -3,7 +3,6 @@
 </template>
 
 <script>
-// import CoinForm from './components/CoinForm.vue'
 import NavBar from'./components/NavbarComp.vue'
 
 export default {
@@ -12,8 +11,10 @@ export default {
     NavBar
   },
   data(){
-    // eslint-disable-next-line
-    cart: {}
+    return {
+      showSidebar: false,
+      cart: {}
+    }
   },
   computed: {
     totalQuantity () {
@@ -24,6 +25,9 @@ export default {
     addToCart (name, quantity) {
       if (!this.cart[name]) this.cart[name] = 0
       this.cart[name] += quantity
+    },
+    toggleSidebar () {
+      this.showSidebar = !this.showSidebar
     },
     removeItem (name) {
       delete this.cart[name]
