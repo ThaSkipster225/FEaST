@@ -14,6 +14,20 @@ export default {
   data(){
     // eslint-disable-next-line
     cart: {}
+  },
+  computed: {
+    totalQuantity () {
+      return Object.values(this.cart)
+    }
+  },
+  methods: {
+    addToCart (name, quantity) {
+      if (!this.cart[name]) this.cart[name] = 0
+      this.cart[name] += quantity
+    },
+    removeItem (name) {
+      delete this.cart[name]
+    }
   }
 }
 </script>
