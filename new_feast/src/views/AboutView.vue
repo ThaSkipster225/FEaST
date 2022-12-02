@@ -10,6 +10,7 @@ import { onBeforeMount } from 'vue';
 
 const db = getFirestore(app)
 
+// Solves the problem of having to use Suspense
 onBeforeMount ( async() => {
   const querySnapshot = await getDocs(collection(db, "Restaurants"));
   querySnapshot.forEach((doc) => {
@@ -43,6 +44,7 @@ onBeforeMount ( async() => {
     :price="'5.79'"/>
   </div>
 </template>
+
   <!-- <template>
     <Suspense>
       <template #Default>
