@@ -19,9 +19,9 @@ ul{
     overflow: hidden;
 }
 
-/*p {
-    font-size: 18px;
-}*/
+p {
+    color: white;
+}
 
 
 li{
@@ -281,7 +281,7 @@ a:hover #Locations{
 /* Team Member Section */
 
 .team-member {
-    background-image: linear-gradient(rgba(1, 68, 33, 0.445), rgba(1, 68, 33, 0.95));
+    background-image: linear-gradient(rgba(1, 68, 33, 0.35), rgba(1, 68, 33, 0.95));
 }
 
 .team-member-img img{
@@ -312,7 +312,7 @@ a:hover #Locations{
 .team-member .team-member-img .social-icons {
     width: 100%;
     height: 60px;
-    background-color: #EBBE9B;
+    background-image: linear-gradient(rgba(235, 190, 155, 0.95), rgba(235, 190, 155, 0.35));
     position: absolute; 
     bottom: -60px;
     left: 0;
@@ -349,6 +349,10 @@ a:hover #Locations{
 }
 
 /* Body */
+
+body {
+    background-color: #5b3919;
+}
 
 #link h2 {
     margin-top: 50px;
