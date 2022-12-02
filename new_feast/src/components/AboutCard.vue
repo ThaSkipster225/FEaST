@@ -26,7 +26,7 @@ export default {
     PersonSmall: String,
     PersonDesc: String,
     PersonImage: String,
-    PesronEmail: String,
+    PersonEmail: String,
     Social1: String,
     Social2: String,
     Social3: String,

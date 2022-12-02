@@ -1,20 +1,10 @@
-<script>
+<script setup>
 // @ is an alias to /src
 import AboutCardVue from '@/components/AboutCard.vue';
 import RegisterModalVue from '@/components/RegisterModal.vue';
 import LocationCardVue from '@/components/LocationCard.vue';
 import LoginModalVue from '@/components/LoginModal.vue';
 
-
-export default {
-  name: "HomeView",
-  components: {
-    LocationCardVue,
-    LoginModalVue,
-    AboutCardVue,
-    RegisterModalVue
-  }
-}
 </script>
 
 <template>
@@ -307,7 +297,7 @@ export default {
           :PersonSmall="'CS Student - AI & Machine Learning'"
           :PersonDesc="'Born in Patterson, New Jersey and raised in Kissimmee, Florida. Began studying Computer Science Fall Semester of 2019. Expecting to graduate Spring 2023.'" 
           :PersonEmail="'anselmiscolumna@gmail.com'"
-          PersonEven=false
+          :PersonEven=false
           :Social1="'https://www.linkedin.com/in/anselmiscolumna/'"
           :Social2="'https://www.instagram.com/a__cado/'"
           :Social3="'https://github.com/anselmiscolumna'"
@@ -319,7 +309,7 @@ export default {
           :PersonSmall="'CS Student - AI & Machine Learning'"
           :PersonDesc="'Born in North Port and raised in both Englewood and Port Charlotte FL. Started studying computer science in earnest his Freshman year of college but always had a fasination with computers throughout his life. Expecting to graduate Spring 2024 or Fall 2024.'"
           :PersonEmail="'austinscheetz4business@gmail.com'"
-          PersonEven=true
+          :PersonEven=true
           :Social1="''"
           :Social2="''"
           :Social3="'https://github.com/AceofCardz02'"
@@ -351,7 +341,7 @@ export default {
           :PersonSmall="'CS Student - AI & Machine Learning'"
           :PersonDesc="'Born and raised in Fort Lauderdale, FL. Started studying computer science Freshman year of highschool and graduated highschool with a Technical Trade in Database Application Development and Programming. Expecting graduation in the Spring of 2023.'"
           :PersonEmail="'sebastian.paquette0@gmail.com'"
-          PersonEven=false
+          :PersonEven=false
           :Social1="'https://www.linkedin.com/in/sebastianpaquette/'"
           :Social2="'https://www.instagram.com/thaskipper225/'"
           :Social3="'https://github.com/ThaSkipster225'"
@@ -385,7 +375,7 @@ export default {
           :PersonSmall="'Professor and Project Advisor'"
           :PersonDesc="'Dr. Cazalas received his Bachelor of Science in Computer Science from the University of Central Florida in 2006. He subsequently earned a Master of Science in Computer Science in 2008 and a Doctor of Philosophy in Computer Science in 2012, both from the University of Central Florida.'"
           :PersonEmail="'jcazalas@flsouthern.edu'"
-          PersonEven=true
+          :PersonEven= true
           :Social1="'https://www.linkedin.com/in/jcazalas/'"
           :Social2="'https://www.instagram.com/'"
           :Social3="'https://github.com/'"
