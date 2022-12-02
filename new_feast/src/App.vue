@@ -5,6 +5,7 @@
 <script>
 import NavBar from'./components/NavbarComp.vue'
 
+
 export default {
   name: 'app',
   components: {

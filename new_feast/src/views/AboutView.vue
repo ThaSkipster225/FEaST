@@ -6,18 +6,27 @@ import app from '../firebaseInit';
 import 'firebase/firestore'
 import { getFirestore, collection, getDocs} from 'firebase/firestore';
 
-        // Reference to Firestore       
+import { onBeforeMount } from 'vue';
+
 const db = getFirestore(app)
 
-const querySnapshot = await getDocs(collection(db, "Restaurants"));
-console.log(querySnapshot.docs.data())
-// querySnapshot.forEach((doc) => {
-//     console.log(doc.data().Location);
-//     // const data = {
+onBeforeMount ( async() => {
+  const querySnapshot = await getDocs(collection(db, "Restaurants"));
+  querySnapshot.forEach((doc) => {
+    console.log(doc.data().Location);
+  })
+})
 
-//     // }
-// });
+// Old Try catch for 'Fetching' data
+// try{
+//   const querySnapshot = await getDocs(collection(db, "Restaurants"))
+//   console.log(querySnapshot)
+//   console.log('Data got gotten')
+// } catch (error){
+//   console.log(error)
+// }
 
+// 
 // export default {
 //     name: "AboutView",
 //     components: {
