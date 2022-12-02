@@ -11,12 +11,12 @@
                 <form @submit.prevent="Register">
                   <div class="mb-2 emailInput">
                     <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" v-model="email" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input type="email" class="form-control" v-model="email" id="exampleInputEmail2" aria-describedby="emailHelp">
                     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                   </div>
                   <div class="passwordInput">
                     <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" v-model="password" id="exampleInputPassword1">
+                    <input type="password" class="form-control" v-model="password" id="exampleInputPassword2">
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LoginModal">I already have an account</button>
