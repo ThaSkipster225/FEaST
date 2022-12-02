@@ -50,9 +50,10 @@ onMounted( async() => {
 
     <h1>Testing</h1>
     
-    <ItemCard
-    :name="'Test'"
-    :price="5.45"
+    <!-- eslint-disable-next-line -->
+    <ItemCard v-for="(Name, Price) in q1.getDocs(Slices)"
+    :name="Name"
+    :price="Price"
     />
     
 </template>
