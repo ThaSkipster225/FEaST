@@ -79,12 +79,18 @@ import LoginModalVue from '@/components/LoginModal.vue';
               <li class="nav-item">
                 <a class="nav-link" href="#AboutUs">About Us</a>
               </li>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LoginModal">
+              
+              <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#LoginModal">
               Log In
             </button>
-            <button type="button" class="btn btn-primary m-2" data-bs-toggle="modal" data-bs-target="#RegisterModal">
-              Register
+            
+            <button type="button" class="btn btn-primary btn-sm">
+              <font-awesome-icon icon="fa-solid fa-cart-shopping fa-xs" />
+              Cart
             </button>
+            <!--<button type="button" class="btn btn-primary m-2" data-bs-toggle="modal" data-bs-target="#RegisterModal">-->
+              <!--Register-->
+            <!--</button>-->
             </ul>
           </div>
         </div>
@@ -163,7 +169,7 @@ import LoginModalVue from '@/components/LoginModal.vue';
 
         <p>
           This the FEaST ordering Web Application, you can order food from 11 out of the 12 food service locations we have
-          on campus. In order to use the app, you'll firtst need to create an account with all of your information. Once, you
+          on campus. In order to use the app, you'll first need to create an account with all of your information. Once, you
           have created an account, you'll be able to complete your orders, before that you will just be able to view the site and not make any
           purchases.
         </p>
