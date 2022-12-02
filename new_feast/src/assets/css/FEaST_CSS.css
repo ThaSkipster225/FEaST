@@ -19,6 +19,11 @@ ul{
     overflow: hidden;
 }
 
+/*p {
+    font-size: 18px;
+}*/
+
+
 li{
     display: inline;
     float: left;
@@ -89,6 +94,13 @@ a:hover #Locations{
     font-weight: 600;
     letter-spacing: 0.1rem;
     box-shadow: 0 0.5rem 0.5rem rgba(0,0,0,0.1);
+}
+
+.navbar-nav .btn{
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .navbar .nav-link {
@@ -178,6 +190,15 @@ a:hover #Locations{
     border-width: medium;
 }
 
+.btn-sm {
+    justify-self: center;
+    border-radius: 0;
+    font-size: 1rem;
+    border-width: medium;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .btn-danger {
     background-color: #AC2615;
     border: 0.05rem solid #AC2615;
@@ -260,7 +281,7 @@ a:hover #Locations{
 /* Team Member Section */
 
 .team-member {
-    background-color: #014421;
+    background-image: linear-gradient(rgba(1, 68, 33, 0.445), rgba(1, 68, 33, 0.95));
 }
 
 .team-member-img img{

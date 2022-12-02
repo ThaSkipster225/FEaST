@@ -21,6 +21,7 @@
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
               <input type="submit" class="btn btn-primary" value="Login" placeholder="Log In">
+              <button type="button" class="btn btn-primary m-2" data-bs-toggle="modal" data-bs-target="#RegisterModal">Register Here!</button>
             </div>
           </form>
         </div>
