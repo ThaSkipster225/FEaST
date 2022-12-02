@@ -3,13 +3,13 @@
     <router-link to="/about">About</router-link>
     <router-link to="/buckstop">Buckstop</router-link>
 
-    <nav>
-        <font-awesome-icon icon="fa-solid fa-cart-shopping" /><p>Cart</p>
-    </nav>
+    
+        
 
     <RouterView></RouterView> <!-- Needs to be at bottom to load everything -->
 </template>
 
 <script setup>
+
 
 </script>

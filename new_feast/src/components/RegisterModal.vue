@@ -19,7 +19,7 @@
                     <input type="password" class="form-control" v-model="password" id="exampleInputPassword1">
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LoginModal">I already have an account</button>
                     <input type="submit" class="btn btn-primary" value="Register" placeholder="Register">
                   </div>
                 </form>
