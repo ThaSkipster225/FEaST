@@ -8,12 +8,13 @@
 import app from '../firebaseInit';
 import 'firebase/firestore'
 import { getFirestore, getDocs, query, collectionGroup} from 'firebase/firestore';
-import { onBeforeMount } from 'vue';
+import { onMounted } from 'vue';
+import ItemCard from '@/components/ItemCard.vue';
 
         // Reference to Firestore       
 const db = getFirestore(app)
 
-onBeforeMount( async() => {
+onMounted( async() => {
     const slices = query(collectionGroup(db, 'By the Slice'));
     const q1 = await getDocs(slices);
     q1.forEach((doc) => {
@@ -35,8 +36,6 @@ onBeforeMount( async() => {
 
 
 
-
-
 // const querySnapshot = await getDocs(collection(db, "Restaurants"));
 // querySnapshot.forEach((doc) => {
 //     console.log(doc.data());
@@ -50,5 +49,10 @@ onBeforeMount( async() => {
 <template>
 
     <h1>Testing</h1>
+    
+    <ItemCard
+    :name="'Test'"
+    :price="5.45"
+    />
     
 </template>

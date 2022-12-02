@@ -1,3 +1,8 @@
+/* Changes the item card font color to black */
+.card p {
+    color: Black;
+}
+
 h1{
     Color: Black;
     text-align: center;

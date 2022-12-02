@@ -1,22 +1,22 @@
-<script setup>
+<script>
 
 import ItemCard from '@/components/ItemCard.vue';
 
-import app from '../firebaseInit';
-import 'firebase/firestore'
-import { getFirestore, collection, getDocs} from 'firebase/firestore';
+// import app from '../firebaseInit';
+// import 'firebase/firestore'
+// import { getFirestore, collection, getDocs} from 'firebase/firestore';
 
-import { onBeforeMount } from 'vue';
+// import { onBeforeMount } from 'vue';
 
-const db = getFirestore(app)
+// const db = getFirestore(app)
 
 // Solves the problem of having to use Suspense
-onBeforeMount ( async() => {
-  const querySnapshot = await getDocs(collection(db, "Restaurants"));
-  querySnapshot.forEach((doc) => {
-    console.log(doc.data().Location);
-  })
-})
+// onBeforeMount ( async() => {
+//   const querySnapshot = await getDocs(collection(db, "Restaurants"));
+//   querySnapshot.forEach((doc) => {
+//     console.log(doc.data().Location);
+//   })
+// })
 
 // Old Try catch for 'Fetching' data
 // try{
@@ -28,12 +28,12 @@ onBeforeMount ( async() => {
 // }
 
 // 
-// export default {
-//     name: "AboutView",
-//     components: {
-//         ItemCard
-//     }
-// }
+export default {
+    name: "AboutView",
+    components: {
+        ItemCard
+    }
+}
 </script>
 
 <template>
@@ -41,7 +41,7 @@ onBeforeMount ( async() => {
     <h1>This is an about page, which is being used to test out features</h1>
     <ItemCard
     :name="'Pretzel Bites'"
-    :price="'5.79'"/>
+    :price="5.79"/>
   </div>
 </template>
 
