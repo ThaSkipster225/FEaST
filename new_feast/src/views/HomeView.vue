@@ -36,19 +36,7 @@ export default {
     <body data-bs-spy="scroll" data-bs-target=".navbar">
       <!-- Top Bar for the log in -->
 
-      <div class="top-bar bg-light UpperNav">
-        <div class="container">
-          <div class="col-12">
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary m-2" data-bs-toggle="modal" data-bs-target="#RegisterModal">
-              Register
-            </button>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LoginModal">
-              Log In
-            </button>
-          </div>
-        </div>
-      </div>
+      <!---->
 
       <!-- End Top Bar -->
 
@@ -101,6 +89,12 @@ export default {
               <li class="nav-item">
                 <a class="nav-link" href="#AboutUs">About Us</a>
               </li>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LoginModal">
+              Log In
+            </button>
+            <button type="button" class="btn btn-primary m-2" data-bs-toggle="modal" data-bs-target="#RegisterModal">
+              Register
+            </button>
             </ul>
           </div>
         </div>
