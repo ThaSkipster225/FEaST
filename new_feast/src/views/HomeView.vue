@@ -1,20 +1,10 @@
-<script>
+<script setup>
 // @ is an alias to /src
 import AboutCardVue from '@/components/AboutCard.vue';
 import RegisterModalVue from '@/components/RegisterModal.vue';
 import LocationCardVue from '@/components/LocationCard.vue';
 import LoginModalVue from '@/components/LoginModal.vue';
 
-
-export default {
-  name: "HomeView",
-  components: {
-    LocationCardVue,
-    LoginModalVue,
-    AboutCardVue,
-    RegisterModalVue
-  }
-}
 </script>
 
 <template>
