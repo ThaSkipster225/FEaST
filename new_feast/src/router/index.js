@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import RegisterModal from '@/components/RegisterModal.vue'
 import LoginModal from '@/components/LoginModal.vue'
 import BuckStopVue from '@/views/BuckStop.vue'
+import KazanSushiVue from '@/views/KazanSushi.vue'
 
 const routes = [
   {
@@ -32,6 +33,11 @@ const routes = [
     path: '/buckstop',
     name: 'buckstop',
     component: BuckStopVue
+  },
+  {
+    path: '/sushi',
+    name: 'sushi',
+    component: KazanSushiVue
   }
 ]
 

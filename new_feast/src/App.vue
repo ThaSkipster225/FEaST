@@ -4,6 +4,7 @@
     <router-link to="/"><span>Home</span></router-link>
     <router-link to="/pretzelplace">Pretzel Place</router-link>
     <router-link to="/buckstop">Buckstop</router-link>
+    <router-link to="/sushi">Kazan Sushi</router-link>
     <a @click="toggleSidebar" class="top-bar-cart-link">
       <font-awesome-icon icon="fa-solid fa-cart-shopping fa-xs" />
     </a>
