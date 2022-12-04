@@ -29,7 +29,7 @@
 
 import ItemCard from '@/components/ItemCard.vue';
 import app from '../firebaseInit'
-import {getFirestore, doc, getDoc} from 'firebase/firestore'
+import {getFirestore, query, collection, getDocs} from 'firebase/firestore'
 
 // Rest of script tag
 const db = getFirestore(app)
@@ -45,8 +45,7 @@ export default {
     },
     data() {
       return {
-        name: '',
-        price: ''
+        slices: []
       }
     },
     created () {
@@ -54,13 +53,17 @@ export default {
     },
     methods: {
       async getPizza() {
-        const docSnap = await getDoc(doc(db, 'By The Slice', 'Cheese'))
+        // query to get all docs in 'By The Slice' collection
+        // const querySnap = await getDocs(query(collectionReference(db, 'Restaurants')));
 
-        if (docSnap.exists()){
-          console.log(docSnap.data())
-        } else {
-          console.log('Document does not exist')
-        }
+        const querySnap = await getDocs(query(collection(db, "/Restaurants/4eSPxsdAIQlyvrBh2wbA/By the Slice")));
+
+        // Add each doc to 'slices' array
+        querySnap.forEach((doc) => {
+          this.slices.push(doc.data())
+          console.log(doc.data())
+        })
+      
       }
     },
 }
@@ -73,8 +76,7 @@ export default {
     :name="'Pretzel Bites'"
     :price="5.79"/>
     <br />
-    <!-- eslint-disable-next-line -->
-    <ItemCard v-for="value in ByTheSlice"
+    <ItemCard v-for="value in slices" :key="value.Name"
     :name="value.Name"
     :price="value.Price"
     />
