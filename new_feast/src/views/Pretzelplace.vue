@@ -31,12 +31,11 @@ export default {
         // query to get all docs in 'By The Slice' collection
         // const querySnap = await getDocs(query(collectionReference(db, 'Restaurants')));
 
-        const querySnap = await getDocs(query(collection(db, "/Restaurants/4eSPxsdAIQlyvrBh2wbA/By the Slice")));
+        const querySnap = await getDocs(query(collection(db, "/Restaurants/e0EXLCdzkgtsYBBfBOXn/Pretzels")));
 
         // Add each doc to 'slices' array
         querySnap.forEach((doc) => {
           this.slices.push(doc.data())
-          // console.log(doc.data())
         })
       
       }
