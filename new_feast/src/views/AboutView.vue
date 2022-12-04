@@ -1,7 +1,5 @@
 <script>
 
-import ItemCard from '@/components/ItemCard.vue';
-
 // import app from '../firebaseInit';
 // import 'firebase/firestore'
 // import { getFirestore, collection, getDocs} from 'firebase/firestore';
@@ -27,12 +25,44 @@ import ItemCard from '@/components/ItemCard.vue';
 //   console.log(error)
 // }
 
-// 
+// Imports
+
+import ItemCard from '@/components/ItemCard.vue';
+import app from '../firebaseInit'
+import {getFirestore, doc, getDoc} from 'firebase/firestore'
+
+// Rest of script tag
+const db = getFirestore(app)
+
+// Buckstop Firestore ID 4eSPxsdAIQ1yvrBh2wba
+
+// Cheese slice Firestore Document ID 3aNUlC16pl356rbiXlKZ
+
 export default {
     name: "AboutView",
     components: {
         ItemCard
-    }
+    },
+    data() {
+      return {
+        name: '',
+        price: ''
+      }
+    },
+    created () {
+      this.getPizza()
+    },
+    methods: {
+      async getPizza() {
+        const docSnap = await getDoc(doc(db, 'By The Slice', 'Cheese'))
+
+        if (docSnap.exists()){
+          console.log(docSnap.data())
+        } else {
+          console.log('Document does not exist')
+        }
+      }
+    },
 }
 </script>
 
@@ -42,6 +72,12 @@ export default {
     <ItemCard
     :name="'Pretzel Bites'"
     :price="5.79"/>
+    <br />
+    <!-- eslint-disable-next-line -->
+    <ItemCard v-for="value in ByTheSlice"
+    :name="value.Name"
+    :price="value.Price"
+    />
   </div>
 </template>
 
