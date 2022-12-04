@@ -1,83 +1,55 @@
-<script setup>
-// Imports for components used in view
+<script>
 
+// Imports
 
-//Other imports
-// import { ref } from 'vue';
-// import {useRouter} from 'vue-router';
-import app from '../firebaseInit';
-import 'firebase/firestore'
-// eslint-disable-next-line
-import { getFirestore, getDocs, query, collection, doc, getDoc, ListCollections } from 'firebase/firestore';
-import { onMounted } from 'vue';
 import ItemCard from '@/components/ItemCard.vue';
+import app from '../firebaseInit'
+import {getFirestore, query, collection, getDocs} from 'firebase/firestore'
 
-// Reference to Firestore       
+// Rest of script tag
 const db = getFirestore(app)
 
-const rests = collection(db, "Restaurants")
-console.log(rests)
+// Buckstop Firestore ID 4eSPxsdAIQ1yvrBh2wba
 
-const Buckstop = doc(db, "Restaurants", "4eSPxsdAIQ1yvrBh2wba")
-console.log('Buckstop', Buckstop)
+// Cheese slice Firestore Document ID 3aNUlC16pl356rbiXlKZ
 
-Buckstop.forEach((doc) => {
-    console.log(doc.id, '=>', doc.data());
-})
+export default {
+    name: "AboutView",
+    components: {
+        ItemCard
+    },
+    data() {
+      return {
+        slices: []
+      }
+    },
+    created () {
+      this.getPizza()
+    },
+    methods: {
+      async getPizza() {
+        // query to get all docs in 'By The Slice' collection
+        // const querySnap = await getDocs(query(collectionReference(db, 'Restaurants')));
 
-onMounted( async() => {
-    const ByTheSlice = Buckstop.getDocs()
-    console.log(ByTheSlice)
-})
+        const querySnap = await getDocs(query(collection(db, "/Restaurants/4eSPxsdAIQlyvrBh2wbA/By the Slice")));
 
-
-
-
-// Test to see how to use v-for
-// const test = [{name: "Test Name 1", price: 2.99}, {name: "Test Name 2", price: 3.99}]
-
-// onMounted( async() => {
-//     const slices = query(collectionGroup(db, 'By the Slice'));
-//     const q1 = await getDocs(slices);
-//     q1.forEach((doc) => {
-//         console.log(doc.id, ' => ', doc.data());
-//     });
-
-//     const wholePizza = query(collectionGroup(db, 'Whole Pizza'));
-//     const q2 = await getDocs(wholePizza);
-//     q2.forEach((doc) => {
-//         console.log(doc.id, ' => ', doc.data());
-//     });
-
-//     const sides = query(collectionGroup(db, 'Sides and Extras'));
-//     const q3 = await getDocs(sides);
-//     q3.forEach((doc) => {
-//         console.log(doc.id, ' => ', doc.data());
-//     });
-// });
-
-
-// const querySnapshot = await getDocs(collection(db, "Restaurants"));
-// querySnapshot.forEach((doc) => {
-//     console.log(doc.data());
-//     // const data = {
-//     //     Locations: 
-//     // }
-// });
-
+        // Add each doc to 'slices' array
+        querySnap.forEach((doc) => {
+          this.slices.push(doc.data())
+          console.log(doc.data())
+        })
+      
+      }
+    },
+}
 </script>
 
 <template>
-
-    <h1>Testing</h1>
-    
-    <!-- eslint-disable-next-line -->
-    <ItemCard v-for="value in ByTheSlices"
-    :name="value.name"
-    :price="1.99"
+  <div class="about">
+    <h1>By The Slice</h1>
+    <ItemCard v-for="value in slices" :key="value.Name"
+    :name="value.Name"
+    :price="value.Price"
     />
-
-    <h1> Test Section </h1>
-    <!--  -->
-    
+  </div>
 </template>
