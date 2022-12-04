@@ -42,9 +42,10 @@ export default {
     }
   },
   methods: {
-    addToCart (name, quantity) {
-      if (!this.cart[name]) this.cart[name] = 0
-      this.cart[name] += quantity
+    addToCart (name, quantity, price) {
+      if (!this.cart[name]) this.cart[name] = [name, 0, 0]
+      this.cart[name] += quantity, price
+      console.log(this.cart)
     },
     toggleSidebar () {
       this.showSidebar = !this.showSidebar

@@ -49,7 +49,7 @@
 
 <script>
 export default {
-  props: ['toggle', 'cart', 'inventory', 'remove'],
+  props: ['toggle', 'cart', 'remove'],
   methods: {
     getPrice (name) {
       const product = this.inventory.find((p) => {

@@ -15,6 +15,7 @@ const db = getFirestore(app)
 
 export default {
     name: "AboutView",
+    props: ['addToCart'],
     components: {
         ItemCard
     },
@@ -36,7 +37,7 @@ export default {
         // Add each doc to 'slices' array
         querySnap.forEach((doc) => {
           this.slices.push(doc.data())
-          console.log(doc.data())
+        //   console.log(doc.data())
         })
       
       }
@@ -50,6 +51,7 @@ export default {
     <ItemCard v-for="value in slices" :key="value.Name"
     :name="value.Name"
     :price="value.Price"
+    :addToCart="addToCart"
     />
   </div>
 </template>
