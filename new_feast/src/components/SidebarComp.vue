@@ -4,7 +4,7 @@
       <h1 class="cart-title spread">
         <span>
           Cart
-          <i class="icofont-cart-alt icofont-1x"></i>
+          <font-awesome-icon icon="fa-solid fa-cart-shopping fa-xs" />
         </span>
         <button @click="toggle" class="cart-close">&times;</button>
       </h1>
@@ -23,7 +23,7 @@
           </thead>
           <tbody>
             <tr v-for="(quantity, key, i) in cart" :key="i">
-              <td><i class="icofont-carrot icofont-3x"></i></td>
+              <td><p>carrot</p>></td>
               <td>{{ key }}</td>
               <td>\${{ getPrice(key) }}</td>
               <td class="center">{{ quantity }}</td>
@@ -58,7 +58,7 @@ export default {
       return product.price.USD
     },
     calculateTotal () { // [key, value]
-      const total = Object.entries(this.cart).reduce((acc, curr, index) => {
+      const total = Object.entries(this.cart).reduce((acc, curr) => {
         return acc + (curr[1] * this.getPrice(curr[0]))
       }, 0)
       return total.toFixed(2)
