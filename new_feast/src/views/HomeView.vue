@@ -187,6 +187,7 @@ import LoginModalVue from '@/components/LoginModal.vue';
         :FoodLoc="'Fresh Twist'" 
         :ImageString="`${require('@/assets/Images/FreshTwist/FreshTwistImage.jpg')}`" 
         :LocDesc="'Located in the Weinstein building, Pretzelmaker has been making fresh baked and handcrafted pretzels since 1991. If you ever get a craving for something salty, you can’t go wrong going with Freshtwist'" 
+        :ActiveLink="'/pretzelplace'"
         />
 
         <!-- The Caf Section (Wynee's Bistro {In the Lower Section}, Sushi Place, Superbowls, Steak and Shake) -->
@@ -232,6 +233,7 @@ import LoginModalVue from '@/components/LoginModal.vue';
         :FoodLoc="'Buckstop'" 
         :ImageString="`${require('@/assets/Images/BuckStop/BuckstopImage.jpg')}`"
         :LocDesc="'Located at the heart of Florida Southern\'s campus, Buckstop prepares only the finest brick oven pizza for the student body. It is one of the only brick oven pizza places to exist on a college campus.'"
+        :ActiveLink="'/buckstop'"
         />
 
         <!-- South Side of Campus (Happy Place, Mocketship, Tutu's Cyber Cafe, Grill Master) -->

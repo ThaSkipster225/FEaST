@@ -36,7 +36,7 @@ export default {
         // Add each doc to 'slices' array
         querySnap.forEach((doc) => {
           this.slices.push(doc.data())
-          console.log(doc.data())
+          // console.log(doc.data())
         })
       
       }
@@ -45,7 +45,7 @@ export default {
 </script>
 
 <template>
-  <div class="about">
+  <div class="PretzelPlace">
     <h1>This is an about page, which is being used to test out features</h1>
     <ItemCard
     :name="'Pretzel Bites'"

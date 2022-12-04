@@ -3,7 +3,7 @@
   <div class="col-lg-3 col-sm-6">
     <div class="food-location">
       <h3>{{ FoodLoc }}</h3>
-      <a href="HomeView.vue"><img :src="ImageString" alt="FoodLoc" class="w-100" />
+      <a :href="ActiveLink"><img :src="ImageString" alt="FoodLoc" class="w-100" />
       <div class="location-overlay">
         <div>
           <h3>{{ FoodLoc }}</h3>
@@ -18,7 +18,7 @@
 <script>
 export default {
   name: 'LocationCard',
-  props: ["FoodLoc", "ImageString", "LocDesc"]
+  props: ["FoodLoc", "ImageString", "LocDesc", "ActiveLink"]
   
 }
 </script>

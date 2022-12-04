@@ -61,7 +61,7 @@ export default {
         // Add each doc to 'slices' array
         querySnap.forEach((doc) => {
           this.pizzas.push(doc.data())
-          console.log(doc.data())
+          // console.log(doc.data())
         })
       
       },
@@ -75,7 +75,7 @@ export default {
         // Add each doc to 'slices' array
         querySnap.forEach((doc) => {
           this.breakfasts.push(doc.data())
-          console.log(doc.data())
+          // console.log(doc.data())
         })
       
       },
@@ -89,7 +89,7 @@ export default {
         // Add each doc to 'slices' array
         querySnap.forEach((doc) => {
           this.grilled.push(doc.data())
-          console.log(doc.data())
+          // console.log(doc.data())
         })
       
       },
@@ -103,7 +103,7 @@ export default {
         // Add each doc to 'slices' array
         querySnap.forEach((doc) => {
           this.sides.push(doc.data())
-          console.log(doc.data())
+          // console.log(doc.data())
         })
       
       },
@@ -117,7 +117,7 @@ export default {
         // Add each doc to 'slices' array
         querySnap.forEach((doc) => {
           this.beverages.push(doc.data())
-          console.log(doc.data())
+          // console.log(doc.data())
         })
       
       }
