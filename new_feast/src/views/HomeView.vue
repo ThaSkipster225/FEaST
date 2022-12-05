@@ -31,9 +31,9 @@ import LoginModalVue from '@/components/LoginModal.vue';
       <!-- End Top Bar -->
 
       <!-- Lower Nav Bar for proper Navigation. It's sticky and has Scroll spy in it so it will highlight the section we are currently in.-->
-      <nav class="navbar sticky-top navbar-expand-lg bg-white">
+      <!-- <nav class="navbar sticky-top navbar-expand-lg bg-white">
         <div class="container-fluid bg-white">
-          <a class="navbar-brand" href="index.html"><img src="../assets/Images/FeastIcon.png" alt="Feast Logo" width=50 height=50></a>
+          <a class="navbar-brand" href="/"><img src="../assets/Images/FeastIcon.png" alt="Feast Logo" width=50 height=50></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
             aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -56,9 +56,9 @@ import LoginModalVue from '@/components/LoginModal.vue';
                   Locations
                 </a>
                 <ul class="dropdown-menu">
-                  <!-- This UL holds all of the different food locations on campus.-->
+                  This UL holds all of the different food locations on campus.
                   <li>Computer Science</li>
-                  <li><a class="dropdown-item" href="CompSci.html">Fresh Twist (Pretzel Place)</a></li>
+                  <li><a class="dropdown-item" href="/pretzelplace">Fresh Twist (Pretzel Place)</a></li>
                   <li>The Cafeteria (Caf)</li>
                   <li><a class="dropdown-item" href="Cafeteria.html">Wynee's Bistro</a></li>
                   <li><a class="dropdown-item" href="Cafeteria.html">Superbowls</a></li>
@@ -88,13 +88,13 @@ import LoginModalVue from '@/components/LoginModal.vue';
               <font-awesome-icon icon="fa-solid fa-cart-shopping fa-xs" />
               Cart
             </button>
-            <!--<button type="button" class="btn btn-primary m-2" data-bs-toggle="modal" data-bs-target="#RegisterModal">-->
-              <!--Register-->
-            <!--</button>-->
+            <button type="button" class="btn btn-primary m-2" data-bs-toggle="modal" data-bs-target="#RegisterModal">
+              Register
+            </button>
             </ul>
           </div>
         </div>
-      </nav>
+      </nav> -->
 
       <!-- Rest of the Body -->
       <div id="Home">

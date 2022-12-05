@@ -4,7 +4,8 @@
               <div class="card-body">
                 <h5 class="card-title">{{ name }}</h5>
                 <img src="../assets/Images/FeastIcon.png" alt="Test Image" class="w-25">
-                <p class="card-text">{{ name }} are super good</p>
+                <br/>
+                <p class="card-text description">{{ name }}.</p>
                 <select name="quantity" id="quantity">
                   <option>0</option>
                   <option>1</option>
@@ -13,7 +14,9 @@
                   <option>4</option>
                   <option>5</option>
                 </select>
-                <p class="card-text text-end">${{ price }}</p>
+                <p class="card-text price text-end">${{ price }}</p>
+                <br/>
+                <br/>
                 <button @click="addToCart(name, quantity, price)" class="btn btn-primary">Add to Cart</button>
               </div>
             </div>
