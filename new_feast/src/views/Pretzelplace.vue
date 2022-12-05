@@ -20,24 +20,47 @@ export default {
     },
     data() {
       return {
-        slices: []
+        Pretzels: [],
+        Flatbreads: [],
+        Breakfast: [],
+        Beverages: []
       }
     },
     created () {
-      this.getPizza()
+      this.getFood()
     },
     methods: {
-      async getPizza() {
-        // query to get all docs in 'By The Slice' collection
-        // const querySnap = await getDocs(query(collectionReference(db, 'Restaurants')));
+      async getFood() {
 
+        // Get pretzels
         const querySnap = await getDocs(query(collection(db, "/Restaurants/e0EXLCdzkgtsYBBfBOXn/Pretzels")));
+        // Get Flatbreads
+        const queryFlat = await getDocs(query(collection(db, "/Restaurants/e0EXLCdzkgtsYBBfBOXn/Flatbreads")));
+        // Get Breakfast Sandwiches
+        const queryBreak = await getDocs(query(collection(db, "/Restaurants/e0EXLCdzkgtsYBBfBOXn/Breakfast Sandwiches")));
+        // Get Beverages
+        const queryBevs = await getDocs(query(collection(db, "/Restaurants/e0EXLCdzkgtsYBBfBOXn/Beverages")));
 
-        // Add each doc to 'slices' array
+        // Add each Pretzel doc to 'Pretzels' array
         querySnap.forEach((doc) => {
-          this.slices.push(doc.data())
-        })
-      
+          this.Pretzels.push(doc.data())
+        });
+
+        // Add each Flatbread doc to 'Flatbread' array
+        queryFlat.forEach((doc) => {
+          this.Flatbreads.push(doc.data())
+        });
+
+        // Add each Breakfast Sandwich doc to 'Breakfast' array
+        queryBreak.forEach((doc) => {
+          this.Breakfast.push(doc.data())
+        });
+
+        // Add each Beverage doc to 'Beverages' array
+        queryBevs.forEach((doc) => {
+          this.Beverages.push(doc.data())
+        });
+
       }
     },
 }
@@ -45,14 +68,36 @@ export default {
 
 <template>
   <div class="PretzelPlace">
-    <h1>This is an about page, which is being used to test out features</h1>
-    <ItemCard
-    :name="'Pretzel Bites'"
-    :price="5.79"/>
-    <br />
-    <ItemCard v-for="value in slices" :key="value.Name"
-    :name="value.Name"
-    :price="value.Price"
-    />
+    <h1>Pretzels</h1>
+    <div class="row">
+      <ItemCard v-for="value in Pretzels" :key="value.Name"
+      :name="value.Name"
+      :price="value.Price"
+      />
+    </div>
+
+    <h1>Flatbreads</h1>
+    <div class="row">
+      <ItemCard v-for="value in Flatbreads" :key="value.Name"
+      :name="value.Name"
+      :price="value.Price"
+      />
+    </div>
+
+    <h1>Breakfast Sandwiches</h1>
+    <div class="row">
+      <ItemCard v-for="value in Breakfast" :key="value.Name"
+      :name="value.Name"
+      :price="value.Price"
+      />
+    </div>
+
+    <h1>Beverages</h1>
+    <div class="row">
+      <ItemCard v-for="value in Beverages" :key="value.Name"
+      :name="value.Name"
+      :price="value.Price"
+      />
+    </div>
   </div>
 </template>
