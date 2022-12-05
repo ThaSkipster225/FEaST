@@ -126,37 +126,49 @@ export default {
 </script>
 
 <template>
-  <div class="about">
+  <div class="Buckstop">
     <h1>By The Slice</h1>
-    <ItemCard v-for="value in slices" :key="value.Name"
-    :name="value.Name"
-    :price="value.Price"
-    :addToCart="addToCart"
-    />
+    <div class="row">
+        <ItemCard v-for="value in slices" :key="value.Name"
+        :name="value.Name"
+        :price="value.Price"
+        :addToCart="addToCart"
+        />
+    </div>
     <h1>Whole Pies</h1>
-    <ItemCard v-for="value in pizzas" :key="value.Name"
-    :name="value.Name"
-    :price="value.Price"
-    />
+    <div class="row">
+        <ItemCard v-for="value in pizzas" :key="value.Name"
+        :name="value.Name"
+        :price="value.Price"
+        />
+    </div>
     <h1>Breakfast</h1>
-    <ItemCard v-for="value in breakfasts" :key="value.Name"
-    :name="value.Name"
-    :price="value.Price"
-    />
+    <div class="row">
+        <ItemCard v-for="value in breakfasts" :key="value.Name"
+        :name="value.Name"
+        :price="value.Price"
+        />
+    </div>
     <h1>Lunch from the Grill</h1>
-    <ItemCard v-for="value in grilled" :key="value.Name"
-    :name="value.Name"
-    :price="value.Price"
-    />
+    <div class="row">
+        <ItemCard v-for="value in grilled" :key="value.Name"
+        :name="value.Name"
+        :price="value.Price"
+        />
+    </div>
     <h1>Sides and Extra Fixings</h1>
-    <ItemCard v-for="value in sides" :key="value.Name"
-    :name="value.Name"
-    :price="value.Price"
-    />
+    <div class="row">
+        <ItemCard v-for="value in sides" :key="value.Name"
+        :name="value.Name"
+        :price="value.Price"
+        />
+    </div>
     <h1>Beverages</h1>
-    <ItemCard v-for="value in beverages" :key="value.Name"
-    :name="value.Name"
-    :price="value.Price"
-    />
+    <div class="row">
+        <ItemCard v-for="value in beverages" :key="value.Name"
+        :name="value.Name"
+        :price="value.Price"
+        />
+    </div>
   </div>
 </template>
