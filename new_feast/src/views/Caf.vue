@@ -14,7 +14,7 @@ const db = getFirestore(app)
 // Cheese slice Firestore Document ID 3aNUlC16pl356rbiXlKZ
 
 export default {
-    name: "SushiView",
+    name: "CafView",
     components: {
         ItemCard
     },
@@ -35,8 +35,7 @@ export default {
 
         // Add each doc to 'slices' array
         querySnap.forEach((doc) => {
-          this.slices.push(doc.data())
-          console.log(doc.data())
+          this.rolls.push(doc.data())
         })
       
       }
@@ -45,15 +44,16 @@ export default {
 </script>
 
 <template>
-  <div class="about">
-    <h1>This is an about page, which is being used to test out features</h1>
-    <ItemCard
-    :name="'Pretzel Bites'"
-    :price="5.79"/>
-    <br />
-    <ItemCard v-for="value in slices" :key="value.Name"
-    :name="value.Name"
-    :price="value.Price"
-    />
+  <div class="caf">
+    <h1>The Caf</h1>
+    <div class="sushi">
+      <h2>Kazan Sushi</h2>
+      <div class="row">
+        <ItemCard v-for="value in rolls" :key="value.Name"
+        :name="value.Name"
+        :price="value.Price"
+        />
+      </div>
+    </div>
   </div>
 </template>

@@ -127,7 +127,8 @@ export default {
 
 <template>
   <div class="Buckstop">
-    <h1>By The Slice</h1>
+    <h1>Buckstop</h1>
+    <h2>By The Slice</h2>
     <div class="row">
         <ItemCard v-for="value in slices" :key="value.Name"
         :name="value.Name"
@@ -135,35 +136,35 @@ export default {
         :addToCart="addToCart"
         />
     </div>
-    <h1>Whole Pies</h1>
+    <h2>Whole Pies</h2>
     <div class="row">
         <ItemCard v-for="value in pizzas" :key="value.Name"
         :name="value.Name"
         :price="value.Price"
         />
     </div>
-    <h1>Breakfast</h1>
+    <h2>Breakfast</h2>
     <div class="row">
         <ItemCard v-for="value in breakfasts" :key="value.Name"
         :name="value.Name"
         :price="value.Price"
         />
     </div>
-    <h1>Lunch from the Grill</h1>
+    <h2>Lunch from the Grill</h2>
     <div class="row">
         <ItemCard v-for="value in grilled" :key="value.Name"
         :name="value.Name"
         :price="value.Price"
         />
     </div>
-    <h1>Sides and Extra Fixings</h1>
+    <h2>Sides and Extra Fixings</h2>
     <div class="row">
         <ItemCard v-for="value in sides" :key="value.Name"
         :name="value.Name"
         :price="value.Price"
         />
     </div>
-    <h1>Beverages</h1>
+    <h2>Beverages</h2>
     <div class="row">
         <ItemCard v-for="value in beverages" :key="value.Name"
         :name="value.Name"

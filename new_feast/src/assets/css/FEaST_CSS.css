@@ -240,6 +240,7 @@ a:hover #Locations{
 .food-location img{
     width: 300px;
     height: 300px;
+    border: black 1px solid;
 }
 
 .food-location img,
@@ -433,8 +434,9 @@ footer a {
 /* Item Card */
 .card select, .card .price{
     display: inline;
-    text-align: center;
 }
+
+
 
 /* Edits to make the item cards look good and grow on hover */
 .Buckstop .row {
@@ -459,6 +461,19 @@ footer a {
 }
 
 .PretzelPlace .col-sm-3:hover {
+    transform: scale(1.02);
+    transition: 0.5s ease;
+}
+
+.caf .row {
+    padding: 10px;
+}
+
+.caf .col-sm-3 {
+    padding-bottom: 10px;
+}
+
+.caf .col-sm-3:hover {
     transform: scale(1.02);
     transition: 0.5s ease;
 }

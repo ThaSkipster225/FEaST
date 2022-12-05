@@ -68,7 +68,8 @@ export default {
 
 <template>
   <div class="PretzelPlace">
-    <h1>Pretzels</h1>
+    <h1>The Pretzel Place</h1>
+    <h2>Pretzels</h2>
     <div class="row">
       <ItemCard v-for="value in Pretzels" :key="value.Name"
       :name="value.Name"
@@ -76,7 +77,7 @@ export default {
       />
     </div>
 
-    <h1>Flatbreads</h1>
+    <h2>Flatbreads</h2>
     <div class="row">
       <ItemCard v-for="value in Flatbreads" :key="value.Name"
       :name="value.Name"
@@ -84,7 +85,7 @@ export default {
       />
     </div>
 
-    <h1>Breakfast Sandwiches</h1>
+    <h2>Breakfast Sandwiches</h2>
     <div class="row">
       <ItemCard v-for="value in Breakfast" :key="value.Name"
       :name="value.Name"
@@ -92,7 +93,7 @@ export default {
       />
     </div>
 
-    <h1>Beverages</h1>
+    <h2>Beverages</h2>
     <div class="row">
       <ItemCard v-for="value in Beverages" :key="value.Name"
       :name="value.Name"

@@ -195,6 +195,7 @@ import LoginModalVue from '@/components/LoginModal.vue';
         :FoodLoc="'Kazan Sushi'" 
         :ImageString="`${require('@/assets/Images/WyneesBistro/SushiBarImage.jpg')}`"
         :LocDesc="'Located in Wynees Bistro, Kazan Sushi has been feeding hungry FSC students for many years. It is always handcrafted and created with the greatest ingredients possible.'" 
+        :ActiveLink="'/caf'"
         />
 
         <LocationCardVue 
