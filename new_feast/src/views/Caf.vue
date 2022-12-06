@@ -23,7 +23,10 @@ export default {
         rolls: [],
         burgers: [],
         salads: [],
-        sides: []
+        sides: [],
+        specials: [],
+        milkshakes: [],
+        drinks: []
       }
     },
     created () {
@@ -48,6 +51,9 @@ export default {
         const queryBurgers = await getDocs(query(collection(db, "/Restaurants/Pg8t8Lcu99BUL2K2uqTe/Steakburgers")));
         const querySalads = await getDocs(query(collection(db, "/Restaurants/Pg8t8Lcu99BUL2K2uqTe/Salads")));
         const querySides = await getDocs(query(collection(db, "/Restaurants/Pg8t8Lcu99BUL2K2uqTe/Sides")));
+        const querySpecials = await getDocs(query(collection(db, "/Restaurants/Pg8t8Lcu99BUL2K2uqTe/Other Specialties (Served with Fries)")));
+        const queryMilkshakes = await getDocs(query(collection(db, "/Restaurants/Pg8t8Lcu99BUL2K2uqTe/Milkshakes")));
+        const queryDrinks = await getDocs(query(collection(db, "/Restaurants/Pg8t8Lcu99BUL2K2uqTe/Drinks")));
 
         // Add each doc to 'burgers' array
         queryBurgers.forEach((doc) => {
@@ -61,6 +67,18 @@ export default {
         querySides.forEach((doc) => {
           this.sides.push(doc.data())
         });
+        
+        querySpecials.forEach((doc) => {
+          this.specials.push(doc.data())
+        });
+        
+        queryMilkshakes.forEach((doc) => {
+          this.milkshakes.push(doc.data())
+        });
+        
+        queryDrinks.forEach((doc) => {
+          this.drinks.push(doc.data())
+        });
 
       }
     },
@@ -70,7 +88,13 @@ export default {
 <template>
   <div class="caf">
     <h1>The Caf</h1>
-    <div class="sushi">
+    <nav class="CafNav navbar fixed-bottom" style="background-color: white;">
+      <ul>
+        <li><a href="#sushi">Kazan Sushi</a></li>
+        <li><a href="#steakNshake">Steak N Shake</a></li>
+      </ul>
+    </nav>
+    <div id="sushi">
       <h2>Kazan Sushi</h2>
       <div class="row">
         <ItemCard v-for="value in rolls" :key="value.Name"
@@ -79,11 +103,36 @@ export default {
         />
       </div>
     </div>
-    <div class="steakNshake">
+    <div id="steakNshake">
       <h2>Steak N Shake</h2>
       <div class="row">
         <h3>Steakburgers</h3>
         <ItemCard v-for="value in burgers" :key="value.Name"
+        :name="value.Name"
+        :price="value.Price"
+        />
+        <h3>Salads</h3>
+        <ItemCard v-for="value in salads" :key="value.Name"
+        :name="value.Name"
+        :price="value.Price"
+        />
+        <h3>Sides</h3>
+        <ItemCard v-for="value in sides" :key="value.Name"
+        :name="value.Name"
+        :price="value.Price"
+        />
+        <h3>Other Specialties</h3>
+        <ItemCard v-for="value in specials" :key="value.Name"
+        :name="value.Name"
+        :price="value.Price"
+        />
+        <h3>Milkshakes</h3>
+        <ItemCard v-for="value in milkshakes" :key="value.Name"
+        :name="value.Name"
+        :price="value.Price"
+        />
+        <h3>Drinks</h3>
+        <ItemCard v-for="value in drinks" :key="value.Name"
         :name="value.Name"
         :price="value.Price"
         />
