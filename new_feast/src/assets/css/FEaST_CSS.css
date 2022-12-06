@@ -17,6 +17,12 @@ h2{
     background-color: #C7CB85;
 }
 
+h3{
+    Color: Black;
+    text-align: center;
+    background-color: #EAD2A8
+}
+
 ul{
     list-style-type: none;
     margin: 0px;

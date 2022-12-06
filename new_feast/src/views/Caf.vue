@@ -20,11 +20,15 @@ export default {
     },
     data() {
       return {
-        rolls: []
+        rolls: [],
+        burgers: [],
+        salads: [],
+        sides: []
       }
     },
     created () {
-      this.getSushi()
+      this.getSushi(),
+      this.getSteak()
     },
     methods: {
       async getSushi() {
@@ -38,6 +42,26 @@ export default {
           this.rolls.push(doc.data())
         })
       
+      },
+      async getSteak() {
+        
+        const queryBurgers = await getDocs(query(collection(db, "/Restaurants/Pg8t8Lcu99BUL2K2uqTe/Steakburgers")));
+        const querySalads = await getDocs(query(collection(db, "/Restaurants/Pg8t8Lcu99BUL2K2uqTe/Salads")));
+        const querySides = await getDocs(query(collection(db, "/Restaurants/Pg8t8Lcu99BUL2K2uqTe/Sides")));
+
+        // Add each doc to 'burgers' array
+        queryBurgers.forEach((doc) => {
+          this.burgers.push(doc.data())
+        });
+
+        querySalads.forEach((doc) => {
+          this.salads.push(doc.data())
+        });
+        
+        querySides.forEach((doc) => {
+          this.sides.push(doc.data())
+        });
+
       }
     },
 }
@@ -50,6 +74,16 @@ export default {
       <h2>Kazan Sushi</h2>
       <div class="row">
         <ItemCard v-for="value in rolls" :key="value.Name"
+        :name="value.Name"
+        :price="value.Price"
+        />
+      </div>
+    </div>
+    <div class="steakNshake">
+      <h2>Steak N Shake</h2>
+      <div class="row">
+        <h3>Steakburgers</h3>
+        <ItemCard v-for="value in burgers" :key="value.Name"
         :name="value.Name"
         :price="value.Price"
         />

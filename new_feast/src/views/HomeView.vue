@@ -1,10 +1,41 @@
-<script setup>
+<script>
 // @ is an alias to /src
 import AboutCardVue from '@/components/AboutCard.vue';
 import RegisterModalVue from '@/components/RegisterModal.vue';
 import LocationCardVue from '@/components/LocationCard.vue';
 import LoginModalVue from '@/components/LoginModal.vue';
 
+import app from '../firebaseInit'
+import {getFirestore, query, collection, getDocs} from 'firebase/firestore'
+
+const db = getFirestore(app)
+
+export default {
+  name: 'HomeView',
+  components: {
+    AboutCardVue,
+    RegisterModalVue,
+    LocationCardVue,
+    LoginModalVue
+  },
+  data() {
+    return {
+      People: [],
+    }
+  },
+  created () {
+    this.getPeople()
+  },
+  methods: {
+    async getPeople() {
+      const querySnap = await getDocs(query(collection(db, '/About Us/')));
+
+      querySnap.forEach((doc) => {
+        this.People.push(doc.data())
+      });
+    }
+  },
+}
 </script>
 
 <template>
@@ -294,17 +325,18 @@ import LoginModalVue from '@/components/LoginModal.vue';
       <div id="AboutUs">
         <h2>The Team</h2>
         <section id="team" class="row g-0 py-0 text-center">
-          <AboutCardVue 
-          :PersonName ="'Anselmis \'AC\' Columna'" 
+          <AboutCardVue
+          :PersonName="'Anselmis \'AC\' Columna'"
           :PersonImage="`${require('@/assets/Images/People/AC.jpg')}`"
           :PersonSmall="'CS Student - AI & Machine Learning'"
           :PersonDesc="'Born in Patterson, New Jersey and raised in Kissimmee, Florida. Began studying Computer Science Fall Semester of 2019. Expecting to graduate Spring 2023.'" 
           :PersonEmail="'anselmiscolumna@gmail.com'"
-          :PersonEven= false
+          :PersonEven=false
           :Social1="'https://www.linkedin.com/in/anselmiscolumna/'"
           :Social2="'https://www.instagram.com/a__cado/'"
           :Social3="'https://github.com/anselmiscolumna'"
           />
+          
 
           <AboutCardVue
           :PersonName="'Austin Scheetz'"
