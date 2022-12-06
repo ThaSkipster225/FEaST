@@ -38,10 +38,10 @@
                   <li>Computer Science</li>
                   <li><a class="dropdown-item" href="/pretzelplace">Fresh Twist (Pretzel Place)</a></li>
                   <li>The Cafeteria (Caf)</li>
-                  <li><a class="dropdown-item" href="Cafeteria.html">Wynee's Bistro</a></li>
-                  <li><a class="dropdown-item" href="Cafeteria.html">Superbowls</a></li>
+                  <li><a class="dropdown-item" href="/caf">Wynee's Bistro</a></li>
+                  <li><a class="dropdown-item" href="/caf">Superbowls</a></li>
                   <li><a class="dropdown-item" href="/caf">Sushi Place</a></li>
-                  <li><a class="dropdown-item" href="Cafeteria.html">Steak and Shake</a></li>
+                  <li><a class="dropdown-item" href="/caf">Steak and Shake</a></li>
                   <li>Undercaf</li>
                   <li><a class="dropdown-item" href="Undercaf.html">Boar's Head Deli</a></li>
                   <li><a class="dropdown-item" href="Undercaf.html">Freshen's</a></li>
