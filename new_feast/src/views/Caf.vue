@@ -92,6 +92,7 @@ export default {
       <ul>
         <li><a href="#sushi">Kazan Sushi</a></li>
         <li><a href="#steakNshake">Steak N Shake</a></li>
+        <li><a href="#superbowls">Super Bowls</a></li>
       </ul>
     </nav>
     <div id="sushi">
@@ -136,6 +137,16 @@ export default {
         :name="value.Name"
         :price="value.Price"
         />
+      </div>
+    </div>
+    <div id="superbowls">
+      <h2>Super Bowls - WIP</h2>
+      <div class="row">
+        <h3>Bases</h3>
+        <h3>Proteins</h3>
+        <h3>Veggies</h3>
+        <h3>Add-Ons</h3>
+        <h3>Sauces</h3>
       </div>
     </div>
   </div>

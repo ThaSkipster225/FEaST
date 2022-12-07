@@ -128,48 +128,55 @@ export default {
 <template>
   <div class="Buckstop">
     <h1>Buckstop</h1>
-    <h2>By The Slice</h2>
-    <div class="row">
-        <ItemCard v-for="value in slices" :key="value.Name"
-        :name="value.Name"
-        :price="value.Price"
-        :addToCart="addToCart"
-        />
-    </div>
-    <h2>Whole Pies</h2>
-    <div class="row">
-        <ItemCard v-for="value in pizzas" :key="value.Name"
-        :name="value.Name"
-        :price="value.Price"
-        />
-    </div>
-    <h2>Breakfast</h2>
-    <div class="row">
-        <ItemCard v-for="value in breakfasts" :key="value.Name"
-        :name="value.Name"
-        :price="value.Price"
-        />
-    </div>
-    <h2>Lunch from the Grill</h2>
-    <div class="row">
-        <ItemCard v-for="value in grilled" :key="value.Name"
-        :name="value.Name"
-        :price="value.Price"
-        />
-    </div>
-    <h2>Sides and Extra Fixings</h2>
-    <div class="row">
-        <ItemCard v-for="value in sides" :key="value.Name"
-        :name="value.Name"
-        :price="value.Price"
-        />
-    </div>
-    <h2>Beverages</h2>
-    <div class="row">
-        <ItemCard v-for="value in beverages" :key="value.Name"
-        :name="value.Name"
-        :price="value.Price"
-        />
+    <nav class="CafNav navbar fixed-bottom" style="background-color: white;">
+      <ul>
+        <li><a href="#buckstop">Buckstop</a></li>
+      </ul>
+    </nav>
+    <div id="buckstop">
+      <h2>By The Slice</h2>
+      <div class="row">
+          <ItemCard v-for="value in slices" :key="value.Name"
+          :name="value.Name"
+          :price="value.Price"
+          :addToCart="addToCart"
+          />
+      </div>
+      <h2>Whole Pies</h2>
+      <div class="row">
+          <ItemCard v-for="value in pizzas" :key="value.Name"
+          :name="value.Name"
+          :price="value.Price"
+          />
+      </div>
+      <h2>Breakfast</h2>
+      <div class="row">
+          <ItemCard v-for="value in breakfasts" :key="value.Name"
+          :name="value.Name"
+          :price="value.Price"
+          />
+      </div>
+      <h2>Lunch from the Grill</h2>
+      <div class="row">
+          <ItemCard v-for="value in grilled" :key="value.Name"
+          :name="value.Name"
+          :price="value.Price"
+          />
+      </div>
+      <h2>Sides and Extra Fixings</h2>
+      <div class="row">
+          <ItemCard v-for="value in sides" :key="value.Name"
+          :name="value.Name"
+          :price="value.Price"
+          />
+      </div>
+      <h2>Beverages</h2>
+      <div class="row">
+          <ItemCard v-for="value in beverages" :key="value.Name"
+          :name="value.Name"
+          :price="value.Price"
+          />
+      </div>
     </div>
   </div>
 </template>

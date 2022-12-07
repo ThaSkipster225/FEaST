@@ -3,7 +3,8 @@
     <router-link to="/">Home</router-link>
     <router-link to="/pretzelplace">Pretzel Place</router-link>
     <router-link to="/buckstop">Buckstop</router-link>
-    <router-link to="/sushi">Kazan Sushi</router-link>
+    <router-link to="/caf">The Caf</router-link>
+    <router-link to="/undercaf">Undercaf</router-link>
     <a @click="toggleSidebar" class="top-bar-cart-link">
       <font-awesome-icon icon="fa-solid fa-cart-shopping fa-xs" />
     </a>
@@ -43,8 +44,8 @@
                   <li><a class="dropdown-item" href="/caf">Sushi Place</a></li>
                   <li><a class="dropdown-item" href="/caf">Steak and Shake</a></li>
                   <li>Undercaf</li>
-                  <li><a class="dropdown-item" href="Undercaf.html">Boar's Head Deli</a></li>
-                  <li><a class="dropdown-item" href="Undercaf.html">Freshen's</a></li>
+                  <li><a class="dropdown-item" href="/undercaf">Boar's Head Deli</a></li>
+                  <li><a class="dropdown-item" href="/undercaf">Freshen's</a></li>
                   <li>Central Campus</li>
                   <li><a class="dropdown-item" href="/buckstop">Buckstop</a></li>
                   <li>South Side of Campus</li>
