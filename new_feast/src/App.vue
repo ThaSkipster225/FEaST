@@ -66,7 +66,7 @@
             
             <button @click="toggleSidebar" type="button" class="btn btn-primary btn-sm">
               <font-awesome-icon icon="fa-solid fa-cart-shopping fa-xs" />
-              Cart ({{cart.length}})
+              Cart ({{totalQuantity}})
             </button>
             <!--<button type="button" class="btn btn-primary m-2" data-bs-toggle="modal" data-bs-target="#RegisterModal">-->
               <!--Register-->
@@ -113,14 +113,36 @@ export default {
   },
   computed: {
     totalQuantity () {
-      return Object.values(this.cart)
+      let quants = []
+      for (let i = 0; i < this.cart.length; i++){
+        quants.push(this.cart[i].quantity)
+      }
+      let total = 0
+      for (let i = 0; i < this.cart.length; i++){
+        total += quants[i]
+      }
+      return total;
     }
   },
   methods: {
     addToCart (name, price, quantity) {
-      if(!this.cart[name]) this.cart[name] = {name, price, quantity}
-      this.cart[name].quantity += 1
+      let names = [] // Array just to hold all of the names of the items in cart.
+      if (this.cart.length == 0) {
+        this.cart.push({name, price, quantity})
+      }else {
+        for (let i = 0; i < this.cart.length; i++){
+          names.push(this.cart[i].name)
+          if (this.cart[i].name == name) {
+            this.cart[i].quantity += 1
+          }
+        }
+        // Adds to cart if it doesn't already exist in the cart
+        if (!names.includes(name)){
+          this.cart.push({name, price, quantity})
+        }
+      }
       console.log(this.cart)
+      console.log(this.cart.length)
     },
     toggleSidebar () {
       this.showSidebar = !this.showSidebar
