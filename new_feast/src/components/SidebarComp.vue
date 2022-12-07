@@ -22,12 +22,12 @@
             </tr>
           </thead>
           <tbody>
-            <tr v-for="(name, price, quantity, i) in cart" :key="i">
+            <tr v-for="item in cart" :key="item.name">
               <td><p>carrot</p>></td>
-              <td>{{ name }}</td>
+              <td>{{ item.name }}</td>
               <td>\$7</td>
-              <td class="center">{{ quantity }}</td>
-              <td>${{ (quantity * price) }}</td>
+              <td class="center">{{ item.quantity }}</td>
+              <td>${{ (item.quantity * item.price) }}</td>
               <td class="center">
                 <button @click="remove(key)" class="btn btn-light cart-remove">
                   &times;

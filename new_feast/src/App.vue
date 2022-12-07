@@ -124,6 +124,7 @@ export default {
     },
     toggleSidebar () {
       this.showSidebar = !this.showSidebar
+      console.log(this.showSidebar)
     },
     removeItem (name) {
       delete this.cart[name]
