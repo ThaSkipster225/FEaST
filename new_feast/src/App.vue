@@ -5,6 +5,7 @@
     <router-link to="/buckstop">Buckstop</router-link>
     <router-link to="/caf">The Caf</router-link>
     <router-link to="/undercaf">Undercaf</router-link>
+    <router-link to="/south">South</router-link>
     <a @click="toggleSidebar" class="top-bar-cart-link">
       <font-awesome-icon icon="fa-solid fa-cart-shopping fa-xs" />
     </a>
@@ -49,10 +50,10 @@
                   <li>Central Campus</li>
                   <li><a class="dropdown-item" href="/buckstop">Buckstop</a></li>
                   <li>South Side of Campus</li>
-                  <li><a class="dropdown-item" href="South.html">Happy Place</a></li>
-                  <li><a class="dropdown-item" href="South.html">Mocketship</a></li>
-                  <li><a class="dropdown-item" href="South.html">Tutu's Cyber Cafe</a></li>
-                  <li><a class="dropdown-item" href="South.html">Grill Master</a></li>
+                  <li><a class="dropdown-item" href="/south">Happy Place</a></li>
+                  <li><a class="dropdown-item" href="/south">Mocketship</a></li>
+                  <li><a class="dropdown-item" href="/south">Tutu's Cyber Cafe</a></li>
+                  <li><a class="dropdown-item" href="/south">Grill Master</a></li>
                 </ul>
               </li>
               <li class="nav-item">
