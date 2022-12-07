@@ -273,11 +273,15 @@ a:hover #Locations{
     opacity: 0;
 }
 
-.location-overlay h3, 
-.location-overlay h6 {
+.location-overlay h3 {
     color: white !important;
     bottom: 108px !important;
     left: 16px;
+}
+
+.location-overlay h6 {
+    bottom: auto !important;
+    color: white;
 }
 
 .food-location .location-overlay h3{

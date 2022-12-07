@@ -198,18 +198,21 @@ export default {
         :FoodLoc="'Super Bowls'" 
         :ImageString="`${require('@/assets/Images/WyneesBistro/SuperBowlsImage.jpg')}`"
         :LocDesc="'Located in Wynees Bistro, Super Bowls is FSCs creation to give students a healthier and different option.'"
+        :ActiveLink="'/caf'"
         />
 
         <LocationCardVue 
         :FoodLoc="'Steak & Shake'" 
         :ImageString="`${require('@/assets/Images/WyneesBistro/SteakAndShakeImage.jpg')}`"
         :LocDesc="'Located in Wynees Bistro, Steak & Shake has been serving the country with their very own steakburgers for many many years.'"
+        :ActiveLink="'/caf'"
         />
 
         <LocationCardVue 
         :FoodLoc="'Portabellos'" 
         :ImageString="`${require('@/assets/Images/WyneesBistro/PortabellosImage.jpg')}`"
         :LocDesc="'Loacted in Wynees Bistro, Portabellos has been blessing the FSC community for many many years with pasta and pizza. '"
+        :ActiveLink="'/caf'"
         />
 
         <!-- Undercaf Section (Boar's Head Deli and Freshens) -->
@@ -217,12 +220,14 @@ export default {
         :FoodLoc="'Boar\'s Head Deli'" 
         :ImageString="`${require('@/assets/Images/Undercaf/UnderCafBoarsHeadImage.jpg')}`" 
         :LocDesc="'Boar\'s Head Deli has been blessing the world for many years. Started by George Jenkins himself, Florida Southern has taken up the mark of continuing his work here on campus by serving the finest of sliced meat and cheeses.'"
+        :ActiveLink="'/undercaf'"
         />
 
         <LocationCardVue 
         :FoodLoc="'Freshen\'s'" 
         :ImageString="`${require('@/assets/Images/Freshens/FreshensImage.jpg')}`" 
         :LocDesc="'Located in the Undercaf, Freshen\'s has been blessing the undercaf with smoothie options for many years. They use only the freshest ingredients and prepare everything to order.'"
+        :ActiveLink="'/undercaf'"
         />
 
         <!-- Central Campus Section (Buckstop) -->
@@ -238,24 +243,28 @@ export default {
         :FoodLoc="'Happy Place'" 
         :ImageString="`${require('@/assets/Images/HappyPlace/HappyPlaceImage.jpg')}`" 
         :LocDesc="'Recently relocated to the food court next to the Branscomb Auditorium, Happy Place offers barbeque food at affordable prices to students and staff alike. Come and get a bag full of happiness today'"
-         />
+        :ActiveLink="'/south'"
+        />
 
         <LocationCardVue
         :FoodLoc="'Mocketship'"
         :ImageString="`${require('@/assets/Images/MocketShip/MocketShipImage.jpg')}`"
         :LocDesc="'The newest offering at FSC, Mocketship is located in the food court next to the Branscomb Auditorium. Come to Mocketship and be taken to the stars with the healthiest options across campus including wraps and snacks!'"
+        :ActiveLink="'/south'"
         />
 
         <LocationCardVue
         :FoodLoc="'Tutu\'s Cyber Cafe'"
         :ImageString="`${require('@/assets/Images/TutusCyberCafe/TuTusImage.jpg')}`"
         :LocDesc="'Located within the Roux Library, Tutu\'s is the campus Starbucks, offering locally brewed coffee and pastries for the delight of the campus. Stop on by to use the free computers, get a bite to eat and something warm to drink!'"
+        :ActiveLink="'/south'"
         />
 
         <LocationCardVue
         :FoodLoc="'Grillmaster'"
         :ImageString="`${require('@/assets/Images/Grillmasters/GrillmastersImage.jpg')}`"
         :LocDesc="'Come to Grillmasters, set within and outside of Roux Library! Here, grilled burgers, hot dogs, and other specialties are offered with the comforts of a fresh cookout are available for your enjoyment.'"
+        :ActiveLink="'/south'"
         />
 
         <!-- The Caf -->
@@ -263,6 +272,7 @@ export default {
         :FoodLoc="'Wynee\'s Bistro'"
         :ImageString="`${require('@/assets/Images/WyneesBistro/WyneesImage.jpg')}`"
         :LocDesc="'Wynee\'s Bistro, otherwise known as the cafeteria, offers a rotating menu daily to offer students a wide variety of warm meals every day of the week. Alongside this location is Portabellos, a constant stop for your flatbread pizza needs.'"
+        :ActiveLink="'/caf'"
         />
 
 
