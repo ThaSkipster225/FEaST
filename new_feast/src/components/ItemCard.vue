@@ -6,18 +6,19 @@
                 <img src="../assets/Images/FeastIcon.png" alt="Test Image" class="w-25">
                 <br/>
                 <p class="card-text description">{{ name }}.</p>
-                <select name="quantity" id="quantity">
-                  <option>0</option>
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
+                <!-- <select name="quantity" id="quantity">
+                  <option value=0>0</option>
+                  <option value=1>1</option>
+                  <option value=2>2</option>
+                  <option value=3>3</option>
+                  <option value=4>4</option>
+                  <option value=5>5</option>
+                </select> -->
                 <p class="card-text price text-end">${{ price }}</p>
                 <br/>
                 <br/>
-                <button @click="addToCart(name, quantity, price)" class="btn btn-primary">Add to Cart</button>
+                <!-- eslint-disable-next-line -->
+                <button @click="addToCart(name, 1, price)" class="btn btn-primary">Add to Cart</button>
               </div>
             </div>
           </div>
@@ -27,6 +28,6 @@
 
 export default {
   name: 'ItemCard',
-  props: ['name', 'price', 'desc', 'addToCart']
+  props: ['name', 'price', 'desc', 'addToCart'],
 }
 </script>
