@@ -3,7 +3,7 @@
     <router-link to="/">Home</router-link>
     <router-link to="/pretzelplace">Pretzel Place</router-link>
     <router-link to="/buckstop">Buckstop</router-link>
-    <router-link to="/under">Undercaf</router-link>
+    <router-link to="/undercaf">Undercaf</router-link>
     <router-link to="/south">South of Campus</router-link>
     <!--<router-link to="/sushi">Kazan Sushi</router-link>-->
     <a @click="toggleSidebar" class="top-bar-cart-link">
