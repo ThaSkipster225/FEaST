@@ -130,6 +130,7 @@ export default {
       if (this.cart.length == 0) {
         this.cart.push({name, price, quantity})
       }else {
+        // Increases the quantity in the cart of the item, if it is in there.
         for (let i = 0; i < this.cart.length; i++){
           names.push(this.cart[i].name)
           if (this.cart[i].name == name) {
@@ -141,15 +142,19 @@ export default {
           this.cart.push({name, price, quantity})
         }
       }
-      console.log(this.cart)
-      console.log(this.cart.length)
     },
     toggleSidebar () {
+      // Should toggle the sidebar to open and close
       this.showSidebar = !this.showSidebar
       console.log(this.showSidebar)
     },
     removeItem (name) {
-      delete this.cart[name]
+      // Loops through the cart and then removes whichever item has the name provided
+      for (let i = 0; i < this.cart.length; i++){
+        if (this.cart[i].name == name){
+          delete this.cart[i]
+        }
+      }
     }
   }
 }
