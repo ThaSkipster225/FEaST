@@ -117,11 +117,9 @@ export default {
     }
   },
   methods: {
-    addToCart (item) {
-      item.quantity += 1;
-      this.cart.push(item);
-      // if (!this.cart[name]) this.cart[name] = [name, price, quantity],
-      // this.cart[name] +=1
+    addToCart (name, price, quantity) {
+      if(!this.cart[name]) this.cart[name] = {name, price, quantity}
+      this.cart[name].quantity += 1
       console.log(this.cart)
     },
     toggleSidebar () {
