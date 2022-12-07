@@ -515,3 +515,16 @@ footer a {
     transform: scale(1.02);
     transition: 0.5s ease;
 }
+
+.SouthCampus .row {
+    padding: 10px;
+}
+
+.SouthCampus .col-sm-3 {
+    padding-bottom: 10px;
+}
+
+.SouthCampus .col-sm-3:hover {
+    transform: scale(1.02);
+    transition: 0.5s ease;
+}

@@ -182,14 +182,15 @@ export default {
 <template>
     <div class="SouthCampus">
         <h1>The Happy Place</h1>
-        <nav class="CafNav navbar fixed-bottom" style="background-color: white;">
-      <ul>
-        <li><a href="#happyplace">The Happy Place</a></li>
-        <li><a href="#mocketship">Mocketships</a></li>
-        <li><a href="#grillmaster">Grillmasters</a></li>
-        <li><a href="#tutus">Tutus' Cyber Cafe</a></li>
-      </ul>
-    </nav>
+      <nav class="CafNav navbar fixed-bottom" style="background-color: white;">
+        <ul>
+          <li><a href="#happyplace">The Happy Place</a></li>
+          <li><a href="#mocketship">Mocketships</a></li>
+          <li><a href="#grillmaster">Grillmasters</a></li>
+          <li><a href="#tutus">Tutus' Cyber Cafe</a></li>
+        </ul>
+      </nav>
+      <div id="happyplace">
             <h2>Ala Carte Menu</h2>
                 <div class="row">
                     <ItemCard v-for="value in AlaCarte" :key="value.Name"
@@ -205,9 +206,8 @@ export default {
                         :price="value.Price"
                     />
                 </div>
-    </div>
-
-    <div class="Mocketships">
+      </div>
+    <div id="mocketship">
         <h1>Mocketships</h1>
             <h2>Craters</h2>
                 <div class="row">
@@ -258,7 +258,7 @@ export default {
                 </div>
         </div>
     
-        <div class="Grillmasters">
+        <div id="grillmaster">
         <h1>Grillmasters</h1>
             <h2>Grill</h2>
                 <div class="row">
@@ -269,7 +269,7 @@ export default {
                 </div>
         </div>
 
-        <div class="Tutus">
+        <div id="tutus">
         <h1>Tutus' Cyber Cafe</h1>
             <h2>Alternatives</h2>
                 <div class="row">
@@ -343,5 +343,5 @@ export default {
                     />
                 </div>
         </div>
-
+      </div>
 </template>
