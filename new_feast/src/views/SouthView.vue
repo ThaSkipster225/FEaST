@@ -311,7 +311,7 @@ export default {
                     />
                 </div>
 
-            <h2>Frappechinos</h2>
+            <h2>Frappuccinos</h2>
                 <div class="row">
                     <ItemCard v-for="value in Frapps" :key="value.Name"
                         :name="value.Name"
