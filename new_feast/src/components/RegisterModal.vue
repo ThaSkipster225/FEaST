@@ -110,7 +110,7 @@ const Register = () => {
       })
       console.log("Document written with ID: ", docRef.id)
       console.log(option1)
-      
+      alert("Register complete!")
     })
     .catch(err => console.log('Something went wrong with adding user to firestore: ', err, option1.value));
 }

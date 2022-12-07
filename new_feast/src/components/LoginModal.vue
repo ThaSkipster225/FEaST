@@ -15,7 +15,7 @@
               <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             </div>
             <div class="passwordInput">
-              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <label for="InputPassword1" class="form-label">Password</label>
               <input type="password" class="form-control" v-model="password" id="InputPassword1">
             </div>
             <div class="modal-footer">
