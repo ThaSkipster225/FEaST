@@ -61,6 +61,7 @@ const Login = () => {
       const profile = await getDoc(docRef)
        
       console.log(userInfo(profile))
+      let user = userInfo(profile)
     })
     .catch((error) => {
       alert(error.message);

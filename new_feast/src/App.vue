@@ -23,7 +23,7 @@
             
             <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/#Home">Home</a>
+                <a class="nav-link" aria-current="page" href="/#Home">Home</a>
               </li>
 
               <li class="nav-item">
@@ -60,8 +60,8 @@
                 <a class="nav-link" href="#AboutUs">About Us</a>
               </li>
               
-              <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#LoginModal">
-              Log In
+            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#LoginModal">
+            Log In
             </button>
             
             <button @click="toggleSidebar" type="button" class="btn btn-primary btn-sm">
@@ -76,6 +76,9 @@
         </div>
       </nav>
 
+      <LoginModalVue></LoginModalVue>
+      <RegisterModalVue></RegisterModalVue>
+
   <RouterView :addToCart="addToCart" /> <!-- Needs to be at bottom to load everything -->
   
   <SidebarComp
@@ -88,14 +91,18 @@
 
 <script>
 // import NavBar from'./components/NavbarComp.vue'
-import SidebarComp from '@/components/SidebarComp.vue'
+import SidebarComp from '@/components/SidebarComp.vue';
+import LoginModalVue from '@/components/LoginModal.vue';
+import RegisterModalVue from '@/components/RegisterModal.vue';
 
 
 export default {
   name: 'app',
   components: {
     // NavBar,
-    SidebarComp
+    SidebarComp,
+    LoginModalVue,
+    RegisterModalVue
   },
   data(){
     return {

@@ -1,9 +1,7 @@
 <script>
 // @ is an alias to /src
 import AboutCardVue from '@/components/AboutCard.vue';
-import RegisterModalVue from '@/components/RegisterModal.vue';
 import LocationCardVue from '@/components/LocationCard.vue';
-import LoginModalVue from '@/components/LoginModal.vue';
 
 import app from '../firebaseInit'
 import {getFirestore, query, collection, getDocs} from 'firebase/firestore'
@@ -14,9 +12,7 @@ export default {
   name: 'HomeView',
   components: {
     AboutCardVue,
-    RegisterModalVue,
-    LocationCardVue,
-    LoginModalVue
+    LocationCardVue
   },
   data() {
     return {
@@ -131,8 +127,8 @@ export default {
       <div id="Home">
 
         <!-- Modal -->
-        <LoginModalVue></LoginModalVue>
-        <RegisterModalVue></RegisterModalVue>
+        <!-- <LoginModalVue></LoginModalVue>
+        <RegisterModalVue></RegisterModalVue> -->
         <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
