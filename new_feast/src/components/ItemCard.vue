@@ -18,7 +18,7 @@
                 <br/>
                 <br/>
                 <!-- eslint-disable-next-line -->
-                <button @click="addToCart(name, price, 1)" class="btn btn-primary">Add to Cart</button>
+                <button @click="addToCart(name, price, 0)" class="btn btn-primary">Add to Cart</button>
               </div>
             </div>
           </div>

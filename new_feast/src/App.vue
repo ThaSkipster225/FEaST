@@ -120,6 +120,7 @@ export default {
     addToCart (name, price, quantity) {
       if(!this.cart[name]) this.cart[name] = {name, price, quantity}
       this.cart[name].quantity += 1
+      console.log(this.cart)
     },
     toggleSidebar () {
       this.showSidebar = !this.showSidebar
