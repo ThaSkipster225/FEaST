@@ -136,9 +136,9 @@ export default {
     <div id="buckstop">
       <h2>By The Slice</h2>
       <div class="row">
-          <ItemCard v-for="value in slices" :key="value.Name"
-          :name="value.Name"
-          :price="value.Price"
+          <ItemCard v-for="item in slices" :key="item.Name"
+          :name="item.Name"
+          :price="item.Price"
           :addToCart="addToCart"
           />
       </div>

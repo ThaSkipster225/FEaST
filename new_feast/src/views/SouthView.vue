@@ -63,25 +63,25 @@ export default {
         // Get Rocket Cones
         const queryDown = await getDocs(query(collection(db, "/Restaurants/QWTJSoV1l1994PCeLjQK/Splash Down")));
         // Get Rocket Cones
-        const queryGrill = await getDocs(query(collection(db, "/Restaurants/QWTJSoV1l1994PCeLjQK/Rocket Cones")));
+        const queryGrill = await getDocs(query(collection(db, "/Restaurants/cUSebkEcyjUOY0RfZz1e/Grill")));
         // Get Craters
-        const queryAlt = await getDocs(query(collection(db, "/Restaurants/QWTJSoV1l1994PCeLjQK/Rocket Fuel")));
+        const queryAlt = await getDocs(query(collection(db, "/Restaurants/ZhoCNYH5hAQjlBsAaTqw/Alternatives")));
         // Get Rocket Cones
-        const queryBreakfast = await getDocs(query(collection(db, "/Restaurants/QWTJSoV1l1994PCeLjQK/Shaker Salads")));
+        const queryBreakfast = await getDocs(query(collection(db, "/Restaurants/ZhoCNYH5hAQjlBsAaTqw/Breakfast Menu")));
         // Get Craters
-        const queryCoffee = await getDocs(query(collection(db, "/Restaurants/QWTJSoV1l1994PCeLjQK/Smooth Takeoff")));
+        const queryCoffee = await getDocs(query(collection(db, "/Restaurants/ZhoCNYH5hAQjlBsAaTqw/Coffee")));
         // Get Rocket Cones
-        const queryEspress = await getDocs(query(collection(db, "/Restaurants/QWTJSoV1l1994PCeLjQK/Splash Down")));
+        const queryEspress = await getDocs(query(collection(db, "/Restaurants/ZhoCNYH5hAQjlBsAaTqw/Espresso Drinks")));
         // Get Rocket Cones
-        const queryXTRA = await getDocs(query(collection(db, "/Restaurants/QWTJSoV1l1994PCeLjQK/Rocket Cones")));
+        const queryXTRA = await getDocs(query(collection(db, "/Restaurants/ZhoCNYH5hAQjlBsAaTqw/Extras")));
         // Get Craters
-        const queryFrapps = await getDocs(query(collection(db, "/Restaurants/QWTJSoV1l1994PCeLjQK/Rocket Fuel")));
+        const queryFrapps = await getDocs(query(collection(db, "/Restaurants/ZhoCNYH5hAQjlBsAaTqw/Frappuccinos")));
         // Get Rocket Cones
-        const queryIced = await getDocs(query(collection(db, "/Restaurants/QWTJSoV1l1994PCeLjQK/Shaker Salads")));
+        const queryIced = await getDocs(query(collection(db, "/Restaurants/ZhoCNYH5hAQjlBsAaTqw/Iced Drinks")));
         // Get Craters
-        const queryTuSalad = await getDocs(query(collection(db, "/Restaurants/QWTJSoV1l1994PCeLjQK/Smooth Takeoff")));
+        const queryTuSalad = await getDocs(query(collection(db, "/Restaurants/ZhoCNYH5hAQjlBsAaTqw/Salads")));
         // Get Rocket Cones
-        const querySandos = await getDocs(query(collection(db, "/Restaurants/QWTJSoV1l1994PCeLjQK/Splash Down")));
+        const querySandos = await getDocs(query(collection(db, "/Restaurants/ZhoCNYH5hAQjlBsAaTqw/Sandwiches")));
 
 
         // Add each Pretzel doc to 'Pretzels' array

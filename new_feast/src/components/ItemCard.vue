@@ -18,7 +18,7 @@
                 <br/>
                 <br/>
                 <!-- eslint-disable-next-line -->
-                <button @click="addToCart(name, 1, price)" class="btn btn-primary">Add to Cart</button>
+                <button @click="addToCart(name, price, 1)" class="btn btn-primary">Add to Cart</button>
               </div>
             </div>
           </div>
@@ -28,6 +28,6 @@
 
 export default {
   name: 'ItemCard',
-  props: ['name', 'price', 'desc', 'addToCart'],
+  props: ['name', 'price', 'quantity', 'desc', 'addToCart'],
 }
 </script>
