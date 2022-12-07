@@ -1,5 +1,5 @@
 <template>
-  <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -9,7 +9,7 @@
         <div class="modal-body">
           <form @submit.prevent="Login">
             <div class="mb-2 emailInput">
-              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <label for="InputEmail1" class="form-label">Email address</label>
               <input type="email" class="form-control" v-model="email" id="exampleInputEmail1"
                 aria-describedby="emailHelp">
               <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
@@ -31,32 +31,49 @@
 
 </template>
 
+<script>
+export default{
+  data(){
+    return{
+      userInfo: []
+    }
+  }
+}
+</script>
+
 <script setup>
 import { ref } from 'vue';
 import firebase from '../firebaseInit';
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth'
-import { useRouter } from 'vue-router';
+import { getDoc, doc, getFirestore } from '@firebase/firestore';
 
 const email = ref('')
 const password = ref('')
 
-const router = useRouter()
-
 const auth = getAuth(firebase)
+const db = getFirestore(firebase)
 
 const Login = () => {
   signInWithEmailAndPassword(auth, email.value, password.value)
-    .then((userCredential) => {
+    .then(async() => {
       // Signed in 
-      alert(userCredential)
-      // ...
+      const docRef = doc(db, "/users", auth.currentUser.uid)
+      const profile = await getDoc(docRef)
+       
+      console.log(userInfo(profile))
     })
     .catch((error) => {
-      alert(error.code);
       alert(error.message);
     });
+}
 
-    router.push('/')
+function userInfo(doc){
+  let firstName = doc.data().firstName
+  let lastName = doc.data().lastName
+  let StudentID = doc.data().StudentID
+  let email = doc.data().email
+
+  return {firstName, lastName, StudentID, email}
 }
 
 </script>
