@@ -117,8 +117,8 @@ export default {
   },
   methods: {
     addToCart (name, quantity, price) {
-      if (!this.cart[name]) this.cart[name] = [name, 0, 0]
-      this.cart[name] += quantity, price
+      if (!this.cart[name]) this.cart[name] = [name, quantity, price]
+      this.cart[name] += quantity
       console.log(this.cart)
     },
     toggleSidebar () {
