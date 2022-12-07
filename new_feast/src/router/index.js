@@ -4,6 +4,7 @@ import RegisterModal from '@/components/RegisterModal.vue'
 import LoginModal from '@/components/LoginModal.vue'
 import BuckStopVue from '@/views/BuckStop.vue'
 import CafView from '@/views/Caf.vue'
+import UndercafView from '@/views/Undercaf.vue'
 
 const routes = [
   {
@@ -38,6 +39,11 @@ const routes = [
     path: '/caf',
     name: 'caf',
     component: CafView
+  },
+  {
+    path: '/undercaf',
+    name: 'undercaf',
+    component: UndercafView
   }
 ]
 

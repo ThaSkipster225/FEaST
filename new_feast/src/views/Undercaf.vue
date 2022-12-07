@@ -20,99 +20,89 @@ export default {
     },
     data() {
       return {
-        rolls: [],
-        burgers: [],
-        salads: [],
+        breakfast: [],
+        hotsand: [],
+        coldsand: [],
         sides: [],
-        specials: [],
-        milkshakes: [],
-        drinks: []
+        beverages: [],
+        smoothies: [],
+        yogurt: []
       }
     },
     created () {
-      this.getSushi(),
-      this.getSteak()
+      this.getBoarsHead(),
+      this.getFreshens()
     },
     methods: {
-      async getSushi() {
-        // query to get all docs in 'By The Slice' collection
-        // const querySnap = await getDocs(query(collectionReference(db, 'Restaurants')));
-
-        const querySnap = await getDocs(query(collection(db, "/Restaurants/EfqH9lNeu33Ld7ombJP1/Sushi")));
-
-        // Add each doc to 'slices' array
-        querySnap.forEach((doc) => {
-          this.rolls.push(doc.data())
-        })
-      
-      },
-      async getSteak() {
+      async getBoarsHead() {
         
-        const queryBurgers = await getDocs(query(collection(db, "/Restaurants/Pg8t8Lcu99BUL2K2uqTe/Steakburgers")));
-        const querySalads = await getDocs(query(collection(db, "/Restaurants/Pg8t8Lcu99BUL2K2uqTe/Salads")));
-        const querySides = await getDocs(query(collection(db, "/Restaurants/Pg8t8Lcu99BUL2K2uqTe/Sides")));
-        const querySpecials = await getDocs(query(collection(db, "/Restaurants/Pg8t8Lcu99BUL2K2uqTe/Other Specialties (Served with Fries)")));
-        const queryMilkshakes = await getDocs(query(collection(db, "/Restaurants/Pg8t8Lcu99BUL2K2uqTe/Milkshakes")));
-        const queryDrinks = await getDocs(query(collection(db, "/Restaurants/Pg8t8Lcu99BUL2K2uqTe/Drinks")));
-
+        const queryBreakfast = await getDocs(query(collection(db, "/Restaurants/kxfVY6tLa4RmO7B7PIbX/Breakfast")));
+        const queryHotSand = await getDocs(query(collection(db, "/Restaurants/kxfVY6tLa4RmO7B7PIbX/Hot Sandwiches & Wraps")));
+        const queryColdSand = await getDocs(query(collection(db, "/Restaurants/kxfVY6tLa4RmO7B7PIbX/Cold Sandwiches")));
+        const querySides = await getDocs(query(collection(db, "/Restaurants/kxfVY6tLa4RmO7B7PIbX/Sides")));
+        const queryBeverages = await getDocs(query(collection(db, "/Restaurants/kxfVY6tLa4RmO7B7PIbX/Beverages")));
         // Add each doc to 'burgers' array
-        queryBurgers.forEach((doc) => {
-          this.burgers.push(doc.data())
+        queryBreakfast.forEach((doc) => {
+          this.breakfast.push(doc.data())
         });
 
-        querySalads.forEach((doc) => {
-          this.salads.push(doc.data())
+        queryHotSand.forEach((doc) => {
+          this.hotsand.push(doc.data())
+        });
+        
+        queryColdSand.forEach((doc) => {
+          this.coldsand.push(doc.data())
         });
         
         querySides.forEach((doc) => {
           this.sides.push(doc.data())
         });
         
-        querySpecials.forEach((doc) => {
-          this.specials.push(doc.data())
-        });
-        
-        queryMilkshakes.forEach((doc) => {
-          this.milkshakes.push(doc.data())
-        });
-        
-        queryDrinks.forEach((doc) => {
-          this.drinks.push(doc.data())
+        queryBeverages.forEach((doc) => {
+          this.beverages.push(doc.data())
         });
 
+      },
+      async getFreshens() {
+        const querySmoothies = await getDocs(query(collection(db, "/Restaurants/Nlwh20wpI9D1gvV8QScs/Smoothies")));
+        const queryYogurt = await getDocs(query(collection(db, "/Restaurants/Nlwh20wpI9D1gvV8QScs/Yogurt")));
+
+        querySmoothies.forEach((doc) => {
+          this.smoothies.push(doc.data())
+        });
+        
+        queryYogurt.forEach((doc) => {
+          this.yogurt.push(doc.data())
+        });
       }
     },
 }
 </script>
 
 <template>
-  <div class="caf">
-    <h1>The Caf</h1>
+  <div class="undercaf">
+    <h1>The Undercaf</h1>
     <nav class="CafNav navbar fixed-bottom" style="background-color: white;">
       <ul>
-        <li><a href="#sushi">Kazan Sushi</a></li>
-        <li><a href="#steakNshake">Steak N Shake</a></li>
+        <li><a href="#boarshead">Boar's Head Deli</a></li>
+        <li><a href="#freshens">Freshen's</a></li>
       </ul>
     </nav>
-    <div id="sushi">
-      <h2>Kazan Sushi</h2>
+    <div id="boarshead">
+      <h2>Boar's Head Deli</h2>
       <div class="row">
-        <ItemCard v-for="value in rolls" :key="value.Name"
+        <h3>Breakfast</h3>
+        <ItemCard v-for="value in breakfast" :key="value.Name"
         :name="value.Name"
         :price="value.Price"
         />
-      </div>
-    </div>
-    <div id="steakNshake">
-      <h2>Steak N Shake</h2>
-      <div class="row">
-        <h3>Steakburgers</h3>
-        <ItemCard v-for="value in burgers" :key="value.Name"
+        <h3>Hot Sandwiches & Wraps</h3>
+        <ItemCard v-for="value in hotsand" :key="value.Name"
         :name="value.Name"
         :price="value.Price"
         />
-        <h3>Salads</h3>
-        <ItemCard v-for="value in salads" :key="value.Name"
+        <h3>Cold Sandwiches</h3>
+        <ItemCard v-for="value in coldsand" :key="value.Name"
         :name="value.Name"
         :price="value.Price"
         />
@@ -121,18 +111,23 @@ export default {
         :name="value.Name"
         :price="value.Price"
         />
-        <h3>Other Specialties</h3>
-        <ItemCard v-for="value in specials" :key="value.Name"
+        <h3>Beverages</h3>
+        <ItemCard v-for="value in beverages" :key="value.Name"
         :name="value.Name"
         :price="value.Price"
         />
-        <h3>Milkshakes</h3>
-        <ItemCard v-for="value in milkshakes" :key="value.Name"
+      </div>
+    </div>
+    <div id="freshens">
+      <h2>Freshen's</h2>
+      <div class="row">
+        <h3>Smoothies</h3>
+        <ItemCard v-for="value in smoothies" :key="value.Name"
         :name="value.Name"
         :price="value.Price"
         />
-        <h3>Drinks</h3>
-        <ItemCard v-for="value in drinks" :key="value.Name"
+        <h3>Yogurt</h3>
+        <ItemCard v-for="value in yogurt" :key="value.Name"
         :name="value.Name"
         :price="value.Price"
         />

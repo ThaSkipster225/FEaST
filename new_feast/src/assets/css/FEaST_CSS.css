@@ -3,6 +3,11 @@
     color: Black;
 }
 
+/* Hides horizontal scrollbar */
+body {
+    overflow-x: hidden;
+}
+
 h1{
     Color: Black;
     text-align: center;
@@ -17,7 +22,8 @@ h2{
     background-color: #C7CB85;
 }
 
-h3{
+.caf h3, 
+.undercaf h3{
     Color: Black;
     text-align: center;
     background-color: #EAD2A8
@@ -480,6 +486,32 @@ footer a {
 }
 
 .caf .col-sm-3:hover {
+    transform: scale(1.02);
+    transition: 0.5s ease;
+}
+
+.CafNav {
+    padding: 0px !important;
+    background-color: tan !important;
+}
+
+.CafNav a {
+    font: sans-serif;
+    color: black;
+    text-decoration: none;
+    border: black 1px solid;
+    padding: 0px;
+}
+
+.undercaf .row {
+    padding: 10px;
+}
+
+.undercaf .col-sm-3 {
+    padding-bottom: 10px;
+}
+
+.undercaf .col-sm-3:hover {
     transform: scale(1.02);
     transition: 0.5s ease;
 }
