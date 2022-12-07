@@ -1,5 +1,5 @@
 <template>
-  <nav style="display:none;">
+  <nav style="display: none;">
     <router-link to="/">Home</router-link>
     <router-link to="/pretzelplace">Pretzel Place</router-link>
     <router-link to="/buckstop">Buckstop</router-link>
@@ -23,7 +23,7 @@
             
             <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/#Home">Home</a>
+                <button class="nav-link" aria-current="page" @click="$router.push('/')">Home</button>
               </li>
 
               <li class="nav-item">
@@ -38,22 +38,22 @@
                 <ul class="dropdown-menu">
                   <!-- This UL holds all of the different food locations on campus.-->
                   <li>Computer Science</li>
-                  <li><a class="dropdown-item" href="/pretzelplace">Fresh Twist (Pretzel Place)</a></li>
+                  <li><button class="dropdown-item" @click="$router.push('/pretzelplace')">Fresh Twist (Pretzel Place)</button></li>
                   <li>The Cafeteria (Caf)</li>
-                  <li><a class="dropdown-item" href="/caf">Wynee's Bistro</a></li>
-                  <li><a class="dropdown-item" href="/caf">Superbowls</a></li>
-                  <li><a class="dropdown-item" href="/caf">Sushi Place</a></li>
-                  <li><a class="dropdown-item" href="/caf">Steak and Shake</a></li>
+                  <li><button class="dropdown-item" @click="$router.push('/caf')">Wynee's Bistro</button></li>
+                  <li><button class="dropdown-item" @click="$router.push('/caf/#superbowls')">Superbowls</button></li>
+                  <li><button class="dropdown-item" @click="$router.push('/caf/#sushi')">Sushi Place</button></li>
+                  <li><button class="dropdown-item" @click="$router.push('/caf/#steakNshake')">Steak and Shake</button></li>
                   <li>Undercaf</li>
-                  <li><a class="dropdown-item" href="/undercaf">Boar's Head Deli</a></li>
-                  <li><a class="dropdown-item" href="/undercaf">Freshen's</a></li>
+                  <li><button class="dropdown-item" @click="$router.push('/undercaf/#boarshead')">Boar's Head Deli</button></li>
+                  <li><button class="dropdown-item" @click="$router.push('/undercaf/#freshens')">Freshen's</button></li>
                   <li>Central Campus</li>
-                  <li><a class="dropdown-item" href="/buckstop">Buckstop</a></li>
+                  <li><button class="dropdown-item" @click="$router.push('/buckstop')">Buckstop</button></li>
                   <li>South Side of Campus</li>
-                  <li><a class="dropdown-item" href="/south">Happy Place</a></li>
-                  <li><a class="dropdown-item" href="/south">Mocketship</a></li>
-                  <li><a class="dropdown-item" href="/south">Tutu's Cyber Cafe</a></li>
-                  <li><a class="dropdown-item" href="/south">Grill Master</a></li>
+                  <li><button class="dropdown-item" @click="$router.push('/south/#happyplace')">Happy Place</button></li>
+                  <li><button class="dropdown-item" @click="$router.push('/south/#mocketship')">Mocketship</button></li>
+                  <li><button class="dropdown-item" @click="$router.push('/south/#tutus')">Tutu's Cyber Cafe</button></li>
+                  <li><button class="dropdown-item" @click="$router.push('/south/#grillmaster')">Grill Master</button></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -66,7 +66,7 @@
             
             <button @click="toggleSidebar" type="button" class="btn btn-primary btn-sm">
               <font-awesome-icon icon="fa-solid fa-cart-shopping fa-xs" />
-              Cart
+              Cart ({{cart.length}})
             </button>
             <!--<button type="button" class="btn btn-primary m-2" data-bs-toggle="modal" data-bs-target="#RegisterModal">-->
               <!--Register-->
