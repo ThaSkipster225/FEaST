@@ -6,6 +6,7 @@ import BuckStopVue from '@/views/BuckStop.vue'
 import CafView from '@/views/Caf.vue'
 import UndercafView from '@/views/Undercaf.vue'
 import SouthView from '@/views/SouthView.vue'
+import PretzelplaceVue from '../views/Pretzelplace.vue'
 
 const routes = [
   {
@@ -19,7 +20,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Pretzelplace.vue')
+    component: PretzelplaceVue
   },
   {
     path: '/login',

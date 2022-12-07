@@ -15,6 +15,7 @@ const db = getFirestore(app)
 
 export default {
     name: "AboutView",
+    props: ['addToCart'],
     components: {
         ItemCard
     },
@@ -196,6 +197,7 @@ export default {
                     <ItemCard v-for="value in AlaCarte" :key="value.Name"
                         :name="value.Name"
                         :price="value.Price"
+                        :addToCart="addToCart"
                     />
                 </div>
 
@@ -204,6 +206,7 @@ export default {
                     <ItemCard v-for="value in SnakeBites" :key="value.Name"
                         :name="value.Name"
                         :price="value.Price"
+                        :addToCart="addToCart"
                     />
                 </div>
       </div>
@@ -214,6 +217,7 @@ export default {
                     <ItemCard v-for="value in Craters" :key="value.Name"
                         :name="value.Name"
                         :price="value.Price"
+                        :addToCart="addToCart"
                     />
                 </div>
 
@@ -222,6 +226,7 @@ export default {
                     <ItemCard v-for="value in Cones" :key="value.Name"
                         :name="value.Name"
                         :price="value.Price"
+                        :addToCart="addToCart"
                     />
                 </div>
 
@@ -230,6 +235,7 @@ export default {
                     <ItemCard v-for="value in Fuel" :key="value.Name"
                         :name="value.Name"
                         :price="value.Price"
+                        :addToCart="addToCart"
                     />
                 </div>
 
@@ -238,6 +244,7 @@ export default {
                     <ItemCard v-for="value in Salads" :key="value.Name"
                         :name="value.Name"
                         :price="value.Price"
+                        :addToCart="addToCart"
                     />
                 </div>
 
@@ -246,6 +253,7 @@ export default {
                     <ItemCard v-for="value in Takeoffs" :key="value.Name"
                         :name="value.Name"
                         :price="value.Price"
+                        :addToCart="addToCart"
                     />
                 </div>
 
@@ -254,6 +262,7 @@ export default {
                     <ItemCard v-for="value in Downs" :key="value.Name"
                         :name="value.Name"
                         :price="value.Price"
+                        :addToCart="addToCart"
                     />
                 </div>
         </div>
@@ -265,6 +274,7 @@ export default {
                     <ItemCard v-for="value in Grill" :key="value.Name"
                         :name="value.Name"
                         :price="value.Price"
+                        :addToCart="addToCart"
                     />
                 </div>
         </div>
@@ -276,6 +286,7 @@ export default {
                     <ItemCard v-for="value in Alts" :key="value.Name"
                         :name="value.Name"
                         :price="value.Price"
+                        :addToCart="addToCart"
                     />
                 </div>
 
@@ -284,6 +295,7 @@ export default {
                     <ItemCard v-for="value in Breakfast" :key="value.Name"
                         :name="value.Name"
                         :price="value.Price"
+                        :addToCart="addToCart"
                     />
                 </div>
 
@@ -292,6 +304,7 @@ export default {
                     <ItemCard v-for="value in Coffees" :key="value.Name"
                         :name="value.Name"
                         :price="value.Price"
+                        :addToCart="addToCart"
                     />
                 </div>
 
@@ -300,6 +313,7 @@ export default {
                     <ItemCard v-for="value in Espressos" :key="value.Name"
                         :name="value.Name"
                         :price="value.Price"
+                        :addToCart="addToCart"
                     />
                 </div>
 
@@ -308,6 +322,7 @@ export default {
                     <ItemCard v-for="value in Extras" :key="value.Name"
                         :name="value.Name"
                         :price="value.Price"
+                        :addToCart="addToCart"
                     />
                 </div>
 
@@ -316,6 +331,7 @@ export default {
                     <ItemCard v-for="value in Frapps" :key="value.Name"
                         :name="value.Name"
                         :price="value.Price"
+                        :addToCart="addToCart"
                     />
                 </div>
 
@@ -324,6 +340,7 @@ export default {
                     <ItemCard v-for="value in Iced" :key="value.Name"
                         :name="value.Name"
                         :price="value.Price"
+                        :addToCart="addToCart"
                     />
                 </div>
 
@@ -332,6 +349,7 @@ export default {
                     <ItemCard v-for="value in TuSalads" :key="value.Name"
                         :name="value.Name"
                         :price="value.Price"
+                        :addToCart="addToCart"
                     />
                 </div>
 
@@ -340,6 +358,7 @@ export default {
                     <ItemCard v-for="value in Sandwiches" :key="value.Name"
                         :name="value.Name"
                         :price="value.Price"
+                        :addToCart="addToCart"
                     />
                 </div>
         </div>

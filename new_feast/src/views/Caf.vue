@@ -15,6 +15,7 @@ const db = getFirestore(app)
 
 export default {
     name: "CafView",
+    props: ['addToCart'],
     components: {
         ItemCard
     },
@@ -101,6 +102,7 @@ export default {
         <ItemCard v-for="value in rolls" :key="value.Name"
         :name="value.Name"
         :price="value.Price"
+        :addToCart="addToCart"
         />
       </div>
     </div>
@@ -111,31 +113,37 @@ export default {
         <ItemCard v-for="value in burgers" :key="value.Name"
         :name="value.Name"
         :price="value.Price"
+        :addToCart="addToCart"
         />
         <h3>Salads</h3>
         <ItemCard v-for="value in salads" :key="value.Name"
         :name="value.Name"
         :price="value.Price"
+        :addToCart="addToCart"
         />
         <h3>Sides</h3>
         <ItemCard v-for="value in sides" :key="value.Name"
         :name="value.Name"
         :price="value.Price"
+        :addToCart="addToCart"
         />
         <h3>Other Specialties</h3>
         <ItemCard v-for="value in specials" :key="value.Name"
         :name="value.Name"
         :price="value.Price"
+        :addToCart="addToCart"
         />
         <h3>Milkshakes</h3>
         <ItemCard v-for="value in milkshakes" :key="value.Name"
         :name="value.Name"
         :price="value.Price"
+        :addToCart="addToCart"
         />
         <h3>Drinks</h3>
         <ItemCard v-for="value in drinks" :key="value.Name"
         :name="value.Name"
         :price="value.Price"
+        :addToCart="addToCart"
         />
       </div>
     </div>
