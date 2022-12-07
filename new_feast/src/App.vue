@@ -107,7 +107,8 @@ export default {
   data(){
     return {
       showSidebar: false,
-      cart: {}
+      cart: [],
+      quantity: 1
     }
   },
   computed: {
@@ -116,9 +117,11 @@ export default {
     }
   },
   methods: {
-    addToCart (name, quantity, price) {
-      if (!this.cart[name]) this.cart[name] = [name, quantity, price]
-      this.cart[name] += quantity
+    addToCart (item) {
+      item.quantity += 1;
+      this.cart.push(item);
+      // if (!this.cart[name]) this.cart[name] = [name, price, quantity],
+      // this.cart[name] +=1
       console.log(this.cart)
     },
     toggleSidebar () {
