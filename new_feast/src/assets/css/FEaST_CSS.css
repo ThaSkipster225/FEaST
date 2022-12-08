@@ -241,8 +241,7 @@ a:hover #Locations{
     border: 0.05rem solid green;
 }
 
-.btn-primary:hover,
-.btn-primary:focus {
+.btn-primary:hover {
     background-color: lightgreen !important;
     border: 0.05rem solid lightgreen !important;
 }
