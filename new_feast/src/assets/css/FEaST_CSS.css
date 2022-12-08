@@ -427,6 +427,19 @@ footer a {
     font-size: 26px;
 }
 
+th {
+    background-color: tan;
+    text-align: center;
+    border: black 1px solid;
+}
+
+td {
+    background-color: white;
+    padding-top: 10px;
+    text-align: center;
+    border: black 1px solid;
+}
+
 .cart-close {
     background: transparent;
     border: 0px;
@@ -437,9 +450,9 @@ footer a {
 
 .cart-table {
     border-collapse: collapse;
-    width: 200px;
-    margin: 0px;
-    font-size: 14px;
+    width: 100%;
+    word-spacing: 10px;
+    font-size: 16px;
 }
 
 .cart-image {
@@ -451,6 +464,7 @@ footer a {
     max-height: 1280px;
     padding: 1px;
     overflow: auto;
+    background-color: transparent !important;
 }
 
 .cart-remove {

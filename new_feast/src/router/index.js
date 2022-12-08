@@ -7,6 +7,7 @@ import CafView from '@/views/Caf.vue'
 import UndercafView from '@/views/Undercaf.vue'
 import SouthView from '@/views/SouthView.vue'
 import PretzelplaceVue from '../views/Pretzelplace.vue'
+import CartView from '../views/CartView.vue'
 
 const routes = [
   {
@@ -51,6 +52,11 @@ const routes = [
     path: '/south',
     name: 'south',
     component: SouthView
+  },
+  {
+    path: '/cart',
+    name: 'cart',
+    component: CartView
   }
 ]
 

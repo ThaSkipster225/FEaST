@@ -5,6 +5,7 @@
     <router-link to="/buckstop">Buckstop</router-link>
     <router-link to="/undercaf">Undercaf</router-link>
     <router-link to="/south">South of Campus</router-link>
+    <router-link to="/cart">Cart</router-link>
     <!--<router-link to="/sushi">Kazan Sushi</router-link>-->
     <a @click="toggleSidebar" class="top-bar-cart-link">
       <font-awesome-icon icon="fa-solid fa-cart-shopping fa-xs" />
@@ -64,7 +65,7 @@
             Log In
             </button>
             
-            <button @click="toggleSidebar" type="button" class="btn btn-primary btn-sm">
+            <button @click="$router.push('/cart')" type="button" class="btn btn-primary btn-sm">
               <font-awesome-icon icon="fa-solid fa-cart-shopping fa-xs" />
               Cart ({{totalQuantity}})
             </button>
@@ -79,7 +80,7 @@
       <LoginModalVue></LoginModalVue>
       <RegisterModalVue></RegisterModalVue>
 
-  <RouterView :addToCart="addToCart" /> <!-- Needs to be at bottom to load everything -->
+  <RouterView :addToCart="addToCart" :cart="cart" :remove="removeItem" /> <!-- Needs to be at bottom to load everything -->
   
   <SidebarComp
     v-if="showSidebar"
@@ -152,7 +153,7 @@ export default {
       // Loops through the cart and then removes whichever item has the name provided
       for (let i = 0; i < this.cart.length; i++){
         if (this.cart[i].name == name){
-          delete this.cart[i]
+          this.cart.splice(i, 1)
         }
       }
     }
