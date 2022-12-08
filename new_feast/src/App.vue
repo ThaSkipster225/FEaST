@@ -107,7 +107,11 @@ import LoginModalVue from '@/components/LoginModal.vue';
 import RegisterModalVue from '@/components/RegisterModal.vue';
 import ProfileCompVue from './components/ProfileComp.vue';
 
-import { setDoc } from '@firebase/firestore';
+
+import firebase from '@/firebaseInit';
+import { setDoc, getFirestore, doc } from '@firebase/firestore';
+
+const db = getFirestore(firebase)
 
 export default {
   name: 'app',
@@ -197,7 +201,7 @@ export default {
       }else {
         bal = user.SnakeBites - total
         user.SnakeBites = bal
-        setDoc(user.docID, user)
+        setDoc(doc(db, user.docID), user)
       }
     }
   }
