@@ -8,7 +8,7 @@ export default{
             for (let i = 0; i < this.cart.length; i++){
                 total += (this.cart[i].price * this.cart[i].quantity)
             }
-            return total
+            return total.toFixed(2)
         }
     }
 }
@@ -38,6 +38,7 @@ export default{
                     </button>
                 </td>
             </tr>
+            <tr style="width:100%; background-color: white; text-align:center;">Total: {{calculateTotal()}}</tr>
         </tbody>
     </table>
 </template>
