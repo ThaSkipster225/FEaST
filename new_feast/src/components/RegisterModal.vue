@@ -106,18 +106,20 @@ const Register = () => {
   createUserWithEmailAndPassword(auth, email.value, password.value)
     .then(() => {
       const docRef = setDoc(doc(db, "users", auth.currentUser.uid), {
+        docID: auth.currentUser.uid,
         firstName: firstName.value,
         lastName: lastName.value,
         email: email.value,
-        StudentID: parseInt(studID.value),
-        SnakeBites: parseInt(option.value)
+        StudentID: parseFloat(studID.value),
+        SnakeBites: parseFloat(option.value)
       })
 
+      user.docID = docID.value
       user.firstName = firstName.value
-    user.lastName = lastName.value
-    user.StudentID = parseInt(studID.value)
-    user.email = email.value
-    user.SnakeBites = parseInt(option.value)
+      user.lastName = lastName.value
+      user.StudentID = parseInt(studID.value)
+      user.email = email.value
+      user.SnakeBites = parseInt(option.value)
       
       console.log("Document written with ID: ", docRef.id)
       console.log(option.value)

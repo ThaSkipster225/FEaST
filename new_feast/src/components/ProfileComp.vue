@@ -22,7 +22,7 @@
 
                                         <div class="d-flex flex-column justify-content-center">
                                             <span class="caption">Snake Bites</span>
-                                            <span class="number1">{{ user.SnakeBites }}</span>
+                                            <span class="number1">${{ user.SnakeBites }}</span>
                                         </div>
 
                                     </div>

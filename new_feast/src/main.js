@@ -29,6 +29,7 @@ export const checkLogin = reactive({
 })
 
 export const user = reactive({
+    docID: 's',
     firstName: 'Johm',
     lastName: 'Doe',
     StudentID: 0,

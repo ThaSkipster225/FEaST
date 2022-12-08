@@ -70,6 +70,7 @@ const Login = () => {
 
 
 function userInfo(doc, user){
+  user.docID = auth.currentUser.uid
   user.firstName = doc.data().firstName
   user.lastName = doc.data().lastName
   user.StudentID = doc.data().StudentID
