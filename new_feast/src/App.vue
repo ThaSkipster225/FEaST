@@ -60,10 +60,12 @@
               <li class="nav-item">
                 <a class="nav-link" href="#AboutUs">About Us</a>
               </li>
-              
-            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#LoginModal">
-            Log In
-            </button>
+
+            <div v-if="(checkLogin.check == false)"> 
+              <button  type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#LoginModal">
+              Log In
+              </button>
+            </div> 
             
             <button @click="$router.push('/cart')" type="button" class="btn btn-primary btn-sm">
               <font-awesome-icon icon="fa-solid fa-cart-shopping fa-xs" />
@@ -92,10 +94,10 @@
 
 <script>
 // import NavBar from'./components/NavbarComp.vue'
+import { checkLogin, user } from './main';
 import SidebarComp from '@/components/SidebarComp.vue';
 import LoginModalVue from '@/components/LoginModal.vue';
 import RegisterModalVue from '@/components/RegisterModal.vue';
-
 
 export default {
   name: 'app',
@@ -109,7 +111,9 @@ export default {
     return {
       showSidebar: false,
       cart: [],
-      quantity: 1
+      quantity: 1,
+      checkLogin,
+      user
     }
   },
   computed: {
