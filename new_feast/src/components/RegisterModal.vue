@@ -82,11 +82,13 @@
 </template>
 
 <script setup>
-import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth'
 import 'firebase/auth'
+import firebase from '../firebaseInit'
+import { checkLogin } from '@/main';
+import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth'
 import { ref } from 'vue';
 import { getFirestore, setDoc, doc } from 'firebase/firestore'
-import firebase from '../firebaseInit'
+
 
 
 const email = ref('')
@@ -107,13 +109,18 @@ const Register = () => {
         lastName: lastName.value,
         email: email.value,
         StudentID: parseInt(studID.value),
-        SnakeBites: parseInt(option.value),
+        SnakeBites: parseInt(option.value)
       })
       console.log("Document written with ID: ", docRef.id)
       console.log(option.value)
       alert("Register complete!")
+
+      checkLogin.check = true
+      return{
+        checkLogin
+      }
     })
-    .catch(err => alert('Something went wrong with adding user: ', err.message));
+    .catch(err => alert(err.message));
 }
 
 </script>

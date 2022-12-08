@@ -33,7 +33,7 @@
 
 <script setup>
 import { checkLogin, user } from '@/main';
-import { ref} from 'vue';
+import { ref } from 'vue';
 import firebase from '../firebaseInit';
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth'
 import { getDoc, doc, getFirestore } from '@firebase/firestore';

@@ -136,7 +136,7 @@ a:hover #Locations{
 }
 
 .navbar-nav .nav-link.active {
-    color: grey;
+    color: red;
 }
 
 .navbar-brand {
@@ -261,9 +261,10 @@ a:hover #Locations{
 }
 
 .food-location img{
-    width: 300px;
-    height: 300px;
+    width: auto;
+    height: auto;
     border: black 1px solid;
+    margin: 5px;
 }
 
 .food-location img,

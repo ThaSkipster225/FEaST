@@ -66,6 +66,12 @@
               Log In
               </button>
             </div> 
+              
+            <div v-else>
+              <button  type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#ProfileModal">
+              Profile
+              </button>
+            </div>
             
             <button @click="$router.push('/cart')" type="button" class="btn btn-primary btn-sm">
               <font-awesome-icon icon="fa-solid fa-cart-shopping fa-xs" />
@@ -81,6 +87,7 @@
 
       <LoginModalVue></LoginModalVue>
       <RegisterModalVue></RegisterModalVue>
+      <ProfileCompVue></ProfileCompVue>
 
   <RouterView :addToCart="addToCart" :cart="cart" :remove="removeItem" /> <!-- Needs to be at bottom to load everything -->
   
@@ -98,6 +105,7 @@ import { checkLogin, user } from './main';
 import SidebarComp from '@/components/SidebarComp.vue';
 import LoginModalVue from '@/components/LoginModal.vue';
 import RegisterModalVue from '@/components/RegisterModal.vue';
+import ProfileCompVue from './components/ProfileComp.vue';
 
 export default {
   name: 'app',
@@ -105,7 +113,8 @@ export default {
     // NavBar,
     SidebarComp,
     LoginModalVue,
-    RegisterModalVue
+    RegisterModalVue,
+    ProfileCompVue
   },
   data(){
     return {
