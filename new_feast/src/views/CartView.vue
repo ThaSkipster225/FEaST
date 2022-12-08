@@ -4,7 +4,7 @@ import CartComp from '../components/CartComp.vue'
 
 export default{
     name: 'CartView',
-    props: ['cart', 'remove', 'addToCart', 'incrQuan', 'decrQuan'],
+    props: ['cart', 'remove', 'addToCart', 'incrQuan', 'decrQuan', 'check'],
     components: {
         CartComp
     },
@@ -97,7 +97,7 @@ export default{
               </li>
             </ul>
 
-            <button type="button" class="btn btn-lg btn-primary rounded">
+            <button @click="check()" type="button" class="btn btn-lg btn-primary rounded">
               Checkout
             </button>
           </div>

@@ -89,7 +89,7 @@
       <RegisterModalVue></RegisterModalVue>
       <ProfileCompVue></ProfileCompVue>
 
-  <RouterView :addToCart="addToCart" :cart="cart" :remove="removeItem" :incrQuan="incrQuantity" :decrQuan="decrQuantity" /> <!-- Needs to be at bottom to load everything -->
+  <RouterView :addToCart="addToCart" :cart="cart" :remove="removeItem" :incrQuan="incrQuantity" :decrQuan="decrQuantity" :check="checkout" /> <!-- Needs to be at bottom to load everything -->
   
   <SidebarComp
     v-if="showSidebar"
@@ -182,6 +182,11 @@ export default {
           if (this.cart[i].name == name){
               this.cart[i].quantity -= 1
           }
+      }
+    },
+    checkout() {
+      if(this.cart.length == 0){
+        alert("The cart is empty, cannot checkout.")
       }
     }
   }
