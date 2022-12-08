@@ -143,6 +143,11 @@ a:hover #Locations{
     color: red;
 }
 
+.navbar-brand button {
+    border: 0 !important;
+    background-color: transparent !important;
+}
+
 .navbar-brand {
     font-weight: 700;
     font-size: 26px;
@@ -298,7 +303,7 @@ a:hover #Locations{
 .location-overlay h6 {
     bottom: auto !important;
     color: white;
-    text-align: left;
+    text-align: left;   
 }
 
 .food-location .location-overlay h3{

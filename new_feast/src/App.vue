@@ -14,7 +14,7 @@
 
   <nav class="navbar sticky-top navbar-expand-lg bg-white">
         <div class="container-fluid bg-white">
-          <a class="navbar-brand" href="/"><img src="@/assets/Images/FeastIcon.png" alt="Feast Logo" width=50 height=50></a>
+          <a class="navbar-brand" @click="$router.push('/')"><img src="@/assets/Images/FeastIcon.png" alt="Feast Logo" width=50 height=50></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
             aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -28,14 +28,14 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#link">Link</a>
+                <button class="nav-link" @click="$router.push('/#link')">Link</button>
               </li>
 
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#Locations" role="button"
+                <a class="nav-link dropdown-toggle" @click="$router.push('/#Locations')" role="button"
                   aria-expanded="false">
                   Locations
-                </a>
+              </a>
                 <ul class="dropdown-menu">
                   <!-- This UL holds all of the different food locations on campus.-->
                   <li>Computer Science</li>
@@ -89,7 +89,7 @@
       <RegisterModalVue></RegisterModalVue>
       <ProfileCompVue></ProfileCompVue>
 
-  <RouterView :addToCart="addToCart" :cart="cart" :remove="removeItem" /> <!-- Needs to be at bottom to load everything -->
+  <RouterView :addToCart="addToCart" :cart="cart" :remove="removeItem" :incrQuan="incrQuantity" :decrQuan="decrQuantity" /> <!-- Needs to be at bottom to load everything -->
   
   <SidebarComp
     v-if="showSidebar"
@@ -168,6 +168,20 @@ export default {
         if (this.cart[i].name == name){
           this.cart.splice(i, 1)
         }
+      }
+    },
+    incrQuantity(name) {
+      for (let i = 0; i < this.cart.length; i++){
+          if (this.cart[i].name == name){
+              this.cart[i].quantity += 1
+          }
+      }
+    },
+    decrQuantity(name) {
+      for (let i = 0; i < this.cart.length; i++){
+          if (this.cart[i].name == name){
+              this.cart[i].quantity -= 1
+          }
       }
     }
   }
