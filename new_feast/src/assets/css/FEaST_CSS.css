@@ -497,11 +497,11 @@ td {
     padding: 10px;
 }
 
-.Buckstop .col-sm-3 {
+.Buckstop .col-sm-12, .col-md-6, .col-lg-3 {
     padding-bottom: 10px;
 }
 
-.Buckstop .col-sm-3:hover {
+.Buckstop .col-sm-12:hover, .col-md-6:hover, .col-lg-3:hover {
     transform: scale(1.02);
     transition: 0.5s ease;
 }
@@ -510,11 +510,11 @@ td {
     padding: 10px;
 }
 
-.PretzelPlace .col-sm-3 {
+.PretzelPlace .col-sm-12, .col-md-6, .col-lg-3 {
     padding-bottom: 10px;
 }
 
-.PretzelPlace .col-sm-3:hover {
+.PretzelPlace .col-sm-12:hover, .col-md-6:hover, .col-lg-3:hover {
     transform: scale(1.02);
     transition: 0.5s ease;
 }
@@ -523,11 +523,11 @@ td {
     padding: 10px;
 }
 
-.caf .col-sm-3 {
+.caf .col-sm-12, .col-md-6, .col-lg-3 {
     padding-bottom: 10px;
 }
 
-.caf .col-sm-3:hover {
+.caf .col-sm-12:hover, .col-md-6:hover, .col-lg-3:hover {
     transform: scale(1.02);
     transition: 0.5s ease;
 }
@@ -549,11 +549,11 @@ td {
     padding: 10px;
 }
 
-.undercaf .col-sm-3 {
+.undercaf .col-sm-12, .col-md-6, .col-lg-3 {
     padding-bottom: 10px;
 }
 
-.undercaf .col-sm-3:hover {
+.undercaf .col-sm-12:hover, .col-md-6:hover, .col-lg-3:hover {
     transform: scale(1.02);
     transition: 0.5s ease;
 }
@@ -562,11 +562,11 @@ td {
     padding: 10px;
 }
 
-.SouthCampus .col-sm-3 {
+.SouthCampus .col-sm-12, .col-md-6, .col-lg-3 {
     padding-bottom: 10px;
 }
 
-.SouthCampus .col-sm-3:hover {
+.SouthCampus .col-sm-12:hover, .col-md-6:hover, .col-lg-3:hover {
     transform: scale(1.02);
     transition: 0.5s ease;
 }
