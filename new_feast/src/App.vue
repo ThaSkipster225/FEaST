@@ -58,7 +58,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#AboutUs">About Us</a>
+                <a class="nav-link" @click="$router.push('/#AboutUs')">About Us</a>
               </li>
 
             <div v-if="(checkLogin.check == false)"> 
@@ -200,8 +200,18 @@ export default {
         alert("The cart is empty, cannot checkout.")
       }else {
         bal = user.SnakeBites - total
-        user.SnakeBites = bal
-        setDoc(doc(db, user.docID), user)
+        if (user.SnakeBites > total){
+          user.SnakeBites = bal
+          setDoc(doc(db, "/users", user.docID), user) // Sends the data to firebase to subtract from the account.
+          alert("Thank you for your purchase, your order will be ready soon.")
+          for (let i = 0; i < this.cart.length; i++){
+            this.cart.splice(i, 1)
+          }
+        } else{
+          let msg = `Insufficient funds in your account. You're remaining balance is: $${user.SnakeBites.toFixed(2)}`
+          alert(msg)
+        }
+        
       }
     }
   }

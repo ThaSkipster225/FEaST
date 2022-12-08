@@ -22,4 +22,6 @@ export default {
   name: 'ItemCard',
   props: ['name', 'price', 'quantity', 'desc', 'addToCart'],
 }
+
+
 </script>
