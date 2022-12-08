@@ -88,7 +88,7 @@ import { checkLogin } from '@/main';
 import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth'
 import { ref } from 'vue';
 import { getFirestore, setDoc, doc } from 'firebase/firestore'
-
+import { user } from '@/main';
 
 
 const email = ref('')
@@ -111,6 +111,13 @@ const Register = () => {
         StudentID: parseInt(studID.value),
         SnakeBites: parseInt(option.value)
       })
+
+      user.firstName = firstName.value
+    user.lastName = lastName.value
+    user.StudentID = parseInt(studID.value)
+    user.email = email.value
+    user.SnakeBites = parseInt(option.value)
+      
       console.log("Document written with ID: ", docRef.id)
       console.log(option.value)
       alert("Register complete!")
