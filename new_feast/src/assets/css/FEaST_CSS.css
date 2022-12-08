@@ -14,12 +14,16 @@ h1{
     background-color: #EBBE9B;
     /* padding-bottom: 10px; */
     padding-top: 10px;
+    margin-top: 10px;
+    margin-bottom:10px;
 }
 
 h2{
     Color: Black;
     text-align: center;
     background-color: #C7CB85;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .caf h3, 
@@ -287,13 +291,14 @@ a:hover #Locations{
 
 .location-overlay h3 {
     color: white !important;
-    bottom: 108px !important;
+    top: 20px !important;
     left: 16px;
 }
 
 .location-overlay h6 {
     bottom: auto !important;
     color: white;
+    text-align: left;
 }
 
 .food-location .location-overlay h3{
@@ -429,7 +434,8 @@ footer a {
 }
 
 th {
-    background-color: tan;
+    background-color: lightgoldenrodyellow;
+    color: black;
     text-align: center;
     border: black 1px solid;
 }
@@ -452,13 +458,13 @@ td {
 .cart-table {
     border-collapse: collapse;
     width: 100%;
-    word-spacing: 10px;
     font-size: 16px;
 }
 
 .cart-image {
-    max-width: 45px;
-    max-height: 45px;
+
+    max-width: 180px;
+    max-height: 180px;
 }
 
 .cart-body {
@@ -478,7 +484,9 @@ td {
     display: inline;
 }
 
-
+.card-title {
+    text-align: center;
+}
 
 /* Edits to make the item cards look good and grow on hover */
 .Buckstop .row {
