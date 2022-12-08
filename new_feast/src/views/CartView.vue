@@ -97,7 +97,7 @@ export default{
               </li>
             </ul>
 
-            <button type="button" class="btn btn-primary btn-lg btn-block">
+            <button type="button" class="btn btn-lg btn-primary rounded">
               Checkout
             </button>
           </div>
