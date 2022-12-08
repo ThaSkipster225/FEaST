@@ -204,9 +204,7 @@ export default {
           user.SnakeBites = bal
           setDoc(doc(db, "/users", user.docID), user) // Sends the data to firebase to subtract from the account.
           alert("Thank you for your purchase, your order will be ready soon.")
-          for (let i = 0; i < this.cart.length; i++){
-            this.cart.splice(i, 1)
-          }
+          this.cart = [] //empty the cart
         } else{
           let msg = `Insufficient funds in your account. You're remaining balance is: $${user.SnakeBites.toFixed(2)}`
           alert(msg)
