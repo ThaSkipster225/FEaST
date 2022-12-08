@@ -10,25 +10,25 @@
         <div class="modal-body">
           <form @submit.prevent="Register">
             <!-- Student ID -->
-            <div class="studentID">
+            <div class="studentID mb-1">
               <label for="InputStudentID" class="form-label">Student ID</label>
               <input class="form-control" v-model="studID" id="InputStudentID">
             </div>
 
             <!-- First Name -->
-            <div class="firstName">
+            <div class="firstName mb-1">
               <label for="InputFirstName" class="form-label">First Name</label>
               <input class="form-control" v-model="firstName" id="inputFirstName">
             </div>
 
             <!-- Last Name -->
-            <div class="lastName">
+            <div class="lastName mb-1">
               <label for="InputLastName" class="form-label">Last Name</label>
               <input class="form-control" v-model="lastName" id="InputLastName">
             </div>
 
             <!-- Email -->
-            <div class="mb-2 emailInput">
+            <div class="emailInput mb-1">
               <label for="userEmail" class="form-label">Email address</label>
               <input type="email" class="form-control" v-model="email" id="userEmail"
                 aria-describedby="emailHelp">
@@ -43,10 +43,10 @@
 
             <!-- check box options for meal plan -->
             <div class="Meal-Plan-Radios">
-              <label class="form-label" for="inlineRadio1">Meal Plan</label>
+              <label class="form-label mt-2 mb-1" for="inlineRadio1">Meal Plan</label>
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="RadioOption1" id="Meal1" value="160"
-                  v-model="option" checked>
+                  v-model="option">
                 <label class="form-check-label" for="inlineRadio1">Meal Plan A: 20-Meals (160 Snake Bites)</label>
               </div>
               <div class="form-check">
@@ -62,7 +62,7 @@
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="RadioOption4" id="Meal4" value="40"
                   v-model="option">
-                <label class="form-check-label" for="inlineRadio3">Meal Plan D: 5-Meals (40 Snake Bites)</label>
+                <label class="form-check-label mb-2" for="inlineRadio3">Meal Plan D: 5-Meals (40 Snake Bites)</label>
               </div>
             </div>
 
@@ -79,14 +79,6 @@
     </div>
   </div>
 
-  <!-- <div class="register">
-    <h1>Register</h1>
-    <form @submit.prevent="Register">
-      <input type="text" placeholder="Email" v-model="email"/>
-      <input type="password" placeholder="Password" v-model="password"/>
-      <input type="submit" value="Register"/>
-    </form>
-  </div> -->
 </template>
 
 <script setup>
@@ -115,13 +107,13 @@ const Register = () => {
         lastName: lastName.value,
         email: email.value,
         StudentID: parseInt(studID.value),
-        SnakeBites: parseInt(option.value)
+        SnakeBites: parseInt(option.value),
       })
       console.log("Document written with ID: ", docRef.id)
       console.log(option.value)
       alert("Register complete!")
     })
-    .catch(err => console.log('Something went wrong with adding user to firestore: ', err.message));
+    .catch(err => alert('Something went wrong with adding user: ', err.message));
 }
 
 </script>

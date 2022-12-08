@@ -1,4 +1,4 @@
-import { createApp } from 'vue'
+import { createApp, reactive } from 'vue'
 import App from './App.vue'
 import router from './router'
 
@@ -23,6 +23,12 @@ import { faLinkedin, faInstagram, faGithub } from '@fortawesome/free-brands-svg-
 library.add(fas, faLinkedin, faInstagram, faGithub)
 
 const app = createApp(App)
+
+export const checkLogin = reactive({
+    check: false
+})
+
 app.use(router)
 app.component('font-awesome-icon', FontAwesomeIcon)
 app.mount('#app')
+

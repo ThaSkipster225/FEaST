@@ -32,7 +32,8 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { checkLogin } from '@/main';
+import { ref} from 'vue';
 import firebase from '../firebaseInit';
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth'
 import { getDoc, doc, getFirestore } from '@firebase/firestore';
@@ -49,14 +50,17 @@ const Login = () => {
       // Signed in 
       const docRef = doc(db, "/users", auth.currentUser.uid)
       const profile = await getDoc(docRef)
-       
-      console.log(userInfo(profile))
+      
+      checkLogin.check = true
+
       let user = userInfo(profile)
 
       alert("Login Successful!")
-
+      
       return{
-        user
+        profile,
+        user,
+        checkLogin
       }      
     })
     .catch((error) => {
@@ -70,8 +74,9 @@ function userInfo(doc){
   let lastName = doc.data().lastName
   let StudentID = doc.data().StudentID
   let email = doc.data().email
+  let SnakeBites = doc.data().SnakeBites
 
-  return {firstName, lastName, StudentID, email}
+  return {firstName, lastName, StudentID, email, SnakeBites}
 }
 
 </script>
