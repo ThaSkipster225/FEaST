@@ -62,18 +62,18 @@
               </li>
 
             <div v-if="(checkLogin.check == false)"> 
-              <button  type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#LoginModal">
-              Log In
+              <button  type="button" class="btn btn-primary btn-sm rounded" data-bs-toggle="modal" data-bs-target="#LoginModal">
+              Login
               </button>
             </div> 
               
             <div v-else>
-              <button  type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#ProfileModal">
+              <button  type="button" class="btn btn-primary btn-sm rounded" data-bs-toggle="modal" data-bs-target="#ProfileModal">
               Profile
               </button>
             </div>
             
-            <button @click="$router.push('/cart')" type="button" class="btn btn-primary btn-sm">
+            <button @click="$router.push('/cart')" type="button" class="btn btn-primary btn-sm rounded">
               <font-awesome-icon icon="fa-solid fa-cart-shopping fa-xs" />
               Cart ({{totalQuantity}})
             </button>

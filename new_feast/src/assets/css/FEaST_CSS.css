@@ -237,14 +237,14 @@ a:hover #Locations{
 }
 
 .btn-primary {
-    background-color: #4981b3;
-    border: 0.05rem solid #4981b3;
+    background-color: green;
+    border: 0.05rem solid green;
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-    background-color: #68a0d2 !important;
-    border: 0.05rem solid #68a0d2 !important;
+    background-color: lightgreen !important;
+    border: 0.05rem solid lightgreen !important;
 }
 
 /* End Carousel Section */
