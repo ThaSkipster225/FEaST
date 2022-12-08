@@ -3,14 +3,14 @@
   <div class="col-lg-3 col-sm-6">
     <div class="food-location">
       <h3>{{ FoodLoc }}</h3>
-      <a :href="ActiveLink"><img :src="ImageString" alt="FoodLoc" class="w-100" />
+      <button @click="$router.push(ActiveLink)"><img :src="ImageString" alt="FoodLoc" class="w-100" />
       <div class="location-overlay">
         <div>
           <h3>{{ FoodLoc }}</h3>
           <h6>{{ LocDesc }}</h6>
         </div>
       </div>
-      </a>
+    </button>
     </div>
   </div>
 </template>

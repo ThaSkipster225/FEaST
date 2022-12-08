@@ -78,7 +78,7 @@ a:hover #Locations{
     color: #7EA172;
 }
 
-.dropdown-content a{
+.dropdown-content button{
     display: inline-block;
     color: darkslategray;
     
@@ -104,6 +104,7 @@ a:hover #Locations{
 }
 
 /* Navigation Bar */
+
 .navbar {
     text-align: end !important;
     font-size: 1.15rem;
@@ -127,6 +128,11 @@ a:hover #Locations{
     letter-spacing: 1px;
     Color: Red;
     margin-right: 25px;
+}
+
+.nav-item button {
+    border: 0;
+    background-color: transparent;
 }
 
 .navbar-nav .nav-link.active {
@@ -239,6 +245,11 @@ a:hover #Locations{
 .food-location {
     overflow: hidden;
     position: relative;
+}
+
+.food-location button {
+    background-color: transparent;
+    border: 0;
 }
 
 .food-location h3{
@@ -416,6 +427,19 @@ footer a {
     font-size: 26px;
 }
 
+th {
+    background-color: tan;
+    text-align: center;
+    border: black 1px solid;
+}
+
+td {
+    background-color: white;
+    padding-top: 10px;
+    text-align: center;
+    border: black 1px solid;
+}
+
 .cart-close {
     background: transparent;
     border: 0px;
@@ -426,9 +450,9 @@ footer a {
 
 .cart-table {
     border-collapse: collapse;
-    width: 200px;
-    margin: 0px;
-    font-size: 14px;
+    width: 100%;
+    word-spacing: 10px;
+    font-size: 16px;
 }
 
 .cart-image {
@@ -440,6 +464,7 @@ footer a {
     max-height: 1280px;
     padding: 1px;
     overflow: auto;
+    background-color: transparent !important;
 }
 
 .cart-remove {

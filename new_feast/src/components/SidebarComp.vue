@@ -1,5 +1,5 @@
 <template>
-    <aside class="cart-container">
+  <aside class="cart-container">
     <div class="cart">
       <h1 class="cart-title spread">
         <span>
@@ -13,7 +13,6 @@
         <table class="cart-table">
           <thead>
             <tr>
-              <th><span class="sr-only">Product Image</span></th>
               <th>Product</th>
               <th>Price</th>
               <th>Qty</th>
@@ -23,7 +22,7 @@
           </thead>
           <tbody>
             <tr v-for="item in cart" :key="item.name">
-              <td><p>carrot</p>></td>
+              <td><p>carrot</p></td>
               <td>{{ item.name }}</td>
               <td>\$7</td>
               <td class="center">{{ item.quantity }}</td>

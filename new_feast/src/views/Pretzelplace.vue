@@ -15,6 +15,7 @@ const db = getFirestore(app)
 
 export default {
     name: "AboutView",
+    props: ['addToCart'],
     components: {
         ItemCard
     },
@@ -74,6 +75,7 @@ export default {
       <ItemCard v-for="value in Pretzels" :key="value.Name"
       :name="value.Name"
       :price="value.Price"
+      :addToCart="addToCart"
       />
     </div>
 
@@ -82,6 +84,7 @@ export default {
       <ItemCard v-for="value in Flatbreads" :key="value.Name"
       :name="value.Name"
       :price="value.Price"
+      :addToCart="addToCart"
       />
     </div>
 
@@ -90,6 +93,7 @@ export default {
       <ItemCard v-for="value in Breakfast" :key="value.Name"
       :name="value.Name"
       :price="value.Price"
+      :addToCart="addToCart"
       />
     </div>
 
@@ -98,6 +102,7 @@ export default {
       <ItemCard v-for="value in Beverages" :key="value.Name"
       :name="value.Name"
       :price="value.Price"
+      :addToCart="addToCart"
       />
     </div>
   </div>
