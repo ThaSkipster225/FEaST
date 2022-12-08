@@ -114,7 +114,7 @@ const Register = () => {
         SnakeBites: parseFloat(option.value)
       })
 
-      user.docID = auth.currentUser.uid
+      user.docID = docRef.id
       user.firstName = firstName.value
       user.lastName = lastName.value
       user.StudentID = parseInt(studID.value)
