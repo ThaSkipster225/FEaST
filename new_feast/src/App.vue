@@ -107,6 +107,8 @@ import LoginModalVue from '@/components/LoginModal.vue';
 import RegisterModalVue from '@/components/RegisterModal.vue';
 import ProfileCompVue from './components/ProfileComp.vue';
 
+import { setDoc } from '@firebase/firestore';
+
 export default {
   name: 'app',
   components: {
@@ -185,8 +187,17 @@ export default {
       }
     },
     checkout() {
+      let total = 0;
+      let bal = 0;
+      for (let i = 0; i < this.cart.length; i++){
+          total += (this.cart[i].price * this.cart[i].quantity)
+      }
       if(this.cart.length == 0){
         alert("The cart is empty, cannot checkout.")
+      }else {
+        bal = user.SnakeBites - total
+        user.SnakeBites = bal
+        setDoc(user.docID, user)
       }
     }
   }
