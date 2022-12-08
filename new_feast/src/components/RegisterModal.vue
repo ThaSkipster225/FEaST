@@ -69,6 +69,7 @@
 
             <!-- Modal Footer -->
             <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
               <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LoginModal">I
                 already have an account</button>
               <input type="submit" class="btn btn-primary" value="Register" placeholder="Register">
