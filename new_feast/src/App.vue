@@ -94,7 +94,7 @@
 
 <script>
 // import NavBar from'./components/NavbarComp.vue'
-import { checkLogin } from './main';
+import { checkLogin, user } from './main';
 import SidebarComp from '@/components/SidebarComp.vue';
 import LoginModalVue from '@/components/LoginModal.vue';
 import RegisterModalVue from '@/components/RegisterModal.vue';
@@ -112,7 +112,8 @@ export default {
       showSidebar: false,
       cart: [],
       quantity: 1,
-      checkLogin
+      checkLogin,
+      user
     }
   },
   computed: {

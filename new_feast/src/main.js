@@ -28,6 +28,14 @@ export const checkLogin = reactive({
     check: false
 })
 
+export const user = reactive({
+    firstName: '',
+    lastName: '',
+    StudentID: 0,
+    email: '',
+    SnakeBites: 0
+})
+
 app.use(router)
 app.component('font-awesome-icon', FontAwesomeIcon)
 app.mount('#app')
