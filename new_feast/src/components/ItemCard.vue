@@ -3,17 +3,9 @@
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">{{ name }}</h5>
-                <img src="../assets/Images/FeastIcon.png" alt="Test Image" class="w-25">
+                <img src="../assets/Images/Food.jpg" alt="Test Image" class="">
                 <br/>
                 <p class="card-text description">{{ name }}.</p>
-                <!-- <select name="quantity" id="quantity">
-                  <option value=0>0</option>
-                  <option value=1>1</option>
-                  <option value=2>2</option>
-                  <option value=3>3</option>
-                  <option value=4>4</option>
-                  <option value=5>5</option>
-                </select> -->
                 <p class="card-text price text-end">${{ price }}</p>
                 <br/>
                 <br/>

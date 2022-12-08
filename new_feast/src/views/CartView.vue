@@ -38,7 +38,7 @@ export default{
                     </button>
                 </td>
             </tr>
-            <tr style="width:100%; background-color: white; text-align:center;">Total: {{calculateTotal()}}</tr>
         </tbody>
     </table>
+    <h2>Cart Total: {{calculateTotal()}}</h2>
 </template>
