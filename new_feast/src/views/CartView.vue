@@ -69,7 +69,6 @@ export default{
             :decrQuan="decrQuan"
             />
 
-            <hr class="my-4" />
 
           </div>
         </div>

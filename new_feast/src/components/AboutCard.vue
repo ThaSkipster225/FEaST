@@ -50,11 +50,6 @@ export default {
     Social3: String,
     PersonEven: Boolean
     
-  },
-  computed: {
-    getMailTo() {
-      return `mailto:${this.PersonEmail}`;
-    }
   }
 }
 </script>
