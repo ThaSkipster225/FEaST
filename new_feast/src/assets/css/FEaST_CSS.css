@@ -1,0 +1,572 @@
+/* Changes the item card font color to black */
+.card p {
+    color: Black;
+}
+
+/* Hides horizontal scrollbar */
+body {
+    overflow-x: hidden;
+}
+
+h1{
+    Color: Black;
+    text-align: center;
+    background-color: #EBBE9B;
+    /* padding-bottom: 10px; */
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+h2{
+    Color: Black;
+    text-align: center;
+    background-color: #C7CB85;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.caf h3, 
+.undercaf h3{
+    Color: Black;
+    text-align: center;
+    background-color: #EAD2A8
+}
+
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+p {
+    color: white;
+}
+
+
+li{
+    display: inline;
+    float: left;
+    padding: 5px;
+    margin: 0px;
+}
+
+li a{
+    float: left;
+}
+
+a {
+    display: block;
+    padding: 8px;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+#Locations{
+    color: #7EA172;
+}
+
+#Locations section {
+    padding-bottom: 10px !important;
+}
+
+a:hover #Locations{
+    color: #7EA172;
+}
+
+.dropdown-content button{
+    display: inline-block;
+    color: darkslategray;
+    
+}
+
+/* Upper Nav Bar / Top Bar */
+.UpperNav {
+    text-align: right;
+    vertical-align: auto;
+    padding: 5px;
+}
+
+.UpperNav a {
+    color: black;
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+}
+
+.UpperNav a:hover {
+    color: grey;
+}
+
+/* Navigation Bar */
+
+.navbar {
+    text-align: end !important;
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    box-shadow: 0 0.5rem 0.5rem rgba(0,0,0,0.1);
+    
+}
+
+.navbar-nav .btn{
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.navbar .nav-link {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    Color: Red;
+    margin-right: 25px;
+}
+
+.nav-item button {
+    border: 0;
+    background-color: transparent;
+}
+
+.navbar-nav .nav-link.active {
+    color: red;
+}
+
+.navbar-brand button {
+    border: 0 !important;
+    background-color: transparent !important;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 26px;
+    color: #092032;
+}
+
+.navbar-brand img {
+    border-radius: 50%;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+    margin-top: 35px;
+}
+
+/* End Navigation Section */
+
+/* Carousel Section */
+
+#carousel1 {
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+}
+  
+.carousel-inner {
+    max-height: 38rem !important;
+}
+
+.carousel-item {
+    width:100%;
+    height:800px;
+  }
+
+/*---Change Carousel Transition Speed --*/
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    transition: transform 1.2s ease;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 65%;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+}
+
+.bg-custom {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    border-radius: 1rem;
+}
+
+.carousel-caption h1 {
+    font-size: 3.8rem !important;
+    background-color: transparent !important;
+    color: lightblue !important;
+    text-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 1) !important;
+}
+
+.border-primary {
+    border-top: 0.2rem solid #4981b3 !important;   
+}
+
+.carousel-caption h3 {
+    font-size: 2.2rem;
+    text-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 1)
+}
+
+.btn-lg {
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-width: medium;
+}
+
+.btn-sm {
+    justify-self: center;
+    border-radius: 0;
+    font-size: 1rem;
+    border-width: medium;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-danger {
+    background-color: #AC2615;
+    border: 0.05rem solid #AC2615;
+}
+
+.btn-primary {
+    background-color: green;
+    border: 0.05rem solid green;
+}
+
+.btn-primary:hover {
+    background-color: lightgreen !important;
+    border: 0.05rem solid lightgreen !important;
+}
+
+/* End Carousel Section */
+
+/* Locations Section */
+
+.food-location {
+    overflow: hidden;
+    position: relative;
+}
+
+.food-location button {
+    background-color: transparent;
+    border: 0;
+}
+
+.food-location h3{
+    opacity: 1;
+    color: #F8F8ff;
+    position: absolute;
+    bottom: 32px;
+    left: 16px;
+}
+
+.food-location img{
+    width: auto;
+    height: auto;
+    border: black 1px solid;
+    margin: 5px;
+}
+
+.food-location img,
+.food-location .location-overlay {
+    transition: all 0.4s ease;
+}
+
+.location-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(80, 36, 25, 0.8);
+    display: flex;
+    align-items: flex-end;
+    padding: 30px;
+    opacity: 0;
+}
+
+.location-overlay h3 {
+    color: white !important;
+    top: 20px !important;
+    left: 16px;
+}
+
+.location-overlay h6 {
+    bottom: auto !important;
+    color: white;
+    text-align: left;   
+}
+
+.food-location .location-overlay h3{
+    font-size: 25px;
+}
+
+.food-location .location-overlay h6{
+    font-size: 14.5px;
+}
+
+.food-location:hover .location-overlay {
+    opacity: 1;
+}
+
+.food-location:hover img {
+    transform: scale(1.1);
+}
+
+/* Team Member Section */
+
+.team-member {
+    background-image: linear-gradient(rgba(1, 68, 33, 0.35), rgba(1, 68, 33, 0.95));
+}
+
+.team-member-img img{
+    width: 100% !important;
+}
+
+.team-member.even {
+    background-color: #DEB887;
+}
+
+.team-member .hline {
+    width: 70px;
+    height: 2px;
+    margin: 16px auto;
+    background-color: rgba(255, 255, 255, 0.445);
+}
+
+.team-member .team-member-img img,
+.team-member .team-member-img .social-icons {
+    transition: all 0.4s ease;
+}
+
+.team-member .team-member-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.team-member .team-member-img .social-icons {
+    width: 100%;
+    height: 60px;
+    background-image: linear-gradient(rgba(235, 190, 155, 0.95), rgba(235, 190, 155, 0.35));
+    position: absolute; 
+    bottom: -60px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-member .team-member-img .social-icons a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    font-size: 24px;
+    color: #fff;
+    border-radius: 100px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.team-member .team-member-img .social-icons a:hover {
+    background-color: #fff;
+    color: #8c7c82;
+}
+
+.team-member:hover .team-member-img .social-icons {
+    bottom: 0;
+}
+
+.team-member:hover img {
+    transform: translateY(-60px);
+}
+
+/* Body */
+
+body {
+    background-color: #5b3919;
+}
+
+#link h2 {
+    margin-top: 50px;
+}
+
+#link p {
+    text-align: center !important;
+
+}
+
+/* Footer */
+
+footer a {
+    text-decoration: none;
+}
+
+/* Cart */
+
+.cart-container {
+    position: fixed;
+    overflow: hidden;
+}
+
+.cart-container .cart {
+    top: 0px;
+    right: 0px;
+    height: 100%;
+}
+
+.cart {
+    position: relative;
+    transition: 1s ease right;
+}
+
+.cart-title {
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 0px 15px;
+    font-size: 26px;
+}
+
+th {
+    background-color: lightgoldenrodyellow;
+    color: black;
+    text-align: center;
+    border: black 1px solid;
+}
+
+td {
+    background-color: white;
+    padding-top: 10px;
+    text-align: center;
+    border: black 1px solid;
+}
+
+.cart-close {
+    background: transparent;
+    border: 0px;
+    border-radius: 1px;
+    padding: 0px 13px;
+    font-weight: bold;
+}
+
+.cart-table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 16px;
+}
+
+.cart-image {
+
+    max-width: 180px;
+    max-height: 180px;
+}
+
+.cart-body {
+    max-height: 1280px;
+    padding: 1px;
+    overflow: auto;
+    background-color: transparent !important;
+}
+
+.cart-remove {
+    padding: 0px 7px;
+    font-size: 14px;
+}
+
+/* Item Card */
+.card select, .card .price{
+    display: inline;
+}
+
+.card-title {
+    text-align: center;
+}
+
+/* Edits to make the item cards look good and grow on hover */
+.Buckstop .row {
+    padding: 10px;
+}
+
+.Buckstop .col-sm-12, .col-md-6, .col-lg-3 {
+    padding-bottom: 10px;
+}
+
+.Buckstop .col-sm-12:hover, .col-md-6:hover, .col-lg-3:hover {
+    transform: scale(1.02);
+    transition: 0.5s ease;
+}
+
+.PretzelPlace .row {
+    padding: 10px;
+}
+
+.PretzelPlace .col-sm-12, .col-md-6, .col-lg-3 {
+    padding-bottom: 10px;
+}
+
+.PretzelPlace .col-sm-12:hover, .col-md-6:hover, .col-lg-3:hover {
+    transform: scale(1.02);
+    transition: 0.5s ease;
+}
+
+.caf .row {
+    padding: 10px;
+}
+
+.caf .col-sm-12, .col-md-6, .col-lg-3 {
+    padding-bottom: 10px;
+}
+
+.caf .col-sm-12:hover, .col-md-6:hover, .col-lg-3:hover {
+    transform: scale(1.02);
+    transition: 0.5s ease;
+}
+
+.CafNav {
+    padding: 0px !important;
+    background-color: tan !important;
+}
+
+.CafNav a {
+    font: sans-serif;
+    color: black;
+    text-decoration: none;
+    border: black 1px solid;
+    padding: 0px;
+}
+
+.undercaf .row {
+    padding: 10px;
+}
+
+.undercaf .col-sm-12, .col-md-6, .col-lg-3 {
+    padding-bottom: 10px;
+}
+
+.undercaf .col-sm-12:hover, .col-md-6:hover, .col-lg-3:hover {
+    transform: scale(1.02);
+    transition: 0.5s ease;
+}
+
+.SouthCampus .row {
+    padding: 10px;
+}
+
+.SouthCampus .col-sm-12, .col-md-6, .col-lg-3 {
+    padding-bottom: 10px;
+}
+
+.SouthCampus .col-sm-12:hover, .col-md-6:hover, .col-lg-3:hover {
+    transform: scale(1.02);
+    transition: 0.5s ease;
+}
