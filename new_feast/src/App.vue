@@ -90,13 +90,6 @@
       <ProfileCompVue></ProfileCompVue>
 
   <RouterView :addToCart="addToCart" :cart="cart" :remove="removeItem" :incrQuan="incrQuantity" :decrQuan="decrQuantity" :check="checkout" /> <!-- Needs to be at bottom to load everything -->
-  
-  <SidebarComp
-    v-if="showSidebar"
-    :toggle="toggleSidebar"
-    :cart="cart"
-    :remove="removeItem"
-  />
 </template>
 
 <script>
@@ -117,6 +110,7 @@ export default {
   name: 'app',
   components: {
     // NavBar,
+    // eslint-disable-next-line
     SidebarComp,
     LoginModalVue,
     RegisterModalVue,
@@ -124,7 +118,6 @@ export default {
   },
   data(){
     return {
-      showSidebar: false,
       cart: [],
       quantity: 1,
       checkLogin,
@@ -162,11 +155,6 @@ export default {
           this.cart.push({name, price, quantity})
         }
       }
-    },
-    toggleSidebar () {
-      // Should toggle the sidebar to open and close
-      this.showSidebar = !this.showSidebar
-      console.log(this.showSidebar)
     },
     removeItem (name) {
       // Loops through the cart and then removes whichever item has the name provided
